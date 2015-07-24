@@ -12,3 +12,4 @@ github_username:  jekyll
 highlighter: rouge
 # Build settings
 markdown: kramdown
+exclude: ['config.ru', 'Gemfile', 'Gemfile.lock', 'vendor']
