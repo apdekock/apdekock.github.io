@@ -4,8 +4,10 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+Philip de Kock
 
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
+I am a passionate software developer who views information technology as an enabler. I delight in exercising and reading. I have recently completed a Masters degree in Information Technology with a mini-dissertation, combining research into the SOA and MDE fields, by generating architectural views of software systems from a DSL. I believe in working interdependently and in continuously developing my own skills through collaboration and knowledge sharing.
 
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+My current interests include: Software Architecture, Leadership, Business Development, Quality Driven Delivery, Agile Development Practices and Scrum.
+
+Linkedin: [https://za.linkedin.com/pub/philip-de-kock/3/686/5b9](https://za.linkedin.com/pub/philip-de-kock/3/686/5b9)

@@ -14,16 +14,4 @@ I did a small POC with the community version but I wanted to have more control o
 - the web service can be consumed from practically anyone.
 - the java application needs to run regardless of any users logged in (like a deamon - linux).
 
-# Example:
-{% highlight c# %}
-public static void main(string[] args)
-{
-
-}
-{% endhighlight %}
-
-Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll’s dedicated Help repository][jekyll-help].
-
 [tanuki]:      http://wrapper.tanukisoftware.com/
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-help]: https://github.com/jekyll/jekyll-help

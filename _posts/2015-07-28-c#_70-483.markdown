@@ -1,0 +1,22 @@
+---
+layout: post
+title:  "MS Programming in C# (Exam 70-483)"
+date:   2015-07-28 17:00:00
+categories: C#
+---
+I just passed the MS Programming in C# (Exam 70-483).
+
+# Preparation
+I read through the [Exam Ref 70-483: Programming in C#](https://www.microsoftpressstore.com/store/exam-ref-70-483-programming-in-c-sharp-9780735676824) book (by Wouter de Kort).
+
+![alt text](https://github.com/apdekock/apdekock.github.io/blob/master/_includes/Cover-70-483examref.jpg "Exam Ref 70-483: Programming in C# by Wouter de Kort")
+
+It was a great help to brush up on any rusty pockets of knowledge. I find I've touched on all of the content in this exam practically but not always for extended periods of time or it was a while ago it helped to refresh the knowledge and in at times acquainted me with certain nuances I was oblivious to.
+
+# Exam content distribution 
+Manage program flow (25%)
+Create and use types (24%)
+Debug applications and implement security (25%)
+Implement data access (26%)
+
+Now for: Exam Ref 70-486
