@@ -9,4 +9,4 @@ twitter_username: apdekock
 github_username:  apdekock
 # Build settings
 markdown: kramdown
-highlighter: none
+# highlighter: rouge

@@ -14,9 +14,9 @@ I read through the [Exam Ref 70-483: Programming in C#](https://www.microsoftpre
 It was a great help to brush up on any rusty pockets of knowledge. I find I've touched on all of the content in this exam practically but not always for extended periods of time or it was a while ago it helped to refresh the knowledge and in at times acquainted me with certain nuances I was oblivious to.
 
 # Exam content distribution 
-Manage program flow (25%)
-Create and use types (24%)
-Debug applications and implement security (25%)
-Implement data access (26%)
+* Manage program flow (25%)
+* Create and use types (24%)
+* Debug applications and implement security (25%)
+* Implement data access (26%)
 
 Now for: Exam Ref 70-486
