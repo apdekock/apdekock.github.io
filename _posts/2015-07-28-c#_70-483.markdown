@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "MS Programming in C# (Exam 70-483)"
+quote:  "Success is 1% inspiration, 98% perspiration and 2% attention to detail. — Phil Dunphy [Phil’s-osophy]"
 date:   2015-07-28 17:00:00
 categories: C#
 ---
@@ -19,4 +20,4 @@ It was a great help to brush up on any rusty pockets of knowledge. I find I've t
 * Debug applications and implement security (25%)
 * Implement data access (26%)
 
-Now for: Exam Ref 70-486
+Now for: Exam Ref 70-486: Developing ASP.NET MVC 4 Web Applications
