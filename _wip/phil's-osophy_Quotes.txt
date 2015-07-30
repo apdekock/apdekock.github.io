@@ -1,28 +1,10 @@
-[C#_Windows_Service_Spring_Java_Post]
-“When life gives you lemonade, make lemons. Life’ll be all like ‘what?!’”
-—   Phil Dunphy [Phil’s-osophy]
-25 Oct 2012   
-
-“If you’re ever in a jam, a crayon scrunched up under your nose makes a good pretend mustache.”
+﻿“If you’re ever in a jam, a crayon scrunched up under your nose makes a good pretend mustache.”
 —   Phil Dunphy [Phil’s-osophy]
 24 Oct 2012   
 
 “If you love something, set it free. Unless it’s a Tiger.”
 —   Phil Dunphy [Phil’s-osophy]
 23 Oct 2012   
-
-“Watch a sunrise at least once a day.”
-—   Phil Dunphy [Phil’s-osophy]
-22 Oct 2012   
-
-“You can tell a lot about a person from his Biography.”
-—   Phil Dunphy [Phil’s-osophy]
-21 Oct 2012   
-
-[70-483 post]
-“Success is 1% inspiration, 98% perspiration and 2% attention to detail.”
-—   Phil Dunphy [Phil’s-osophy]
-20 Oct 2012   
 
 “Older black ladies make the best iced tea.”
 —   Phil Dunphy [Phil’s-osophy]
@@ -48,6 +30,7 @@
 —   Phil Dunphy [Phil’s-osophy]
 14 Oct 2012   
 
+[MCSD?]
 “The most amazing things that can happen to a human being will happen to you, if you just lower your expectations.”
 —   Phil Dunphy [Phil’s-osophy]
 13 Oct 2012   

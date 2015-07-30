@@ -20,4 +20,14 @@ It was a great help to brush up on any rusty pockets of knowledge. I find I've t
 * Debug applications and implement security (25%)
 * Implement data access (26%)
 
-Now for: Exam Ref 70-486: Developing ASP.NET MVC 4 Web Applications
+_Now for: Exam Ref 70-486: Developing ASP.NET MVC 4 Web Applications_
+
+## Moral:
+
+So what can we take from Phil's infinite wisdom?
+
+  * "Success is 1% inspiration, 98% perspiration and 2% attention to detail." — Phil Dunphy [Phil’s-osophy]
+ 
+    **_Brush up on the 2% of detail you don't know well by using that 1% inspiration to motivate you for the 98% perspiration required._**
+
+	**_It all adds up to that 101% pass mark!_**
