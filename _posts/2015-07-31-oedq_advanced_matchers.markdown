@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Oracle Enterprise Data Quality (OEDQ) / EDQ Advanced matchers"
-date:   2015-07-30 12:00:00
+date:   2015-07-31 21:52:00
 quote:  "You can tell a lot about a person from his Biography. — Phil Dunphy [Phil’s-osophy]"
 categories: OEDQ, Oracle Enterprise Data Quality, SQL, SQL Server, Data Validation
 ---
