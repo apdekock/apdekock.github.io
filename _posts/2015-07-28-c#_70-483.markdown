@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "MS Programming in C# (Exam 70-483)"
+title:  "Programming in C# (Exam 70-483)"
 quote:  "Success is 1% inspiration, 98% perspiration and 2% attention to detail. — Phil Dunphy [Phil’s-osophy]"
 date:   2015-07-28 17:00:00
 categories: C#
 ---
-I just passed the MS Programming in C# (Exam 70-483).
+I just passed the Programming in C# Microsoft Exam (Exam 70-483).
 
 # Preparation
 I read through the [Exam Ref 70-483: Programming in C#](https://www.microsoftpressstore.com/store/exam-ref-70-483-programming-in-c-sharp-9780735676824) book (by Wouter de Kort).
