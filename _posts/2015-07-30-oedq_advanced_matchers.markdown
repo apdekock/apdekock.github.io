@@ -47,7 +47,7 @@ Work flow:
 
 # A Basic work flow to match City in two tables
 
-Right clicking on the menu items provides you with the option to create a new instance of an item. In the steps below just follow the creation wizard.
+Right clicking on the menu items provides you with the option to create a new instance of an item.
 
 1. Set up a Source Data Store - this will be the database connection.
 
@@ -65,7 +65,7 @@ Right clicking on the menu items provides you with the option to create a new in
 
 3. Create a process to profile the tables, start with a Reader for the _Customers_ table.
 	
-	3.1 Choose the _Customers_ table and run through the wizard.
+	3.1 Choose the _Customers_ table and run through the configuration.
 	
 	![alt text]({{ site.url }}/assets/3.1_source.PNG "Source")
 	
@@ -79,14 +79,81 @@ Right clicking on the menu items provides you with the option to create a new in
 	
 4. Add another Reader for the _Employees_ table.
 
-	4.1 Select the Data Store icon on the _Tool Palette_ and drag a **Reader** on.
+	4.1 Select the Data Store icon on the _Tool Palette_ and drag a **Reader** onto the process panel.
 	
 	![alt text]({{ site.url }}/assets/4.1_reader1.PNG "Reader Employees")
 	
-	4.2 
+	4.2 Double click on the new Reader and select the _Employees_ snapshot at the Source dropdown. Select all fields for this exercise - we'll only be using country though.
 	
+	![alt text]({{ site.url }}/assets/4.2_reader2.PNG "Reader Employees")
+	
+5. Add an Advanced Matcher.
+
+	5.1 Select the Matching icon on the _Tool Palette_ and drag an **Advanced Match** onto the process panel.
+	
+	![alt text]({{ site.url }}/assets/5.1_add_matcher.PNG "Advanced Matcher")
+
+	5.2 Link the first **Reader** to the **Advanced Match** _Working Data_ port.
+	
+	![alt text]({{ site.url }}/assets/5.2_link_readers.PNG "Link Advanced Matcher")
+
+	5.3 The configuration window will pop-up after the first link, choose the **City** attribute and add it to the _Selected Attributes_ list and click **OK**.
+	 	 
+	![alt text]({{ site.url }}/assets/5.3_setup_matcher1.PNG "Set Fields Advanced Matcher")
+	
+	5.4 _**Do not close the process tab**_  Close the _Advanced Match_ tab.
+	
+	![alt text]({{ site.url }}/assets/5.4_input_matcher.PNG "Set Fields Advanced Matcher")
+
+	5.5 Link the remaining **Reader** to the **Advanced Match** _Reference Data_ port.
+
+	![alt text]({{ site.url }}/assets/5.5_link_readers2.PNG "Link Advanced Matcher")
+
+6. Configuring the **Advanced Match**.
+
+	6.1 Once you link the second reader the **Advanced Match** configuration window opens. _Double Click_ on **Input** to open the input configuration.
+
+	![alt text]({{ site.url }}/assets/6.1_setInput.PNG "Input for Advanced Matcher")
+
+	6.1.1 Both the _Employees_ and _Customers_ sources should be available as Tabs at the top of the configuration window. Switch between the tabs and ensure the appropriate source is selected for each tab and that the **City** attribute is added to the _Selected Attributes_ list and click **OK**.
+	
+	![alt text]({{ site.url }}/assets/6.2_setInput2.PNG "Input for Advanced Matcher")
+
+	6.1.2 This provides us with the following view displaying the two tables.
+	
+	![alt text]({{ site.url }}/assets/6.3_sources_set.PNG "Sources set for Advanced Matcher")
+	
+	6.2 Click on _Auto Map Identifies_ **OR** alternatively _Double Click_ on the **Identify** to map the identifiers manually.
+	
+	![alt text]({{ site.url }}/assets/6.4_map_identifiers.PNG "Map Identifiers")
+	![alt text]({{ site.url }}/assets/6.4_map_identifiers1.PNG "Map Identifiers")
+
+	6.3 _Double Click_ on [**Cluster**](http://www.oracle.com/webfolder/technetwork/data-quality/edqhelp/Content/advanced_features/indexing_concept_guide.htm) to create one.<sup><sup>[See the link for further information on **Clustering**](http://www.oracle.com/webfolder/technetwork/data-quality/edqhelp/Content/advanced_features/indexing_concept_guide.htm).</sup></sup> Click on the _+_ button > then _Add Identififer_ and select **City**.
+
+	![alt text]({{ site.url }}/assets/6.5_cluster1.PNG "Cluster")
+	
+	6.4 _Double Click_ on **Match**
+	
+	![alt text]({{ site.url }}/assets/6.6_match1.PNG "Match")
+	
+	6.4.1 **City** will be available. Select **City** and click on _Add Comparison_.
+	
+	![alt text]({{ site.url }}/assets/6.6_match2.PNG "Comparison")
+	
+	6.4.2 Change the Comparison Type to _Exact String Match_.<sup><sup>Feel free to look through the other options that might come in handy in the dropdown.</sup></sup>
+	
+	![alt text]({{ site.url }}/assets/6.6_match3.PNG "Comparison")
+	
+	6.5 Switch to the _Match Rules_ tab and click on the _+_ button at the bottom left to add a match rule. Change the _Decision_ to **MATCH** and set the value for the Comparison configuration _Comparison1_ to **true**.<sup><sup>The _Matching Rules_ determine when and how to handle a comparison result. In this case we want it to be treated as a Match.</sup></sup>
+	
+	![alt text]({{ site.url }}/assets/6.7_match_rule.PNG "Comparison")
+		
+	6.6 Close the _Advanced Match_ tab.
+	
+	![alt text]({{ site.url }}/assets/5.4_input_matcher.PNG "Set Fields Advanced Matcher")
 	
 ## Additional Information
+* [Matching Concept Guide](http://www.oracle.com/webfolder/technetwork/data-quality/edqhelp/Content/advanced_features/matching_concept_guide.htm) for additional information.
 * Although the documentation has some crucial information hidden (in a note sections or greyed out sections) it really is helpful and does explain the reasoning behind the functionality and the operations one can perform.
 
 	[![alt text]({{ site.url }}/assets/oedq_note_ind.png "Crucial Information")][OEDQHelp]
