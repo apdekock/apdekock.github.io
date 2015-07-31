@@ -10,8 +10,8 @@ categories: OEDQ, Oracle Enterprise Data Quality, SQL, SQL Server, Data Validati
 [Oracle Enterprise Data Quality (OEDQ) or (EDQ)](http://www.oracle.com/technetwork/middleware/oedq/overview/index.html) baiscally enables an organisation to govern data, it facilitates data integration and has the capability to extract basic business intelligence. The objective in this application of OEDQ was data cleansing. The first step was to identify and report to business the specific records and fields that need to be addressed to improve data integrity. It also allowed us to identify where serious input validation is required or where client side validation failed and server side validation was omitted.
 
 ## Set up OEDQ
-
-* On installing OEDQ I selected all the functional packs.
+	
+* On installing **OEDQ version 9.0.8 (1103)**, I selected all the functional packs.
 
 	![alt text]({{ site.url }}/assets/1_select_all_options.png)
 
@@ -150,21 +150,41 @@ Right clicking on the menu items provides you with the option to create a new in
 		
 	6.6 Close the _Advanced Match_ tab.
 	
-	![alt text]({{ site.url }}/assets/5.4_input_matcher.PNG "Set Fields Advanced Matcher")
+	![alt text]({{ site.url }}/assets/5.4_input_matcher.PNG "Close Advanced Matcher Configuration")
 	
+7. Run the process.
+
+	![alt text]({{ site.url }}/assets/7_run.PNG "Set Fields Advanced Matcher")
+
+8. Evaluate the results.
+
+	8.1 We have 8 Matches and clicking on the 8 provides us with a drill down into those 8 records.
+	
+	![alt text]({{ site.url }}/assets/8_results1.PNG "Advanced Matcher Matching")
+
+	8.2 You can drill down into the data to see the relationships and which cities overlap.
+	
+	![alt text]({{ site.url }}/assets/8_results2.PNG "Drill down")
+
 ## Additional Information
-* [Matching Concept Guide](http://www.oracle.com/webfolder/technetwork/data-quality/edqhelp/Content/advanced_features/matching_concept_guide.htm) for additional information.
+* See the [Matching Concept Guide](http://www.oracle.com/webfolder/technetwork/data-quality/edqhelp/Content/advanced_features/matching_concept_guide.htm) for additional information.
+* OEDQ is a great tool and is extremely powerful. For the data cleansing project I was able to set up scheduled jobs that profile certain table fields for a degree of quality and produces an Excel spreadsheet with the anomalous records to be addressed. The previous reports are archived and hence, an analysis can be done to determine if data quality is improving or degrading. All this was done with built in Functionality provided by OEDQ.
 * Although the documentation has some crucial information hidden (in a note sections or greyed out sections) it really is helpful and does explain the reasoning behind the functionality and the operations one can perform.
-
+_**This little snippet explained why I could not see any client side Data Stores in my Tool palette when creating a Job.**_
+	
 	[![alt text]({{ site.url }}/assets/oedq_note_ind.png "Crucial Information")][OEDQHelp]
-
+	
+# Version Information
+	
+![alt text]({{ site.url }}/assets/oedq_version.PNG "OEDQ Version")
+	
 ## Moral:
 
 So what can we take from Phil's infinite wisdom?
 
   * "You can tell a lot about a person from his Biography." — Phil Dunphy [Phil’s-osophy]
  
-    **_Read the help documentation, it helps..._**
+    **_Reading the help documentation helps..._**
  
  
 [OEDQHelp]:http://www.oracle.com/webfolder/technetwork/data-quality/edqhelp/Content/concepts/jobs.htm
