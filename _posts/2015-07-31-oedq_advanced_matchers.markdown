@@ -7,7 +7,7 @@ categories: OEDQ, Oracle Enterprise Data Quality, SQL, SQL Server, Data Validati
 ---
 ## What is OEDQ?
 
-[Oracle Enterprise Data Quality (OEDQ) or EDQ](http://www.oracle.com/technetwork/middleware/oedq/overview/index.html) baiscally enables an organisation to govern data, it facilitates data integration and has the capability to extract basic business intelligence. The objective in applying OEDQ was data cleansing. The first step was to identify and report to business the specific records and table fields that need to be addressed to improve data quality and in cases of weak references, data integrity. It also allowed us to identify where serious input validation is required or where client side validations fails and server side validation is omitted.
+[Oracle Enterprise Data Quality (OEDQ) / EDQ](http://www.oracle.com/technetwork/middleware/oedq/overview/index.html) baiscally enables an organisation to govern data, it facilitates data integration and has the capability to extract basic business intelligence. The objective in applying OEDQ was data cleansing. The first step was to identify and report to business the specific records and table fields that need to be addressed to improve data quality and in cases of weak references, data integrity. It also allowed us to identify where serious input validation is required or where client side validations fails and server side validation is omitted.
 
 ## Set up OEDQ
 	
