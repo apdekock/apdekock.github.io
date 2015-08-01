@@ -12,7 +12,7 @@ I read through the [Exam Ref 70-483: Programming in C#](https://www.microsoftpre
 
 ![alt text]({{ site.url }}/assets/Cover-70-483examref.jpg "Exam Ref 70-483: Programming in C# by Wouter de Kort")
 
-It was a great help to brush up on any rusty pockets of knowledge. I find I've touched on all of the content in this exam practically but not always for extended periods of time or it was a while ago it helped to refresh the knowledge and in at times acquainted me with certain nuances I was oblivious to.
+It was a great help to brush up on any rusty pockets of knowledge. I find I've touched on all of the content practically but not always for extended periods of time or it was a while ago. At times the content in the book acquainted me with certain nuances I was oblivious to.
 
 # Exam content distribution 
 * Manage program flow (25%)
