@@ -3,7 +3,7 @@ layout: page
 title: About
 permalink: /about/
 ---
-[Philip de Kock](https://za.linkedin.com/pub/philip-de-kock/3/686/5b9)
+# [Philip de Kock](https://za.linkedin.com/pub/philip-de-kock/3/686/5b9)
 
 [![picture]({{ site.url }}/assets/phil.jpg "Philip de Kock")](https://za.linkedin.com/pub/philip-de-kock/3/686/5b9)
 
