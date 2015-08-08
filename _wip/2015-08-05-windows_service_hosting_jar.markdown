@@ -350,6 +350,8 @@ Right click on the project and click add service reference.
 
 * Start the .NET Console Application and retest that the Java API is being consumed.
 
+using baretail is what I coudl use to monitor the Nlog logs
+
 # Improvements
 
 * Right now it can host only one process - a static field is used to keep the process id reference. Looking at something like a Dictionary to keep track of instances spawned of a process hosted could allow multiple JavaProcesses  to run on service start up.
