@@ -385,13 +385,13 @@ namespace ConsoleApplication
 
 ## Improvements
 
-* Right now it can host only one process - a static field is used to keep the process id reference. Looking at something like a Dictionary to keep track of instances spawned of a process hosted could allow multiple JavaProcesses  to run on service start up.
-* Logging seems pretty vanilla and introducing post sharp or another AOP Framework to implement the cross-cutting aspect could be beneficial - especially as the project grows. (The logging Advice could point to [NLog](http://nlog-project.org/), I'll post this some other time.)
-* Fault tolerance / some sort of auto detection and auto recovery should the JavaProcess fails could also be introduced. Such as when down - restart / attempt this for three tries.
+* The Windows Service can host only one **[JavaProcess]** - a static field is used to keep reference to the running process id. One could look at something like a _Dictionary_ to keep track of instances spawned of multiple **[JavaProcess]** instances.
+* Logging seems pretty vanilla and introducing [PostSharp](https://www.postsharp.net/) or another [AOP](https://en.wikipedia.org/wiki/Aspect-oriented_programming) Framework to implement the cross-cutting concern of logging could be beneficial - especially as the project grows. (The logging Advice could still point to [NLog](http://nlog-project.org/), I'll post this some other time)
+* Fault tolerance / some sort of auto detection and auto recovery should the **[JavaProcess]** fail could also be introduced.
 
 ## Alternatives
 
-* I did some research and found an awesome library in [Tanuki Software's Java Service Wrapper](http://wrapper.tanukisoftware.com/). It looks like an awesome tool with alot of [features](http://wrapper.tanukisoftware.com/doc/english/product-features.html) and will be able to provide the same functionality as this project with a few added benefits. 
+* I did some research and found an awesome library in [Tanuki Software's Java Service Wrapper](http://wrapper.tanukisoftware.com/). It looks like an awesome tool with a lot of [features](http://wrapper.tanukisoftware.com/doc/english/product-features.html) and will be able to provide the same functionality as this project with a few added benefits.
 * If you have the ability to alter both the Java and .NET code - [jni4net](http://jni4net.com/) is an option.
 
 ##**Moral:**
@@ -405,7 +405,7 @@ So what can we take from Phil's infinite wisdom?
 [^10]:[Shock and awe](https://en.wikipedia.org/wiki/Shock_and_awe)
 
 ##**Quick Guide:** 
-1. Cone [Java.NETWindowsService repo](https://github.com/apdekock/Java.NETWindowsService). 
+1. Clone [Java.NETWindowsService repo](https://github.com/apdekock/Java.NETWindowsService). 
 2. Compile the solution.
 3. Install and Start the compiled service.<sup> see the **Installing/Uninstalling the service** section on how to install the service.</sup> 
 4. Run the _**ConsoleApplication.exe**_ executable located in the _.NETApp_ folder of the cloned repo.
