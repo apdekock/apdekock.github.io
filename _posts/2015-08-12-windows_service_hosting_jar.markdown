@@ -64,14 +64,14 @@ For the purposes of this post I used a pre-existing Spring SOAP web service that
 1. Clone the my altered [_"Producing a SOAP web service"_ GitHub repo](https://github.com/apdekock/gs-producing-web-service).
 
 2. Open the project in [IntelliJ](https://www.jetbrains.com/idea/) and run a **mvn clean install** to produce a jar file (gs-producing-web-service-0.1.0.jar) _which will act as both, the Java API being wrapped, and the web service that will be exposed from the Windows Service_.
-![intelliJ_build_maven]({{ site.url }}/assets/maven_build_spring_sample.png "Maven clean install Spring Sample")
+![intelliJ_build_maven]({{ site.url }}/assets/java_net_post/maven_build_spring_sample.PNG "Maven clean install Spring Sample")
 
 3. Execute the _**run.bat**_ file to run the Spring web service which hosted at http://localhost:8080/ws [^6] 
 A console should appear as below with spring telling us what's going on.
-![Spring Test]({{ site.url }}/assets/running_spring_service.png "Spring WS running")
+![Spring Test]({{ site.url }}/assets/java_net_post/running_spring_service.PNG "Spring WS running")
 
 4. Test the service once it is up and running. I used [SoapUI](http://www.soapui.org/) by SMARTBEAR[^7]. In the previous screen shot, you will see the additional logging come into play when, a few service calls are made. I called the service 4 times, three times with "Spain" as the request country and once with "France".
-![Spring Test SOAP UI]({{ site.url }}/assets/running_spring_service_soapUI.png "Spring WS running test")
+![Spring Test SOAP UI]({{ site.url }}/assets/java_net_post/running_spring_service_soapUI.PNG "Spring WS running test")
 
 [^6]:Why don't we just do this? - Because as soon as we close the console the process stops and our service dissapears. Hence, the windows service.
 [^7]:Adding the service to the project - Right click on **Projects** > **New SOAP Project** and in the _Initial  WSDL_ field paste: http://localhost:8080/ws/countries.wsdl
@@ -85,12 +85,12 @@ This project replicates the command line execution of Spring web service host as
 The logging mechanism employed in this project is [NLog](http://nlog-project.org/) with the file target configured (alternatively you could log to the [EventLog](https://msdn.microsoft.com/en-us/library/system.diagnostics.eventlog(v=vs.110).aspx) under the Windows Service name).
 
 # Solution overview
-![ProjectStructure]({{ site.url }}/assets/project_structure.png "Windows Service Project Structure") 
+![ProjectStructure]({{ site.url }}/assets/java_net_post/project_structure.PNG "Windows Service Project Structure") 
 
 # Windows Service
   
 * I Created a Windows Service using the vanilla Windows Service C# project template from MS Visual Studio 2013.
-![Create Windows Service]({{ site.url }}/assets/create_windows_service.png "Windows Service Vanilla Template c#")
+![Create Windows Service]({{ site.url }}/assets/java_net_post/create_windows_service.PNG "Windows Service Vanilla Template c#")
 
 * The **[JavaWindowsService.cs]** is the main class in the solution, it is the one instantiated by **[Program.cs]** when the service starts up. It inherits from **[ServiceBase]** and overrides two methods, the _OnStart()_ and _OnStop()_, where the logic required to run and stop the Java API needs to be incorporated.
 
@@ -286,16 +286,16 @@ public int Start()
 
 # Create a console application
 * Create a new vanilla C# console application.
-![New Console Application Template]({{ site.url }}/assets/new_console.png "New Console Application Template")
+![New Console Application Template]({{ site.url }}/assets/java_net_post/new_console.PNG "New Console Application Template")
 
 Now we add a service reference to our .NET application in order to consume the web service that wraps the Java API[^2].
 
 * Run the spring ws _**run.bat**_ file - to get the service up and running.
-![Spring WS Reference]({{ site.url }}/assets/running_spring_service.png "Spring WS running reference")
+![Spring WS Reference]({{ site.url }}/assets/java_net_post/running_spring_service.PNG "Spring WS running reference")
 
 *  Right click on the _Project_ > _Add_ > _Service Reference..._ --- Add a service reference to the console application using the end point: [http://localhost:8080/ws/countries.wsdl](http://localhost:8080/ws/countries.wsdl).
-![Add Service Reference]({{ site.url }}/assets/addServiceReference.png "Add Service Reference")
-![Add Service Reference Console]({{ site.url }}/assets/console_add_service.png "Reference EndPoint")
+![Add Service Reference]({{ site.url }}/assets/java_net_post/addServiceReference.PNG "Add Service Reference")
+![Add Service Reference Console]({{ site.url }}/assets/java_net_post/console_add_service.PNG "Reference EndPoint")
  
 * Replace the Program Class (in the _**[Program.cs]**_ file) code with the below snippet.
 {% highlight C# %}
@@ -335,7 +335,7 @@ namespace ConsoleApplication
 # Test 
 
 * Run the console application and test the Java API by typing in a country like _Spain_
-![.NET Console Application consuming Java API]({{ site.url }}/assets/running_spring_service_consumingService.png "Consuming Java API")
+![.NET Console Application consuming Java API]({{ site.url }}/assets/java_net_post/running_spring_service_consumingService.PNG "Consuming Java API")
 
 * Stop the _**run.bat**_ process and close the .NET Console Application.
 
@@ -345,7 +345,7 @@ namespace ConsoleApplication
   * I'll use the [sc.exe](https://technet.microsoft.com/en-us/library/cc990289.aspx)[^9]. Below is a simple version I employed to test this service (run from the _../bin/debug_ path). _**Important:** The space after the **=** sign is required!_
 	* _**sc create testJavaWindowsService binpath= "Java.NETWindowsService.exe"**_
 	  * The installed but stopped service should look like below.
-	    ![Installed Windows Service]({{ site.url }}/assets/installedService.png "Installed Windows Service")
+	    ![Installed Windows Service]({{ site.url }}/assets/java_net_post/installedService.PNG "Installed Windows Service")
 
 [^9]: Installing a windows service can be done either through the [installutil.exe](https://msdn.microsoft.com/en-us/library/sd8zc8ha(v=vs.110).aspx) that ships with the .NET framework or the [sc.exe](https://technet.microsoft.com/en-us/library/cc990289.aspx) utility that is native to the Windows OS (from Vista and up).
 
@@ -371,7 +371,7 @@ namespace ConsoleApplication
     * Monitoring the hosted process **([JavaProcess])** passes along the messages, previously logged to the console, to the Windows Service that then employs [NLog](http://nlog-project.org/).	
       * I used BareTail to monitor the log files produced by [NLog](http://nlog-project.org/) (the location & name of the log file is specified in the _NLog.config_ file: _${basedir}/logs/${shortdate}.log_).
 
-![BareTail]({{ site.url }}/assets/bareTail.png "BareTail [NLog](http://nlog-project.org/)")
+![BareTail]({{ site.url }}/assets/java_net_post/bareTail.PNG "BareTail [NLog](http://nlog-project.org/)")
 
 # Additional parameters                                                                                                                            
   * _**start=** [auto]_ --- sets the service to start automatically on OS boot up.                                                                             
