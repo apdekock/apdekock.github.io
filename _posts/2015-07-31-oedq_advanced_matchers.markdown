@@ -9,7 +9,7 @@ categories: OEDQ, Oracle Enterprise Data Quality, SQL, SQL Server, Data Validati
 
 [Oracle Enterprise Data Quality (OEDQ) / EDQ](http://www.oracle.com/technetwork/middleware/oedq/overview/index.html) baiscally enables an organisation to govern data, it facilitates data integration and has the capability to extract basic business intelligence. The objective in applying OEDQ was data cleansing. The first step was to identify and report to business the specific records and table fields that need to be addressed to improve data quality and in cases of weak references, data integrity. It also allowed us to identify where serious input validation is required or where client side validations fails and server side validation is omitted.
 
-## Set up OEDQ
+# Set up OEDQ
 	
 * On installing **OEDQ version 9.0.8 (1103)**, I selected all the functional packs.
 
@@ -33,7 +33,7 @@ categories: OEDQ, Oracle Enterprise Data Quality, SQL, SQL Server, Data Validati
 
 	![alt text]({{ site.url }}/assets/5_add_site_exception.PNG "Edit Site List...")
 
-## OEDQ basics
+# OEDQ basics
 
 The main work flow is pretty simple once you get the hang of it.
 
@@ -45,7 +45,7 @@ Work flow:
 
 ![alt text]({{ site.url }}/assets/2_workflow.PNG "Work flow")
 
-# A Basic work flow to match City in two tables
+## A Basic work flow to match City in two tables
 
 Right clicking on the menu items provides you with the option to create a new instance of an item.
 
@@ -166,7 +166,7 @@ Right clicking on the menu items provides you with the option to create a new in
 	
 	![alt text]({{ site.url }}/assets/8_results2.PNG "Drill down")
 
-## Additional Information
+# Additional Information
 * See the [Matching Concept Guide](http://www.oracle.com/webfolder/technetwork/data-quality/edqhelp/Content/advanced_features/matching_concept_guide.htm) for additional information.
 * OEDQ is a great tool and is extremely powerful. For the data cleansing project I set up scheduled jobs that profile certain table fields for a degree of quality and produces a few Excel spreadsheet (per business area concerned) with the anomalous records to be addressed. The previous reports are archived and hence, an analysis can be done to determine if data quality is improving or degrading over time. All this was done with built in Functionality provided by OEDQ in conjuction with a few batch files for complex file system I/O operations.
 * The documentation has some crucial information hidden (in a note sections or greyed out sections). However, it is helpful and does explain the reasoning behind the functionality and the operations one can perform.
