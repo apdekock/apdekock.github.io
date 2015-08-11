@@ -4,13 +4,10 @@ title:  "Java / .NET interop - Windows Service hosting a Java .jar"
 date:   2015-08-12 14:56:37
 quote:  "When life gives you lemonade, make lemons. Life'll be all like 'what?!' —   Phil Dunphy [Phil’s-osophy]"
 categories: C#, Java, Spring, Java .NET interop
-# corrections
-# [web service] and [soap service]
-# update repo readme's and descriptions
 ---
 ## Intro
 
-I recently got a requirement to integrate with a Java API. 
+I recently received a requirement to integrate with a Java API. 
 I've worked with Java before and [natch](http://www.urbandictionary.com/define.php?term=natch), the requirement came my way.
 
 ## Considerations
@@ -30,11 +27,11 @@ I've worked with Java before and [natch](http://www.urbandictionary.com/define.p
 
 [![Design]({{ site.url }}/assets/DesignJavaHost.svg "Courtesy of https://www.draw.io/")](https://www.draw.io/)
 
-* **Seamless, loosely coupled integration between the .NET application and the Java API** by _**wrap the Java API in a SOAP service**_ that can then just be consumed like any other SOAP based web service.
+* **Seamless, loosely coupled integration between the .NET application and the Java API** by _**wrap the Java API in a web service**_ that can then just be consumed like any other SOAP based web service.
 
-* **Write as little Java as possible** by _**exposing the required Java API functionality as vanilla as possible in the SOAP service**_. The implemebntations code on the .NET side is then automatically through the service proxy class generation tools in Visual Studio OR [Svcutil.exe](https://msdn.microsoft.com/en-us/library/aa347733(v=vs.110).aspx). _**Any orchestration logic such as polling should then reside in the .NET application code.**_
+* **Write as little Java as possible** by _**exposing the required Java API functionality as vanilla as possible in the web service**_. The implemebntations code on the .NET side is then automatically through the service proxy class generation tools in Visual Studio OR [Svcutil.exe](https://msdn.microsoft.com/en-us/library/aa347733(v=vs.110).aspx). _**Any orchestration logic such as polling should then reside in the .NET application code.**_
 
-* **Run the SOAP Service (that wraps the Java API**[^2]**) as a background application** by wrapping it in a _**Windows Service**_. _The windows service hosts the web service as a background operation which means it is not tied to any user sessions._ A windows service has the additional capability of being configured to starting automatically on the occasional server reboot as well as run under credentials specific to the operation.
+* **Run the Web Service (that wraps the Java API**[^2]**) as a background application** by wrapping it in a _**Windows Service**_. _The windows service hosts the web service as a background operation which means it is not tied to any user sessions._ A windows service has the additional capability of being configured to starting automatically on the occasional server reboot as well as run under credentials specific to the operation.
 
 [^2]:[..in the house that Jack built.](https://en.wikipedia.org/wiki/This_Is_the_House_That_Jack_Built)
 
@@ -50,7 +47,7 @@ Either start with the **Getting started** section below...
 
 **OR** 
 
-...**clone this [Java.NETWindowsService repo](https://github.com/apdekock/Java.NETWindowsService)** with the pre-compiled _Spring Java SOAP service (that wraps the test Java API[^3])_ as well as the test _.NET console application[^4]_ that consumes the SOAP service **and install and start the compiled service and run the .NET console application executable[^5]**.
+...**clone this [Java.NETWindowsService repo](https://github.com/apdekock/Java.NETWindowsService)** with the pre-compiled _Spring Java SOAP service (that wraps the test Java API[^3])_ as well as the test _.NET console application[^4]_ that consumes the SOAP based web service **and install and start the compiled service and run the .NET console application executable[^5]**.
   
 [^3]:[Repo location for Java API and batch file to run.](https://github.com/apdekock/Java.NETWindowsService/tree/master/Java.NETWindowsService/JavaAPI)
 [^4]:[Repo location for .Net Console Application](https://github.com/apdekock/Java.NETWindowsService/tree/master/Java.NETWindowsService/.NETApp)
@@ -66,7 +63,7 @@ For the purposes of this post I used a pre-existing Spring SOAP web service that
   
 1. Clone the my altered [_"Producing a SOAP web service"_ GitHub repo](https://github.com/apdekock/gs-producing-web-service).
 
-2. Open the project in [IntelliJ](https://www.jetbrains.com/idea/) and run a **mvn clean install** to produce a jar file (gs-producing-web-service-0.1.0.jar) _which will act as both, the Java API being wrapped, and the SOAP service that will be exposed from the Windows Service_.
+2. Open the project in [IntelliJ](https://www.jetbrains.com/idea/) and run a **mvn clean install** to produce a jar file (gs-producing-web-service-0.1.0.jar) _which will act as both, the Java API being wrapped, and the web service that will be exposed from the Windows Service_.
 ![intelliJ_build_maven]({{ site.url }}/assets/java_net_post/maven_build_spring_sample.png "Maven clean install Spring Sample")
 
 3. Execute the _**run.bat**_ file to run the Spring web service which hosted at http://localhost:8080/ws [^6] 
@@ -291,7 +288,7 @@ public int Start()
 * Create a new vanilla C# console application.
 ![New Console Application Template]({{ site.url }}/assets/java_net_post/new_console.png "New Console Application Template")
 
-Now we add a service reference to our .NET application in order to consume the SOAP web service that wraps the Java API[^2].
+Now we add a service reference to our .NET application in order to consume the web service that wraps the Java API[^2].
 
 * Run the spring ws _**run.bat**_ file - to get the service up and running.
 ![Spring WS Reference]({{ site.url }}/assets/java_net_post/running_spring_service.png "Spring WS running reference")
