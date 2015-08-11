@@ -7,17 +7,17 @@ categories: C#, Java, Spring, Java .NET interop
 ---
 ## Intro
 
-I recently received a requirement to integrate with a Java API. 
+We recently received a requirement to integrate with a Java API.
 I've worked with Java before and [natch](http://www.urbandictionary.com/define.php?term=natch), the requirement came my way.
 
 ## Considerations
 
-* This is a .NET shop and [Maven](https://maven.apache.org/) / [Gradle](https://gradle.org/) / [Spring](https://spring.io/) / [IntelliJ](https://www.jetbrains.com/idea/) are foreign concepts (the company firewall wouldn't let me trough to the [Maven](https://maven.apache.org/) repo, nor was there an internal repo that I could find).  Thus, in order to ensure the solution is maintainable by anyone in the team, most of the logic needed to reside in the .NET space and the least amount of Java should be written.
+* This is a .NET shop and [Maven](https://maven.apache.org/) / [Gradle](https://gradle.org/) / [Spring](https://spring.io/) / [IntelliJ](https://www.jetbrains.com/idea/) are foreign concepts (the company firewall wouldn't let me trough to the [Maven](https://maven.apache.org/) repo, nor was there an internal repo that I could find).  Thus, in order to ensure the solution is maintainable by anyone in the team, most of the logic needed to reside in the .NET space and the least amount of Java had to be written.
 
 ## Requirements
 
 * The interaction with Java should be seamless.
-* Minimal to no coupling between the Java API and the .NET code. This meant no [jni4net](http://jni4net.com/) that would require intricate knowledge of the API's internals as well as will require the Java API to emit to our .NET application, and vice versa.
+* There should be minimal to no coupling between the Java API and the .NET code. This meant no [jni4net](http://jni4net.com/) that would require intricate knowledge of the API's internals and in addition it will require the Java API to emit to our .NET application, and vice versa.
 	<sup>(The implementation of [jni4net](http://jni4net.com/) in the Java API was not an option anyway as it would require additional support from the writers of the API for my specific situation.)</sup>
 * The Java API needs to be hosted regardless of any user being logged in, it needs to run as a background process (like a [Daemon](https://en.wikipedia.org/wiki/Daemon_(computing)) in a Unix environment).[^1]
 
@@ -27,11 +27,11 @@ I've worked with Java before and [natch](http://www.urbandictionary.com/define.p
 
 [![Design]({{ site.url }}/assets/java_net_post/DesignJavaHost.svg "Courtesy of https://www.draw.io/")](https://www.draw.io/)
 
-* **Seamless, loosely coupled integration between the .NET application and the Java API** by _**wrap the Java API in a web service**_ that can then just be consumed like any other SOAP based web service.
+* **Seamless, loosely coupled, highly cohesive integration between the .NET application and the Java API** by _**wrapping the Java API in a web service**_ that can then just be consumed like any other SOAP based web service.
 
-* **Write as little Java as possible** by _**exposing the required Java API functionality as vanilla as possible in the web service**_. The implemebntations code on the .NET side is then automatically through the service proxy class generation tools in Visual Studio OR [Svcutil.exe](https://msdn.microsoft.com/en-us/library/aa347733(v=vs.110).aspx). _**Any orchestration logic such as polling should then reside in the .NET application code.**_
+* **Write as little Java as possible** by _**exposing the required Java API functionality as vanilla as possible in the web service**_. The code on the .NET side is then automatically created through the service proxy class generation tools in Visual Studio OR [Svcutil.exe](https://msdn.microsoft.com/en-us/library/aa347733(v=vs.110).aspx). _**Any orchestration logic such as polling should then reside in the .NET application code.**_
 
-* **Run the Web Service (that wraps the Java API**[^2]**) as a background application** by wrapping it in a _**Windows Service**_. _The windows service hosts the web service as a background operation which means it is not tied to any user sessions._ A windows service has the additional capability of being configured to starting automatically on the occasional server reboot as well as run under credentials specific to the operation.
+* **Run the Web Service (that wraps the Java API**[^2]**) as a background application** by wrapping it in a _**Windows Service**_. _The windows service hosts the web service as a background operation which means it is not tied to any user session._ A windows service has the additional capability of being configured to starting automatically on the occasional server reboot as well as run under elevated credentials specific to the operation.
 
 [^2]:[..in the house that Jack built.](https://en.wikipedia.org/wiki/This_Is_the_House_That_Jack_Built)
 
@@ -47,7 +47,7 @@ Either start with the **Getting started** section below...
 
 **OR** 
 
-...**clone this [Java.NETWindowsService repo](https://github.com/apdekock/Java.NETWindowsService)** with the pre-compiled _Spring Java SOAP service (that wraps the test Java API[^3])_ as well as the test _.NET console application[^4]_ that consumes the SOAP based web service **and install and start the compiled service and run the .NET console application executable[^5]**.
+...**clone this [Java.NETWindowsService repo](https://github.com/apdekock/Java.NETWindowsService)** with the pre-compiled _Spring Java SOAP service (that wraps the test Java API[^3])_ as well as the test _.NET console application[^4]_ that consumes the SOAP based web service **. Then install and start the compiled service and run the .NET console application executable[^5]**.
   
 [^3]:[Repo location for Java API and batch file to run.](https://github.com/apdekock/Java.NETWindowsService/tree/master/Java.NETWindowsService/JavaAPI)
 [^4]:[Repo location for .Net Console Application](https://github.com/apdekock/Java.NETWindowsService/tree/master/Java.NETWindowsService/.NETApp)
@@ -55,46 +55,46 @@ Either start with the **Getting started** section below...
 
 ## Getting started
 
-For the purposes of this post I used a pre-existing Spring SOAP web service that I "borrowed" from the spring getting started guide: ["Producing a SOAP web service"](http://spring.io/guides/gs/producing-web-service/) which is at this [GitHub repo](https://github.com/spring-guides/gs-producing-web-service).
+For the purposes of this post I used a pre-existing Spring SOAP web service that I borrowed from the spring getting started guide: ["Producing a SOAP web service"](http://spring.io/guides/gs/producing-web-service/) which is at this [GitHub repo](https://github.com/spring-guides/gs-producing-web-service).
 
 * I forked the [_"Producing a SOAP web service"_ GitHub repo](https://github.com/spring-guides/gs-producing-web-service.git) > [here](https://github.com/apdekock/gs-producing-web-service) and,
   - ...added **additional logging** (_for demonstration purposes that shows the EndPoint called and the Country parameter in the service request_).
   -  ...added a **run.bat** batch file to run the compiled sample jar as a stand alone service.
-  
-1. Clone the my altered [_"Producing a SOAP web service"_ GitHub repo](https://github.com/apdekock/gs-producing-web-service).
+ 
+1. Clone the [_"Producing a SOAP web service"_ GitHub repo](https://github.com/apdekock/gs-producing-web-service) altered by me.
 
-2. Open the project in [IntelliJ](https://www.jetbrains.com/idea/) and run a **mvn clean install** to produce a jar file (gs-producing-web-service-0.1.0.jar) _which will act as both, the Java API being wrapped, and the web service that will be exposed from the Windows Service_.
+2. Open the project in [IntelliJ](https://www.jetbrains.com/idea/) and run a **mvn clean install** to produce a jar file _(gs-producing-web-service-0.1.0.jar) which will serve as both, the Java API being wrapped, and the web service that will be exposed from the Windows Service_.
 ![intelliJ_build_maven]({{ site.url }}/assets/java_net_post/maven_build_spring_sample.PNG "Maven clean install Spring Sample")
 
-3. Execute the _**run.bat**_ file to run the Spring web service which hosted at [http://localhost:8080/ws](http://localhost:8080/ws) [^6] 
-A console should appear as below with spring telling us what's going on.
+3. Execute the _**run.bat**_ file to run the Spring web service[^6] which is hosted at [http://localhost:8080/ws](http://localhost:8080/ws). 
+A console should appear as below with Spring telling us what's going on.
 ![Spring Test]({{ site.url }}/assets/java_net_post/running_spring_service.PNG "Spring WS running")
 
-4. Test the service once it is up and running. I used [SoapUI](http://www.soapui.org/) by SMARTBEAR[^7]. In the previous screen shot, you will see the additional logging come into play when, a few service calls are made. I called the service 4 times, three times with "Spain" as the request country and once with "France".
+4. Test the service once it is up and running. I used [SoapUI](http://www.soapui.org/) by SMARTBEAR[^7]. In the previous screen shot, you will see the additional logging come into play when a few service calls are made. I called the service 4 times, three times with "Spain" as the request country and once with "France".
 ![Spring Test SOAP UI]({{ site.url }}/assets/java_net_post/running_spring_service_soapUI.PNG "Spring WS running test")
 
-[^6]:Why don't we just do this? - Because as soon as we close the console the process stops and our service dissapears. Hence, the windows service.
+[^6]:Why don't I just do this? - Because as soon as I close the console the process stops and our service dissapears. Hence, the Windows Service.
 [^7]:Adding the service to the project - Right click on **Projects** > **New SOAP Project** and in the _Initial  WSDL_ field paste: [http://localhost:8080/ws/countries.wsdl](http://localhost:8080/ws/countries.wsdl)
 
 ## Hosting the Java API as a Windows Service
 
-Running the **_run.bat_** file in is essentially starting up the JVM and running our test web service (that wraps the Java API) we want to consume from .NET. When the Windows Service executes a Process it is doing exactly that, only as a background process devoid of any dependency on a logged in user. <sup>(The windows service still needs to run under a user account though)</sup>
+Running the **_run.bat_** file in the console is essentially starting up the JVM and running our test web service (that wraps the Java API) that I want to consume from a .NET application. When the Windows Service executes a Process it is doing exactly that, only as a background process devoid of any dependency on a logged in user. <sup>(The windows service still needs to run under a user account though and defaults to local system account.)</sup>
 
-This project replicates the command line execution of Spring web service host as a background process, managed from the Windows Service, while mapping the start and stop operations of the service - to the start and stop of the hosted process. The project also ensures output is redirected from the hosted process, to prevent the loss of feedback, into a logging mechanism. 
+This project replicates the command line execution of a Spring web service host as a background process, but managed from the Windows Service. The start and stop operations of the service are mapped to the start and stop of the hosted process. The project also ensures output is redirected from the hosted process into a logging mechanism to prevent the loss of feedback from the process that is hosted in the Windows Service. 
 
-The logging mechanism employed in this project is [NLog](http://nlog-project.org/) with the file target configured (alternatively you could log to the [EventLog](https://msdn.microsoft.com/en-us/library/system.diagnostics.eventlog(v=vs.110).aspx) under the Windows Service name).
+The logging mechanism employed in this project is: [NLog](http://nlog-project.org/), with a file target configured (alternatively you could log to the [EventLog](https://msdn.microsoft.com/en-us/library/system.diagnostics.eventlog(v=vs.110).aspx) under the Windows Service name).
 
 # Solution overview
 ![ProjectStructure]({{ site.url }}/assets/java_net_post/project_structure.PNG "Windows Service Project Structure") 
 
 # Windows Service
   
-* I Created a Windows Service using the vanilla Windows Service C# project template from MS Visual Studio 2013.
+* I created a Windows Service using the vanilla Windows Service C# project template from MS Visual Studio 2013.
 ![Create Windows Service]({{ site.url }}/assets/java_net_post/create_windows_service.PNG "Windows Service Vanilla Template c#")
 
-* The **[JavaWindowsService.cs]** is the main class in the solution, it is the one instantiated by **[Program.cs]** when the service starts up. It inherits from **[ServiceBase]** and overrides two methods, the _OnStart()_ and _OnStop()_, where the logic required to run and stop the Java API needs to be incorporated.
+* The **[JavaWindowsService.cs]** is the main class in the solution. It is instantiated by **[Program.cs]** when the service starts up. It inherits from **[ServiceBase]** and overrides two methods, the _OnStart()_ and _OnStop()_, where the logic required to start and stop the Java API process needs to be incorporated.
 
-* The _OnStart()_ method retrieves the start arguments from the app.config AppSettings section.
+* The _OnStart()_ method retrieves the start arguments from the _**app.config**_ _AppSettings_ section.
 {% highlight C# %}
 protected override void OnStart(string[] args)
 {
@@ -114,7 +114,7 @@ protected override void OnStart(string[] args)
     }
 }
 {% endhighlight %}
-* A **[JavaProcess]** is instantiated and event handlers are assigned to the events the process emits. The process is started and the running process ID is returned to keep track of the process. _If an exception occurs we log it and then **throw;** again because **we do not want the service to start up in a faulted state.**_
+* A **[JavaProcess]** is instantiated and event handlers are assigned to the events that the process emits. The process is started and the process ID is returned to keep track of the process. _If an exception occurs it is logged and then re-thrown again --- **throw;**, because **I do not want the service to start up in a faulted state or lose the stack trace.**_
 
 * _Config args_: All the app settings are used as arguments in order - regardless of key name. So first entry is first argument. _**arg0**_ then _**arg1**_ then _**charlie123**_ etc...
 {% highlight XML %}
@@ -158,7 +158,7 @@ private void OnExited(int exitCode)
 }
 {% endhighlight %}
 
-* The _OnStop()_ method delegates to the _StopProcess()_ method which employs the static _[processById]_ field to retrieve a reference to the process in order to issue _Kill()_ commands against.
+* The _OnStop()_ method delegates to the _StopProcess()_ method which employs the static _[processById]_ field to retrieve a reference to the process. The reference is retrieved in order to issue _Kill()_ commands against.
 {% highlight C# %}
 protected override void OnStop()
 {
@@ -174,7 +174,7 @@ protected override void OnStop()
 }
 {% endhighlight %}
 
-* The _WaitForExit()_ method prevents the service from reporting the stopped state prematurely, and waits for the **[JavaProcess]** to shut down before assuming the stopped state.
+* The _WaitForExit()_ method prevents the service from reporting the stopped state prematurely, and waits for the **[JavaProcess]** to shut down before entering a stopped state.
 {% highlight C# %}
 private void StopProcess()
 {
@@ -186,16 +186,16 @@ private void StopProcess()
 
 # .NET _**[JavaProcess.cs]**_
 
-* There are two public events that emits output messages, _OnMessage_ and _OnExit_, pretty self explanatory, but the code will follow.
+* There are two public events that emit output messages, _OnMessage_ and _OnExit_, pretty self explanatory, but the code will follow.
 
-* The **[JavaProcess]** has a constructor for passing the start arguments to the underlying JVM **Java.exe** process. The **ProcessStartInfo** is constructed with the start arguments and configuration settings required when hosting the process.
+* The **[JavaProcess]** has a constructor for passing the start arguments to the underlying JVM **Java.exe** process.
   * The **[JavaProcess]** relies on the _%JAVA_HOME%_ environment variable in order to locate the Java installation on the machine.
     * The ProcessStartInfo parameters:
       * _UseShellExecute = false_ _**allows redirection**_ of the input, output, and error streams from the process.
       * _CreateNoWindow = true_ _**prevents another console**_ form opening.
       * _RedirectStandardError = true_ redirect error messages to _**ErrorDataReceived**_ event subscribers.
       * _RedirectStandardOutput = true_ redirect error messages to _**OutputDataReceived**_ event subscribers.
-      * _RedirectStandardInput = true_ don't accept input from other than the _**StandardInput**_ property.<sup>(Not employed by this solution)</sup>
+      * _RedirectStandardInput = true_ don't accept input from other than the _**StandardInput**_ property.<sup>(Not employed by this solution.)</sup>
 	
 {% highlight C# %}
 public class JavaProcess
@@ -246,7 +246,7 @@ private string GetJavaPath(string javaHomePathEnvironmentVariable)
 
 * The  _OutputDataReceived_ and _ErrorDataReceived_ events are subscribed to with the _RaiseMessageEvent_ event handler. In this case no distinction should be made between the two types of messages, both are reported the same[^8].
  
-[^8]: An internal error to the process being hosted does not necessarily be interpreted as a fatal exception and should not affect the hosting process.
+[^8]: An internal error to the process being hosted should not necessarily be interpreted as a fatal exception and should not affect the hosting process.
 
 {% highlight C# %}
 private void RaiseMessageEvent(object sender, DataReceivedEventArgs e)
@@ -255,9 +255,9 @@ private void RaiseMessageEvent(object sender, DataReceivedEventArgs e)
 }		
 {% endhighlight %}
 
-* The _Exited_ event is subscribed to form the exposed _OnExit_ event handler to inform the service that the process has stopped. <sup>At present this is just logged in the Windows Service but some fault tolerance, a restart or some recovery mechanism could be incorporated here.</sup>
+* The _Exited_ event is subscribed to by the exposed _OnExit_ event handler to inform the service when the process has stopped. <sup>At present this is just logged in the Windows Service but some fault tolerance, a restart or some recovery mechanism could be incorporated here.</sup>
 
-* A _Start()_ command issued to the **[JavaProcess]**, from the _OnStart()_ method the Windows Service, instantiates a new **Process** with the **ProcessStartInfo** created in the constructor passed directly as the _StartInfo_.
+* From the _OnStart()_ method the Windows Service the _Start()_ command is issued to the **[JavaProcess]**. It instantiates a new **Process** with the **ProcessStartInfo** created in the constructor as the __startInfo_.
 
 {% highlight C# %}
 public int Start()
@@ -288,9 +288,9 @@ public int Start()
 * Create a new vanilla C# console application.
 ![New Console Application Template]({{ site.url }}/assets/java_net_post/new_console.PNG "New Console Application Template")
 
-Now we add a service reference to our .NET application in order to consume the web service that wraps the Java API[^2].
+Now add a service reference to the .NET application in order to consume the web service that wraps the Java API[^2].
 
-* Run the spring ws _**run.bat**_ file - to get the service up and running.
+* Run the _**run.bat**_ file from the altered ["Producing a SOAP web service"](https://github.com/apdekock/gs-producing-web-service) project - to get the service up and running.
 ![Spring WS Reference]({{ site.url }}/assets/java_net_post/running_spring_service.PNG "Spring WS running reference")
 
 *  Right click on the _Project_ > _Add_ > _Service Reference..._ --- Add a service reference to the console application using the end point: [http://localhost:8080/ws/countries.wsdl](http://localhost:8080/ws/countries.wsdl).
@@ -334,7 +334,7 @@ namespace ConsoleApplication
 
 # Test 
 
-* Run the console application and test the Java API by typing in a country like _Spain_
+* Run the console application and test the Java API by typing in a country like _Spain_.
 ![.NET Console Application consuming Java API]({{ site.url }}/assets/java_net_post/running_spring_service_consumingService.PNG "Consuming Java API")
 
 * Stop the _**run.bat**_ process and close the .NET Console Application.
@@ -342,18 +342,18 @@ namespace ConsoleApplication
 ## Installing/Uninstalling the service 
 
 # Install the Windows Service
-  * I'll use the [sc.exe](https://technet.microsoft.com/en-us/library/cc990289.aspx)[^9]. Below is a simple version I employed to test this service (run from the _../bin/debug_ path). _**Important:** The space after the **=** sign is required!_
+  * I used the [sc.exe](https://technet.microsoft.com/en-us/library/cc990289.aspx)[^9] tool. Below is a simple version I employed to test this service (run from the _../bin/debug_ path). _**Important:** The space after the **=** sign is required!_
 	* _**sc create testJavaWindowsService binpath= "Java.NETWindowsService.exe"**_
 	  * The installed but stopped service should look like below.
 	    ![Installed Windows Service]({{ site.url }}/assets/java_net_post/installedService.PNG "Installed Windows Service")
 
-[^9]: Installing a windows service can be done either through the [installutil.exe](https://msdn.microsoft.com/en-us/library/sd8zc8ha(v=vs.110).aspx) that ships with the .NET framework or the [sc.exe](https://technet.microsoft.com/en-us/library/cc990289.aspx) utility that is native to the Windows OS (from Vista and up).
+[^9]: Installing a Windows Service can be done either through the [installutil.exe](https://msdn.microsoft.com/en-us/library/sd8zc8ha(v=vs.110).aspx) that ships with the .NET framework or the [sc.exe](https://technet.microsoft.com/en-us/library/cc990289.aspx) utility that is native to and naturally occurs in the Windows habitat (from Vista and up).
 
 # Uninstalling the Windows Service
-  * It is not required to uninstall the Windows Service with each change made, it is advisable to stop the service, uninstall it, replace the executable and re-install the service. Here is an example:
+  * It is not required to uninstall the Windows Service with each change you woudl like to deploy locally, however, it is advisable to stop the service, uninstall it, replace the altered assembly and re-install the service.
 	1. _**sc stop testJavaWindowsService**_
 	2. _**sc delete testJavaWindowsService**_
-	3. replace assembly
+	3. replace the altered assembly
 	4. _**sc create testJavaWindowsService binpath= "Java.NETWindowsService.exe"**_
 	
 ## Testing it all together
@@ -367,9 +367,9 @@ namespace ConsoleApplication
     * _**sc start testJavaWindowsService**_
 
 # Test	
-  * Start the .NET Console Application and retest much like the previous _**Test**_ section but this time - testing that the Java API is correctly being consumed when running the Spring web service wrapper as a Windows Service.
+  * Start the .NET Console Application and retest, much like the previous _**Test**_ section, but this time - testing that the Java API is correctly consumed when running the Spring web service (Java API wrapper) as a Windows Service.
     * Monitoring the hosted process **([JavaProcess])** passes along the messages, previously logged to the console, to the Windows Service that then employs [NLog](http://nlog-project.org/).	
-      * I used BareTail to monitor the log files produced by [NLog](http://nlog-project.org/) (the location & name of the log file is specified in the _NLog.config_ file: _${basedir}/logs/${shortdate}.log_).
+      * I used BareTail to monitor the log files produced by [NLog](http://nlog-project.org/). The location & name of the log file is specified in the _NLog.config_ file: _${basedir}/logs/${shortdate}.log_.
 
 ![BareTail]({{ site.url }}/assets/java_net_post/baretail.PNG "BareTail [NLog](http://nlog-project.org/)")
 
@@ -377,14 +377,14 @@ namespace ConsoleApplication
   * _**start=** [auto]_ --- sets the service to start automatically on OS boot up.                                                                             
   * _**obj=** [useraccountname]_ --- sets the User Account under which the service should run - in certain cases elevated privileges might be required.      
   * _**password=** [useraccountpassword]_ --- sets the password for the User Account under which the service should run.                                     
-  * _**depend=** [servicename]_ --- the API might need to wait for another service to startup first - like a database server that also runs as a service.    
-  * _**displayname=** [pretty name]_ --- a more descriptive name for the Service.                                                                            
+  * _**depend=** [servicename]_ --- specifies a service that this one depends on,the API might need to wait for another service to startup first - like a database server that also runs as a service.    
+  * _**displayname=** [pretty name]_ --- a more descriptive name for the windows service.                                                                            
 
 ## Improvements
 
-* The Windows Service can host only one **[JavaProcess]** - a static field is used to keep reference to the running process id. One could look at something like a _Dictionary_ to keep track of instances spawned of multiple **[JavaProcess]** instances.
-* Logging seems pretty vanilla and introducing [PostSharp](https://www.postsharp.net/) or another [AOP](https://en.wikipedia.org/wiki/Aspect-oriented_programming) Framework to implement the cross-cutting concern of logging could be beneficial - especially as the project grows. (The logging Advice could still point to [NLog](http://nlog-project.org/), I'll post this some other time)
-* Fault tolerance / some sort of auto detection and auto recovery should the **[JavaProcess]** fail could also be introduced.
+* The Windows Service can host only one **[JavaProcess]** - a static field is used to keep reference to the running process ID.
+* Logging seems pretty vanilla and introducing [PostSharp](https://www.postsharp.net/) or another [AOP](https://en.wikipedia.org/wiki/Aspect-oriented_programming) Framework to implement this cross-cutting concern could be beneficial - especially as the project grows. (The logging Advice could still point to [NLog](http://nlog-project.org/), I'll post this some other time.)
+* Fault tolerance / some sort of auto recovery should the **[JavaProcess]** stop could also be introduced.
 
 ## Alternatives
 
@@ -397,7 +397,7 @@ So what can we take from Phil's infinite wisdom?
 
   * "When life gives you lemonade, make lemons. Life’ll be all like ‘what?!’" —   Phil Dunphy [Phil’s-osophy]"
  
-    **_Shock and awe life[^10]..., and there are ways of making .NET and Java work together, whilst adhering to the loosely coupled and highly cohesive code rules, with vanilla mechanisms at your disposal._**
+    **_Shock and awe life[^10]..., and there are ways of making .NET and Java work together with vanilla mechanisms at your disposal, whilst still remaining loosely coupled and highly cohesive._**
 	
 [^10]:[Shock and awe](https://en.wikipedia.org/wiki/Shock_and_awe)
 
