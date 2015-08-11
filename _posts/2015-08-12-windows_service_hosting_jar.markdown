@@ -347,7 +347,7 @@ namespace ConsoleApplication
 	  * The installed but stopped service should look like below.
 	    ![Installed Windows Service]({{ site.url }}/assets/java_net_post/installedService.PNG "Installed Windows Service")
 
-[^9]: Installing a Windows Service can be done either through the [installutil.exe](https://msdn.microsoft.com/en-us/library/sd8zc8ha(v=vs.110).aspx) that ships with the .NET framework or the [sc.exe](https://technet.microsoft.com/en-us/library/cc990289.aspx) utility that is native to and naturally occurs in the Windows habitat (from Vista and up).
+[^9]: Installing a Windows Service can be done either through the [installutil.exe](https://msdn.microsoft.com/en-us/library/sd8zc8ha(v=vs.110).aspx) that ships with the .NET framework or the [sc.exe](https://technet.microsoft.com/en-us/library/cc990289.aspx) utility that is native to, and naturally occurs in, the Windows habitat (from Vista and up).
 
 # Uninstalling the Windows Service
   * It is not required to uninstall the Windows Service with each change you woudl like to deploy locally, however, it is advisable to stop the service, uninstall it, replace the altered assembly and re-install the service.
