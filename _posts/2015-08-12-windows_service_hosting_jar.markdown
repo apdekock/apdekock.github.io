@@ -26,7 +26,7 @@ I've worked with Java before and [natch](http://www.urbandictionary.com/define.p
 
 [^1]:java.exe -jar on a console was thus not an option.
  
-## Result of ruminating on the above constraints
+## The result of ruminating on the constraints
 
 [![Design]({{ site.url }}/assets/DesignJavaHost.svg "Courtesy of https://www.draw.io/")](https://www.draw.io/)
 
@@ -85,7 +85,7 @@ Running the **_run.bat_** file in is essentially starting up the JVM and running
 
 This project replicates the command line execution of Spring web service host as a background process, managed from the Windows Service, while mapping the start and stop operations of the service - to the start and stop of the hosted process. The project also ensures output is redirected from the hosted process, to prevent the loss of feedback, into a logging mechanism. 
 
-The logging mechanism employed in this project is [Nlog](http://nlog-project.org/) with the file target configured (alternatively you could log to the [EventLog](https://msdn.microsoft.com/en-us/library/system.diagnostics.eventlog(v=vs.110).aspx) under the Windows Service name).
+The logging mechanism employed in this project is [NLog](http://nlog-project.org/) with the file target configured (alternatively you could log to the [EventLog](https://msdn.microsoft.com/en-us/library/system.diagnostics.eventlog(v=vs.110).aspx) under the Windows Service name).
 
 # Solution overview
 ![ProjectStructure]({{ site.url }}/assets/java_net_post/project_structure.png "Windows Service Project Structure") 
@@ -247,7 +247,8 @@ private string GetJavaPath(string javaHomePathEnvironmentVariable)
 }
 {% endhighlight %}
 
-* The  _OutputDataReceived_ and _ErrorDataReceived_ events are subscribed to with the _RaiseMessageEvent_ event handler. In this case no distinction should be made between the two types of messages, both are reported the same[^8]. 
+* The  _OutputDataReceived_ and _ErrorDataReceived_ events are subscribed to with the _RaiseMessageEvent_ event handler. In this case no distinction should be made between the two types of messages, both are reported the same[^8].
+ 
 [^8]: An internal error to the process being hosted does not necessarily be interpreted as a fatal exception and should not affect the hosting process.
 
 {% highlight C# %}
@@ -346,17 +347,10 @@ namespace ConsoleApplication
 # Install the Windows Service
   * I'll use the [sc.exe](https://technet.microsoft.com/en-us/library/cc990289.aspx)[^9]. Below is a simple version I employed to test this service (run from the _../bin/debug_ path). _**Important:** The space after the **=** sign is required!_
 	* _**sc create testJavaWindowsService binpath= "Java.NETWindowsService.exe"**_
+	  * The installed but stopped service should look like below.
+	    ![Installed Windows Service]({{ site.url }}/assets/java_net_post/installedService.png "Installed Windows Service")
 
-[^9]:Installing a windows service can be done either through the [installutil.exe](https://msdn.microsoft.com/en-us/library/sd8zc8ha(v=vs.110).aspx) that ships with the .NET framework or the [sc.exe](https://technet.microsoft.com/en-us/library/cc990289.aspx) utility that is native to the Windows OS (from Vista and up).
-	  
-# Start the service
-  
-  * Starting the service is another simple [sc.exe](https://technet.microsoft.com/en-us/library/cc990289.aspx) command.
-    * _**sc start testJavaWindowsService**_
-
-using baretail is what I could use to monitor the Nlog logs
-
-* Start the .NET Console Application and retest as in the _**Test**_ section that the Java API is correctly being consumed when running the web service wrapper as a Windows Service.
+[^9]: Installing a windows service can be done either through the [installutil.exe](https://msdn.microsoft.com/en-us/library/sd8zc8ha(v=vs.110).aspx) that ships with the .NET framework or the [sc.exe](https://technet.microsoft.com/en-us/library/cc990289.aspx) utility that is native to the Windows OS (from Vista and up).
 
 # Uninstalling the Windows Service
   * It is not required to uninstall the Windows Service with each change made, it is advisable to stop the service, uninstall it, replace the executable and re-install the service. Here is an example:
@@ -365,6 +359,23 @@ using baretail is what I could use to monitor the Nlog logs
 	3. replace assembly
 	4. _**sc create testJavaWindowsService binpath= "Java.NETWindowsService.exe"**_
 	
+## Testing it all together
+  
+# Start the service
+  * You can start the service by pressing the _**[Play]**_ button (red rectangle in the _**Install the Windows Service**_ screen shot).
+  
+  OR
+  
+  * Start the service via another simple [sc.exe](https://technet.microsoft.com/en-us/library/cc990289.aspx) command.
+    * _**sc start testJavaWindowsService**_
+
+# Test	
+  * Start the .NET Console Application and retest much like the previous _**Test**_ section but this time - testing that the Java API is correctly being consumed when running the Spring web service wrapper as a Windows Service.
+    * Monitoring the hosted process **([JavaProcess])** passes along the messages, previously logged to the console, to the Windows Service that then employs [NLog](http://nlog-project.org/).	
+      * I used BareTail to monitor the log files produced by [NLog](http://nlog-project.org/) (the location & name of the log file is specified in the _NLog.config_ file: _${basedir}/logs/${shortdate}.log_).
+
+![BareTail]({{ site.url }}/assets/java_net_post/bareTail.png "BareTail [NLog](http://nlog-project.org/)")
+
 # Additional parameters                                                                                                                            
   * _**start=** [auto]_ --- sets the service to start automatically on OS boot up.                                                                             
   * _**obj=** [useraccountname]_ --- sets the User Account under which the service should run - in certain cases elevated privileges might be required.      
@@ -375,7 +386,7 @@ using baretail is what I could use to monitor the Nlog logs
 ## Improvements
 
 * Right now it can host only one process - a static field is used to keep the process id reference. Looking at something like a Dictionary to keep track of instances spawned of a process hosted could allow multiple JavaProcesses  to run on service start up.
-* Logging seems pretty vanilla and introducing post sharp or another AOP Framework to implement the cross-cutting aspect could be beneficial - especially as the project grows. (The logging Advice could point to NLog, I'll post this some other time.)
+* Logging seems pretty vanilla and introducing post sharp or another AOP Framework to implement the cross-cutting aspect could be beneficial - especially as the project grows. (The logging Advice could point to [NLog](http://nlog-project.org/), I'll post this some other time.)
 * Fault tolerance / some sort of auto detection and auto recovery should the JavaProcess fails could also be introduced. Such as when down - restart / attempt this for three tries.
 
 ## Alternatives
@@ -389,8 +400,10 @@ So what can we take from Phil's infinite wisdom?
 
   * "When life gives you lemonade, make lemons. Life’ll be all like ‘what?!’" —   Phil Dunphy [Phil’s-osophy]"
  
-    **_Reading the help documentation helps..._**
+    **_Shock and awe life[^10]..., and there are ways of making .NET and Java work together, whilst adhering to the loosely coupled and highly cohesive code rules, with vanilla mechanisms at your disposal._**
 	
+[^10]:[Shock and awe](https://en.wikipedia.org/wiki/Shock_and_awe)
+
 ##**Quick Guide:** 
 1. Cone [Java.NETWindowsService repo](https://github.com/apdekock/Java.NETWindowsService). 
 2. Compile the solution.
