@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Java / .NET interop - Windows Service hosting a Java .jar"
-date:   2015-08-05 14:56:37
+date:   2015-08-12 14:56:37
 quote:  "When life gives you lemonade, make lemons. Life'll be all like 'what?!' —   Phil Dunphy [Phil’s-osophy]"
 categories: C#, Java, Spring, Java .NET interop
 # corrections
@@ -32,7 +32,7 @@ I've worked with Java before and [natch](http://www.urbandictionary.com/define.p
 
 * **Seamless, loosely coupled integration between the .NET application and the Java API** by _**wrap the Java API in a SOAP service**_ that can then just be consumed like any other SOAP based web service.
 
-* **Write as little Java as possible** by _**exposing the required Java API functionality as vanilla as possible in the SOAP service**_. The implemebntations code on the .NET side is then automatically through the service proxy class generation tools in Visual Studio OR [SVCUtil.exe](https://msdn.microsoft.com/en-us/library/aa347733(v=vs.110).aspx). _**Any orchestration logic such as polling should then reside in the .NET application code.**_
+* **Write as little Java as possible** by _**exposing the required Java API functionality as vanilla as possible in the SOAP service**_. The implemebntations code on the .NET side is then automatically through the service proxy class generation tools in Visual Studio OR [Svcutil.exe](https://msdn.microsoft.com/en-us/library/aa347733(v=vs.110).aspx). _**Any orchestration logic such as polling should then reside in the .NET application code.**_
 
 * **Run the SOAP Service (that wraps the Java API**[^2]**) as a background application** by wrapping it in a _**Windows Service**_. _The windows service hosts the web service as a background operation which means it is not tied to any user sessions._ A windows service has the additional capability of being configured to starting automatically on the occasional server reboot as well as run under credentials specific to the operation.
 
@@ -341,15 +341,36 @@ namespace ConsoleApplication
 
 * Stop the _**run.bat**_ process and close the .NET Console Application.
 
-## Installing the service 
+## Installing/Uninstalling the service 
 
-* Install the Windows Service and start it.
+# Install the Windows Service
+  * I'll use the [sc.exe](https://technet.microsoft.com/en-us/library/cc990289.aspx)[^9]. Below is a simple version I employed to test this service (run from the _../bin/debug_ path). _**Important:** The space after the **=** sign is required!_
+	* _**sc create testJavaWindowsService binpath= "Java.NETWindowsService.exe"**_
 
-	sc create ......
+[^9]:Installing a windows service can be done either through the [installutil.exe](https://msdn.microsoft.com/en-us/library/sd8zc8ha(v=vs.110).aspx) that ships with the .NET framework or the [sc.exe](https://technet.microsoft.com/en-us/library/cc990289.aspx) utility that is native to the Windows OS (from Vista and up).
+	  
+# Start the service
+  
+  * Starting the service is another simple [sc.exe](https://technet.microsoft.com/en-us/library/cc990289.aspx) command.
+    * _**sc start testJavaWindowsService**_
+
+using baretail is what I could use to monitor the Nlog logs
 
 * Start the .NET Console Application and retest as in the _**Test**_ section that the Java API is correctly being consumed when running the web service wrapper as a Windows Service.
 
-using baretail is what I could use to monitor the Nlog logs
+# Uninstalling the Windows Service
+  * It is not required to uninstall the Windows Service with each change made, it is advisable to stop the service, uninstall it, replace the executable and re-install the service. Here is an example:
+	1. _**sc stop testJavaWindowsService**_
+	2. _**sc delete testJavaWindowsService**_
+	3. replace assembly
+	4. _**sc create testJavaWindowsService binpath= "Java.NETWindowsService.exe"**_
+	
+# Additional parameters                                                                                                                            
+  * _**start=** [auto]_ --- sets the service to start automatically on OS boot up.                                                                             
+  * _**obj=** [useraccountname]_ --- sets the User Account under which the service should run - in certain cases elevated privileges might be required.      
+  * _**password=** [useraccountpassword]_ --- sets the password for the User Account under which the service should run.                                     
+  * _**depend=** [servicename]_ --- the API might need to wait for another service to startup first - like a database server that also runs as a service.    
+  * _**displayname=** [pretty name]_ --- a more descriptive name for the Service.                                                                            
 
 ## Improvements
 
@@ -373,7 +394,7 @@ So what can we take from Phil's infinite wisdom?
 ##**Quick Guide:** 
 1. Cone [Java.NETWindowsService repo](https://github.com/apdekock/Java.NETWindowsService). 
 2. Compile the solution.
-3. Install and Start the compiled service.<sup> see the **Installing the service** section on how to install the service.</sup> 
+3. Install and Start the compiled service.<sup> see the **Installing/Uninstalling the service** section on how to install the service.</sup> 
 4. Run the _**ConsoleApplication.exe**_ executable located in the _.NETApp_ folder of the cloned repo.
 
 ##Footnotes
