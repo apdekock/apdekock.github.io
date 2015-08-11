@@ -25,7 +25,7 @@ I've worked with Java before and [natch](http://www.urbandictionary.com/define.p
  
 ## The result of ruminating on the constraints
 
-[![Design]({{ site.url }}/assets/DesignJavaHost.svg "Courtesy of https://www.draw.io/")](https://www.draw.io/)
+[![Design]({{ site.url }}/assets/java_net_post/DesignJavaHost.svg "Courtesy of https://www.draw.io/")](https://www.draw.io/)
 
 * **Seamless, loosely coupled integration between the .NET application and the Java API** by _**wrap the Java API in a web service**_ that can then just be consumed like any other SOAP based web service.
 
@@ -371,7 +371,7 @@ namespace ConsoleApplication
     * Monitoring the hosted process **([JavaProcess])** passes along the messages, previously logged to the console, to the Windows Service that then employs [NLog](http://nlog-project.org/).	
       * I used BareTail to monitor the log files produced by [NLog](http://nlog-project.org/) (the location & name of the log file is specified in the _NLog.config_ file: _${basedir}/logs/${shortdate}.log_).
 
-![BareTail]({{ site.url }}/assets/java_net_post/bareTail.PNG "BareTail [NLog](http://nlog-project.org/)")
+![BareTail]({{ site.url }}/assets/java_net_post/baretail.PNG "BareTail [NLog](http://nlog-project.org/)")
 
 # Additional parameters                                                                                                                            
   * _**start=** [auto]_ --- sets the service to start automatically on OS boot up.                                                                             
