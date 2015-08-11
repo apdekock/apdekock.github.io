@@ -22,7 +22,7 @@ It was a great help to brush up on any rusty pockets of knowledge. I find I've t
 
 _Now for: Exam Ref 70-486: Developing ASP.NET MVC 4 Web Applications_
 
-## Moral:
+##**Moral:**
 
 So what can we take from Phil's infinite wisdom?
 

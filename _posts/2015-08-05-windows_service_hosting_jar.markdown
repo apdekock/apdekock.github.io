@@ -8,16 +8,16 @@ categories: C#, Java, Spring, Java .NET interop
 # [web service] and [soap service]
 # update repo readme's and descriptions
 ---
-# Intro
+## Intro
 
 I recently got a requirement to integrate with a Java API. 
 I've worked with Java before and [natch](http://www.urbandictionary.com/define.php?term=natch), the requirement came my way.
 
-# Considerations
+## Considerations
 
 * This is a .NET shop and [Maven](https://maven.apache.org/) / [Gradle](https://gradle.org/) / [Spring](https://spring.io/) / [IntelliJ](https://www.jetbrains.com/idea/) are foreign concepts (the company firewall wouldn't let me trough to the [Maven](https://maven.apache.org/) repo, nor was there an internal repo that I could find).  Thus, in order to ensure the solution is maintainable by anyone in the team, most of the logic needed to reside in the .NET space and the least amount of Java should be written.
 
-# Requirements
+## Requirements
 
 * The interaction with Java should be seamless.
 * Minimal to no coupling between the Java API and the .NET code. This meant no [jni4net](http://jni4net.com/) that would require intricate knowledge of the API's internals as well as will require the Java API to emit to our .NET application, and vice versa.
@@ -26,7 +26,7 @@ I've worked with Java before and [natch](http://www.urbandictionary.com/define.p
 
 [^1]:java.exe -jar on a console was thus not an option.
  
-# Result of ruminating on the above constraints
+## Result of ruminating on the above constraints
 
 [![Design]({{ site.url }}/assets/DesignJavaHost.svg "Courtesy of https://www.draw.io/")](https://www.draw.io/)
 
@@ -38,13 +38,13 @@ I've worked with Java before and [natch](http://www.urbandictionary.com/define.p
 
 [^2]:[..in the house that Jack built.](https://en.wikipedia.org/wiki/This_Is_the_House_That_Jack_Built)
 
-# Pre-requisites
+## Pre-requisites
 1. [Java SDK installation](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 2. [Maven](https://maven.apache.org/)  Installation (optionally [Gradle](https://gradle.org/))
 3. [MS Visual Studio 2013](https://www.visualstudio.com/)
 4. [Git](https://git-scm.com/)
 
-# Paths
+## Paths
 
 Either start with the **Getting started** section below...
 
@@ -56,7 +56,7 @@ Either start with the **Getting started** section below...
 [^4]:[Repo location for .Net Console Application](https://github.com/apdekock/Java.NETWindowsService/tree/master/Java.NETWindowsService/.NETApp)
 [^5]:see the **Quick Guide** section at the end.
 
-# Getting started
+## Getting started
 
 For the purposes of this post I used a pre-existing Spring SOAP web service that I "borrowed" from the spring getting started guide: ["Producing a SOAP web service"](http://spring.io/guides/gs/producing-web-service/) which is at this [GitHub repo](https://github.com/spring-guides/gs-producing-web-service).
 
@@ -79,7 +79,7 @@ A console should appear as below with spring telling us what's going on.
 [^6]:Why don't we just do this? - Because as soon as we close the console the process stops and our service dissapears. Hence, the windows service.
 [^7]:Adding the service to the project - Right click on **Projects** > **New SOAP Project** and in the _Initial  WSDL_ field paste: http://localhost:8080/ws/countries.wsdl
 
-# Hosting the Java API as a Windows Service
+## Hosting the Java API as a Windows Service
 
 Running the **_run.bat_** file in is essentially starting up the JVM and running our test web service (that wraps the Java API) we want to consume from .NET. When the Windows Service executes a Process it is doing exactly that, only as a background process devoid of any dependency on a logged in user. <sup>(The windows service still needs to run under a user account though)</sup>
 
@@ -88,9 +88,10 @@ This project replicates the command line execution of Spring web service host as
 The logging mechanism employed in this project is [Nlog](http://nlog-project.org/) with the file target configured (alternatively you could log to the [EventLog](https://msdn.microsoft.com/en-us/library/system.diagnostics.eventlog(v=vs.110).aspx) under the Windows Service name).
 
 # Solution overview
-
 ![ProjectStructure]({{ site.url }}/assets/java_net_post/project_structure.png "Windows Service Project Structure") 
 
+# Windows Service
+  
 * I Created a Windows Service using the vanilla Windows Service C# project template from MS Visual Studio 2013.
 ![Create Windows Service]({{ site.url }}/assets/java_net_post/create_windows_service.png "Windows Service Vanilla Template c#")
 
@@ -119,7 +120,6 @@ protected override void OnStart(string[] args)
 * A **[JavaProcess]** is instantiated and event handlers are assigned to the events the process emits. The process is started and the running process ID is returned to keep track of the process. _If an exception occurs we log it and then **throw;** again because **we do not want the service to start up in a faulted state.**_
 
 * _Config args_: All the app settings are used as arguments in order - regardless of key name. So first entry is first argument. _**arg0**_ then _**arg1**_ then _**charlie123**_ etc...
-
 {% highlight XML %}
 <?xml version="1.0" encoding="utf-8"?>
 <configuration>
@@ -149,7 +149,6 @@ protected override void OnStart(string[] args)
 {% endhighlight %}
 
 * The _OnMessage()_ and _OnExited()_ event handlers simply log messages with the appropriate descriptive prefix.
-
 {% highlight C# %}
 private void OnMessage(string message)
 {
@@ -163,7 +162,6 @@ private void OnExited(int exitCode)
 {% endhighlight %}
 
 * The _OnStop()_ method delegates to the _StopProcess()_ method which employs the static _[processById]_ field to retrieve a reference to the process in order to issue _Kill()_ commands against.
-
 {% highlight C# %}
 protected override void OnStop()
 {
@@ -180,7 +178,6 @@ protected override void OnStop()
 {% endhighlight %}
 
 * The _WaitForExit()_ method prevents the service from reporting the stopped state prematurely, and waits for the **[JavaProcess]** to shut down before assuming the stopped state.
-
 {% highlight C# %}
 private void StopProcess()
 {
@@ -287,19 +284,22 @@ public int Start()
 
 * Once the process is started the _BeginOutputReadLine()_ and _BeginErrorReadLine()_ statements are required to start redirecting the output and error streams to the subscribed event handlers.
 
-# Consuming the service
+## Consuming the API through the web service
 
-Now we add a service reference to our .NET application that needs to use the Java API.
-
-* Run the spring ws _**run.bat**_ file - to get the service up and running - to auto generate our proxy classes for the .NET app.
-
-![Spring WS Reference]({{ site.url }}/assets/java_net_post/running_spring_service.png "Spring WS running reference")
-
-* Create a console application.
-
+# Create a console application
+* Create a new vanilla C# console application.
 ![New Console Application Template]({{ site.url }}/assets/java_net_post/new_console.png "New Console Application Template")
 
-* Replace the Program Class code with the below snippet.
+Now we add a service reference to our .NET application in order to consume the SOAP web service that wraps the Java API[^2].
+
+* Run the spring ws _**run.bat**_ file - to get the service up and running.
+![Spring WS Reference]({{ site.url }}/assets/java_net_post/running_spring_service.png "Spring WS running reference")
+
+*  Right click on the _Project_ > _Add_ > _Service Reference..._ --- Add a service reference to the console application using the end point: [http://localhost:8080/ws/countries.wsdl](http://localhost:8080/ws/countries.wsdl).
+![Add Service Reference]({{ site.url }}/assets/java_net_post/addServiceReference.png "Add Service Reference")
+![Add Service Reference Console]({{ site.url }}/assets/java_net_post/console_add_service.png "Reference EndPoint")
+ 
+* Replace the Program Class (in the _**[Program.cs]**_ file) code with the below snippet.
 {% highlight C# %}
 using System;
 using ConsoleApplication.JavaAPIEndPoint;
@@ -315,7 +315,7 @@ namespace ConsoleApplication
             {
                 var readLine = Console.ReadLine();
                 if (readLine != null && readLine.ToLower() == "exit") break;
-
+    
                 using (CountriesPortClient client = new CountriesPortClient())
                 {
                     try
@@ -334,40 +334,35 @@ namespace ConsoleApplication
 }
 {% endhighlight %}
 
-* Add Service reference to console application using the http://localhost:8080/ws/countries.wsdl EndPoint. 
-Right click on the project and click add service reference.
+# Test 
 
-![Add Service Reference]({{ site.url }}/assets/java_net_post/addServiceReference.png "Add Service Reference")
- 
-![Add Service Reference Console]({{ site.url }}/assets/java_net_post/console_add_service.png "Reference EndPoint")
- 
-* Run the console app and type in a country: "Spain"
+* Run the console application and test the Java API by typing in a country like _Spain_
 ![.NET Console Application consuming Java API]({{ site.url }}/assets/java_net_post/running_spring_service_consumingService.png "Consuming Java API")
 
 * Stop the _**run.bat**_ process and close the .NET Console Application.
 
-# Installing the service 
+## Installing the service 
 
 * Install the Windows Service and start it.
 
 	sc create ......
 
-* Start the .NET Console Application and retest that the Java API is being consumed.
+* Start the .NET Console Application and retest as in the _**Test**_ section that the Java API is correctly being consumed when running the web service wrapper as a Windows Service.
 
-using baretail is what I coudl use to monitor the Nlog logs
+using baretail is what I could use to monitor the Nlog logs
 
-# Improvements
+## Improvements
 
 * Right now it can host only one process - a static field is used to keep the process id reference. Looking at something like a Dictionary to keep track of instances spawned of a process hosted could allow multiple JavaProcesses  to run on service start up.
 * Logging seems pretty vanilla and introducing post sharp or another AOP Framework to implement the cross-cutting aspect could be beneficial - especially as the project grows. (The logging Advice could point to NLog, I'll post this some other time.)
 * Fault tolerance / some sort of auto detection and auto recovery should the JavaProcess fails could also be introduced. Such as when down - restart / attempt this for three tries.
 
-# Alternatives
+## Alternatives
 
 * I did some research and found an awesome library in [Tanuki Software's Java Service Wrapper](http://wrapper.tanukisoftware.com/). It looks like an awesome tool with alot of [features](http://wrapper.tanukisoftware.com/doc/english/product-features.html) and will be able to provide the same functionality as this project with a few added benefits. 
 * If you have the ability to alter both the Java and .NET code - [jni4net](http://jni4net.com/) is an option.
 
-# Moral:
+##**Moral:**
 
 So what can we take from Phil's infinite wisdom?
 
@@ -375,10 +370,10 @@ So what can we take from Phil's infinite wisdom?
  
     **_Reading the help documentation helps..._**
 	
-#**Quick Guide:** 
+##**Quick Guide:** 
 1. Cone [Java.NETWindowsService repo](https://github.com/apdekock/Java.NETWindowsService). 
 2. Compile the solution.
 3. Install and Start the compiled service.<sup> see the **Installing the service** section on how to install the service.</sup> 
 4. Run the _**ConsoleApplication.exe**_ executable located in the _.NETApp_ folder of the cloned repo.
 
-#Footnotes
+##Footnotes
