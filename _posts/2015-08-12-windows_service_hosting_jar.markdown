@@ -36,8 +36,8 @@ I've worked with Java before and [natch](http://www.urbandictionary.com/define.p
 [^2]:[..in the house that Jack built.](https://en.wikipedia.org/wiki/This_Is_the_House_That_Jack_Built)
 
 ## Pre-requisites
-1. [Java SDK installation](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
-2. [Maven](https://maven.apache.org/)  Installation (optionally [Gradle](https://gradle.org/))
+1. [Java SDK](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
+2. [Maven](https://maven.apache.org/) (optionally [Gradle](https://gradle.org/))
 3. [MS Visual Studio 2013](https://www.visualstudio.com/)
 4. [Git](https://git-scm.com/)
 
