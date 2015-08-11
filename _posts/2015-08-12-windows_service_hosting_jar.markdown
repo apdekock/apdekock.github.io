@@ -66,7 +66,7 @@ For the purposes of this post I used a pre-existing Spring SOAP web service that
 2. Open the project in [IntelliJ](https://www.jetbrains.com/idea/) and run a **mvn clean install** to produce a jar file (gs-producing-web-service-0.1.0.jar) _which will act as both, the Java API being wrapped, and the web service that will be exposed from the Windows Service_.
 ![intelliJ_build_maven]({{ site.url }}/assets/java_net_post/maven_build_spring_sample.PNG "Maven clean install Spring Sample")
 
-3. Execute the _**run.bat**_ file to run the Spring web service which hosted at http://localhost:8080/ws [^6] 
+3. Execute the _**run.bat**_ file to run the Spring web service which hosted at [http://localhost:8080/ws](http://localhost:8080/ws) [^6] 
 A console should appear as below with spring telling us what's going on.
 ![Spring Test]({{ site.url }}/assets/java_net_post/running_spring_service.PNG "Spring WS running")
 
@@ -74,7 +74,7 @@ A console should appear as below with spring telling us what's going on.
 ![Spring Test SOAP UI]({{ site.url }}/assets/java_net_post/running_spring_service_soapUI.PNG "Spring WS running test")
 
 [^6]:Why don't we just do this? - Because as soon as we close the console the process stops and our service dissapears. Hence, the windows service.
-[^7]:Adding the service to the project - Right click on **Projects** > **New SOAP Project** and in the _Initial  WSDL_ field paste: http://localhost:8080/ws/countries.wsdl
+[^7]:Adding the service to the project - Right click on **Projects** > **New SOAP Project** and in the _Initial  WSDL_ field paste: [http://localhost:8080/ws/countries.wsdl](http://localhost:8080/ws/countries.wsdl)
 
 ## Hosting the Java API as a Windows Service
 
