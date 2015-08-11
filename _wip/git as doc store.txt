@@ -1,0 +1,7 @@
+---
+layout: post
+title:  "Git as a document store"
+date:    
+quote:  " —   Phil Dunphy [Phil’s-osophy]"
+categories: C#, Git
+---
