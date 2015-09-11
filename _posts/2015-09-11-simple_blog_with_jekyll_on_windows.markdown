@@ -1,10 +1,11 @@
 ---
 layout: post
-title:  "test .jar"
-date:   2015-08-13 14:56:37
-quote:  "When life gives you lemonade, make lemons. Life'll be all like 'what?!' —   Phil Dunphy [Phil’s-osophy]"
-categories: C#, Java, Spring, Java .NET interop
+title:  "Creating a simple blog with static site generator Jekyll on Windows"
+date:   2015-09-11 22:00:00
+quote:  "“Why do I have to watch a French movie, I didn’t do anything wrong.” — Phil Dunphy"
+categories: Jekyll, Ruby, GitHub pages, Windows
 ---
+
 ## Easily and Quickly set up Jekyll in a Windows environment!
 
 ![alt text]({{ site.url }}/assets/jekyll/logo.png)
@@ -112,7 +113,3 @@ Granted, the versions in the [apdekock/jekyllWindows](https://github.com/apdekoc
 |[DevKit-mingw64-64-4.7.2-20130224-1432-sfx.exe](http://dl.bintray.com/oneclick/rubyinstaller/DevKit-mingw64-64-4.7.2-20130224-1432-sfx.exe)|
 
 ##**Moral:**
-
-  * “Why do I have to watch a French movie, I didn’t do anything wrong.” — Phil Dunphy
- 
-    **_Don't punish yourself, clone the repo._**
