@@ -17,7 +17,15 @@ categories: Jekyll, Ruby, GitHub pages, Windows
 
 # Generate:
 
-
+{% highlight xml %}
+Quick-start Instructions for jekyll:
+	1. jekyll new my-awesome-site
+	2. replace the config in my-awesome-site\_config.yml with 
+	   the [relative path]_config.yml one.
+	3. cd my-awesome-site
+	4. jekyll serve
+Now browse to http://localhost:4000
+{% endhighlight %}
 
 ![alt text]({{ site.url }}/assets/jekyll/cmd.PNG)
 
@@ -56,22 +64,22 @@ I needed to disable the _**highlighter**_ in the *_config.yml* to get it working
 For syntax highlighting I installed [rouge](https://github.com/jneen/rouge) locally, that is the reason for step [2] in the *"Quick-start Instructions for jekyll"* which replaces the vanilla *_config.yml* with one that uses the appropriate highlighter setting.
 
 Works **both** **locally** and on **GitHub pages** *but* obviously **no syntax highlighting**:
-{% highlight markdown %}
+{% highlight xml %}
 highlighter: none
 {% endhighlight %}
 
 Works **locally** after "_**jekyll install rouge**_":
-{% highlight markdown %}
+{% highlight xml %}
 highlighter: rouge
 {% endhighlight %}
 
 Works on **GitHub pages**:
-{% highlight markdown %}
+{% highlight xml %}
 highlighter: pygments
 {% endhighlight %}
 
 Complete **_config.yml**:
-{% highlight markdown %}
+{% highlight xml %}
 # Site settings
 title: Your awesome title
 email: your-email@domain.com
