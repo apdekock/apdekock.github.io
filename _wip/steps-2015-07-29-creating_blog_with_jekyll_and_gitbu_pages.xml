@@ -1,8 +1,0 @@
-install ruby
-add to "PATH" env var C:\Ruby200-x64\bin;(set PATH=C:\Ruby200-x64\bin;%PATH%)
-Extract devkit
-init
-change config.yaml
-install
-gem install jekyll
-gem install rouge
