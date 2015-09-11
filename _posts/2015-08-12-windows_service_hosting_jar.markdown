@@ -395,7 +395,7 @@ namespace ConsoleApplication
 
 So what can we take from Phil's infinite wisdom?
 
-  * "When life gives you lemonade, make lemons. Life’ll be all like ‘what?!’" —   Phil Dunphy [Phil’s-osophy]"
+  * "When life gives you lemonade, make lemons. Life’ll be all like ‘what?!’" —   Phil Dunphy [Phil’s-osophy]
  
     **_Shock and awe life[^10]..., and there are ways of making .NET and Java work together with vanilla mechanisms at your disposal, whilst still remaining loosely coupled and highly cohesive._**
 	
