@@ -1,0 +1,59 @@
+---
+layout: post
+title:  "Developing ASP.NET MVC Web Applications (Exam 70-486)"
+quote:  "The most amazing things that can happen to a human being will happen to you, if you just lower your expectations. — Phil Dunphy [Phil’s-osophy]"
+date:   2016-02-01 10:00:00
+categories: C#, JavaScript, CSS, MVC, ASP.NET, Web Applications 
+---
+In the spirit of continuous professional development and in pursuit of an MCSD, I recently wrote and passed the Developing ASP.NET MVC Web Applications Exam (Exam 70-486).
+
+# Preparation
+Like the previous exam (40-483), I read through one of the MS prescribed books for the exam: [Exam Ref 70-484: Developing ASP.NET MVC Web Applications](https://www.microsoftpressstore.com/store/exam-ref-70-486-developing-asp.net-mvc-4-web-applications-9780735677227) book (by William Penberthy).
+
+![alt text]({{ site.url }}/assets/Cover-70-486examref.jpg "Exam Ref 70-486: Developing ASP.NET MVC 4 Web Applications by William Penberthy")
+
+I also watched a few of the videos on [_Pluralsight_](http://blog.pluralsight.com/asp-net-mvc-microsoft-exam-70-486) - do this if you can - especially the security module. It was a great help to brush up on some of the lesser day-to-day used concepts and technologies. I was very selective as to which videos I watched as the total time for all the videos listed is over 60 hours. I did watch most of the first course: **Building Applications with ASP.NET MVC 4** and in hind sight, I would also recommend watching at least the introductory **Azure** courses, I'll probably focus on those for 70-487.
+
+|  |Course |Duration|
+|  |:--------|:------------------------------------------------------------|
+|  |**Building Applications with ASP.NET MVC 4**| 7h 22m |
+|  |ASP.NET MVC 5 Fundamentals| 7h 22m |
+|  |Web Security and the OWASP Top 10: The Big Picture| 2h 03m |
+|  |OWASP Top 10 Web Application Security Risks for ASP.NET| 8h 06m |
+|  |What’s New in the OWASP Top 10 for 2013| 1h 34m |
+|  |Mobile First Responsive Web Design| 2h 57m |
+|  |HTML5 Advanced Topics| 2h 45m |
+|  |ASP.NET Bundling, Minification & Resource Optimization| 4h 22m |
+|  |ASP.NET 3.5 Advanced Topics| 6h 00m |
+|  |Extending IIS 7.5 with Modules and Handlers| 2h 47m |
+|  |Search Engine Optimization with ASP.NET| 1h 05m |
+|  |**Introduction to Windows Azure**| 2h 25m |
+|  |**Windows Azure Web Sites**| 1h 35m |
+|  |**Windows Azure Access Control Service**| 2h 10m |
+|  |**Windows Azure Diagnostics**| 3h 18m |
+|  |IntelliTrace| 5h 30m |
+|  |------|--------------------------------------------------------------|
+|  |Total| **60h 20m** |
+ 
+
+# Exam content distribution 
+
+This time round - I learned much more than the previous C# exam. The MVC framework is huge and IIS as well as Azure and the surrounding technologies were very interesting. In the book I especially enjoyed the ability of the author to sketch practical scenario's and provide relevant applications of the technologies. In addition he was able to clarifying when a certain option is better, even though both options would work.
+
+* Design the Application Architecture (20%-25%)
+* Design the User Experience (15%-20%)
+* Develop the User Experience (20%-25%)
+* Troubleshoot and Debug Web Applications (20%-25%)
+* Design and Implement Security (20%-25%)
+
+_For more detailed information on exam content see [this](https://borntolearn.mslearn.net/certification/developer/w/wiki/536.486-developing-asp-net-4-5-mvc-web-applications) blog post by Leann Turpin_
+
+_Now for: Exam Ref 70-487: Developing Windows Azure and Web Services_
+
+##**Moral:**
+
+So what can we take from Phil's infinite wisdom?
+
+  * "The most amazing things that can happen to a human being will happen to you, if you just lower your expectations." — Phil Dunphy [Phil’s-osophy]
+ 
+    **_Whahahahaha, I can't add anything to this one!_**
