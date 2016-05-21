@@ -1,0 +1,28 @@
+working with cmake in windows
+
+I was working with the ViewerJS project and I saw some potential for adding new functionality, specifically adding a function call when a page is shown. That's the subject of another blog post though.
+
+In this post I wanted to explain and show how to use cmake if you are not familiar with the tool. I myself saw cmake as a build tool and needed to understand that it is a "meta-compiler" of sorts. Now my taxonomy might be grosely incorrect at this stage but I wanted to share my 
+
+Prerequisites:
+
+Visual studio 2015 community edition (my version Microsoft Visual Studio Community 2015; Version 14.0.25123.00 Update 2; Microsoft .NET Framework; Version 4.6.01055)
+(Specific to ViewerJS) NodeJS
+
+Step by step:
+
+Step 1: Clone the ViewerJS or any other projoect with CMakeList file.
+/code
+code/
+Step 2: Download cmake-3.5.2-win32-x86.zip [https://cmake.org/files/v3.5/cmake-3.5.2-win32-x86.zip], you can opt for the installer as well.
+Step 3: run cmake with the following arguments on the ViewerJS soilution - generating the VS solution file
+/code
+code/
+Step 4: open the solution in VS
+Step 5: build the solution in VS 
+- it takes a while so let it run
+- check the error messages - there might be dependancies required on tools for your project such as in this case nodejs
+- it might fail first time round - I suspect its a build order problem - but run it multiple times (NB check the error messages - it might be a dependancy)
+
+Step 6: see the folder [folder] for your compiled solution
+
