@@ -15,6 +15,7 @@ namespace ConsoleApplication1
             var aggregateData = new AggregateData(new FileSystemLocation(args[0]));
             var dictionary = aggregateData.Aggregate();
             var html = aggregateData.GetHTML(dictionary);
+            html += "<script type=\"text/javascript\"> $('.sparklines').sparkline('html'); </script>";
         }
     }
 }
