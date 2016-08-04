@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Text;
 
 namespace Aggregator
 {
@@ -42,6 +43,18 @@ namespace Aggregator
             var listedAtLeastMonthAgo = cars.Where(c => c.Value.Keys.Max() > monthAgo);
 
             return listedAtLeastMonthAgo.ToDictionary(d => d.Key, y => y.Value.Values.Select(f => f));
+        }
+
+        public string GetHTML(Dictionary<string, IEnumerable<double>> aggregate)
+        {
+            StringBuilder sb = new StringBuilder();
+
+            foreach (var car in aggregate)
+            {
+                string Template = "<div> {0} <span class=\"sparklines\">{1}</span><div>";
+                sb.AppendLine(string.Format(Template, car.Key, string.Join(",", car.Value)));
+            }
+            return sb.ToString();
         }
     }
 

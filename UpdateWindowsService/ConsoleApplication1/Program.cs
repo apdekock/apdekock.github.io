@@ -13,8 +13,8 @@ namespace ConsoleApplication1
         {
             args = new[] { @"C:\Dropbox\jnk\WeSellCars" };
             var aggregateData = new AggregateData(new FileSystemLocation(args[0]));
-            aggregateData.Aggregate();
-
+            var dictionary = aggregateData.Aggregate();
+            var html = aggregateData.GetHTML(dictionary);
         }
     }
 }

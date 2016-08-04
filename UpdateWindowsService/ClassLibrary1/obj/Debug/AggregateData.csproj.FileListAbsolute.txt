@@ -2,3 +2,4 @@ C:\git\apdekock.github.io\UpdateWindowsService\ClassLibrary1\bin\Debug\Aggregato
 C:\git\apdekock.github.io\UpdateWindowsService\ClassLibrary1\bin\Debug\Aggregator.pdb
 C:\git\apdekock.github.io\UpdateWindowsService\ClassLibrary1\obj\Debug\Aggregator.dll
 C:\git\apdekock.github.io\UpdateWindowsService\ClassLibrary1\obj\Debug\Aggregator.pdb
+C:\git\apdekock.github.io\UpdateWindowsService\ClassLibrary1\obj\Debug\AggregateData.csprojResolveAssemblyReference.cache
