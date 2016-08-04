@@ -11,6 +11,15 @@ test
 
   <script type="text/javascript">
   alert('test');</script>
+  
+  <span class="sparklines">1,2,3,4,5,4,3,2,1</span>
+  <span class="sparklines">10,10,20,40,5,9</span
+<span id="ticker"">Loading..</span>
+
+<script type="text/javascript">
+$('.sparklines').sparkline('html');
+$('#ticker').sparkline([1,2,3,4,5,4,3,2,1]);
+</script>
 
 
 ## Moral:
