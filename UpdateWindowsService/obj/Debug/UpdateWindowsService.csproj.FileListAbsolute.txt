@@ -1,0 +1,5 @@
+C:\git\apdekock.github.io\UpdateWindowsService\bin\Debug\UpdateWindowsService.exe
+C:\git\apdekock.github.io\UpdateWindowsService\bin\Debug\UpdateWindowsService.pdb
+C:\git\apdekock.github.io\UpdateWindowsService\obj\Debug\UpdateWindowsService.csprojResolveAssemblyReference.cache
+C:\git\apdekock.github.io\UpdateWindowsService\obj\Debug\UpdateWindowsService.exe
+C:\git\apdekock.github.io\UpdateWindowsService\obj\Debug\UpdateWindowsService.pdb

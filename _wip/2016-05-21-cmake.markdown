@@ -1,13 +1,22 @@
 working with cmake in windows
 
-I was working with the ViewerJS project and I saw some potential for adding new functionality, specifically adding a function call when a page is shown. That's the subject of another blog post though.
+I was working with the ViewerJS project and I saw some potential for adding new functionality, specifically adding a function call to notify me when a page is shown. That's the subject of another blog post though.
 
-In this post I wanted to explain and show how to use cmake if you are not familiar with the tool. I myself saw cmake as a build tool and needed to understand that it is a "meta-compiler" of sorts. Now my taxonomy might be grosely incorrect at this stage but I wanted to share my 
+In this post I wanted to explain and show how to use cmake if you are not familiar with the tool. I myself saw cmake as a build tool and needed to understand that it is a "meta-compiler" of sorts. Now my taxonomy might be grossly incorrect at this stage but I wanted to share what I learned.
 
 Prerequisites:
-
 Visual studio 2015 community edition (my version Microsoft Visual Studio Community 2015; Version 14.0.25123.00 Update 2; Microsoft .NET Framework; Version 4.6.01055)
-(Specific to ViewerJS) NodeJS
+* ensure you have the windows sdk & c++ compilre tools installed
+[screen shot]
+ensure you have the c++ compiler installed:
+
+Also required: java jdk (version...)
+[screenshot]
+[link]http://download.oracle.com/otn-pub/java/jdk/8u91-b15/jdk-8u91-windows-x64.exe?AuthParam=1465105722_69f43e89a6b43c872493041781c40201
+
+
+you'll also need NodeJS
+nodejs:https://nodejs.org/dist/v4.4.5/node-v4.4.5-x64.msi
 
 Step by step:
 
@@ -15,13 +24,23 @@ Step 1: Clone the ViewerJS or any other projoect with CMakeList file.
 /code
 code/
 Step 2: Download cmake-3.5.2-win32-x86.zip [https://cmake.org/files/v3.5/cmake-3.5.2-win32-x86.zip], you can opt for the installer as well.
-Step 3: run cmake with the following arguments on the ViewerJS soilution - generating the VS solution file
+Step 3: extract cmake to a folder
+git clone git@github.com:kogmbh/ViewerJS.git
+mkdir build
+cd build
+
+Step 3: run cmake with the following arguments on the ViewerJS solution - generating the VS solution file
 /code
+-- went through gui....
+"C:\git\cmake-3.5.2-win32-x86\bin\cmake.exe" -g visual studio 14.0 win64 ../ViewerJS/Build
+cmake ../ViewerJS -g visual studio 14.0 win64
+make
+
 code/
 Step 4: open the solution in VS
 Step 5: build the solution in VS 
 - it takes a while so let it run
-- check the error messages - there might be dependancies required on tools for your project such as in this case nodejs
+- check the error messages - there might be dependencies required on tools for your project such as in this case nodejs
 - it might fail first time round - I suspect its a build order problem - but run it multiple times (NB check the error messages - it might be a dependancy)
 
 Step 6: see the folder [folder] for your compiled solution

@@ -1,0 +1,7 @@
+C:\git\apdekock.github.io\UpdateWindowsService\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\git\apdekock.github.io\UpdateWindowsService\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\git\apdekock.github.io\UpdateWindowsService\ConsoleApplication1\bin\Debug\Aggregator.dll
+C:\git\apdekock.github.io\UpdateWindowsService\ConsoleApplication1\bin\Debug\Aggregator.pdb
+C:\git\apdekock.github.io\UpdateWindowsService\ConsoleApplication1\obj\Debug\ConsoleApplication1.csprojResolveAssemblyReference.cache
+C:\git\apdekock.github.io\UpdateWindowsService\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+C:\git\apdekock.github.io\UpdateWindowsService\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
