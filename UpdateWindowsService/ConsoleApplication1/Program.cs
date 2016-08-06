@@ -31,7 +31,7 @@ namespace ConsoleApplication1
             var dictionary = aggregateData.Aggregate();
 
             var html = aggregateData.GetHTML(dictionary);
-            var post = string.Format(postTemplate.ToString(), DateTime.Now.ToString(CultureInfo.InvariantCulture).Replace("/","-"), html);
+            var post = string.Format(postTemplate.ToString(), string.Format("{0}-{1}-{2}", DateTime.Now.Year, DateTime.Now.Month.ToString().PadLeft(2,'0'), DateTime.Now.Day.ToString().PadLeft(2, '0')), html);
         }
     }
 }
