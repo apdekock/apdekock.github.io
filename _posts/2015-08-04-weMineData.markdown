@@ -1,11 +1,11 @@
 ---
 layout: post 
 title: "Scraping" 
-date: 2016-08-06 7:02:31 AM 
-quote: "If you get pulled over for speeding.Tell them your spouse has diarrhoea. — Phil Dunphy[Phil’s - osophy]"
+date: 08-06-2016 07:13:42 
+quote: "If you get pulled over for speeding.Tell them your spouse has diarrhoea. — Phil Dunphy [Phil’s - osophy]"
 categories: scraping, auto generatingpost 
 ---
- This page is a daily re-generated post [last re-generated 2016-08-06 7:02:31 AM], that shows the movement of prices on the www.wesellcars.co.za website.
+ This page is a daily re-generated post [last re-generated 08-06-2016 07:13:42], that shows the movement of prices on the www.wesellcars.co.za website.
 
 <ul>
 <li><div> 100 247km,2012 Volkswagen Polo 1.2 ... <span class="sparklines">124000,124000,124000,124000</span></div></li>
