@@ -48,12 +48,14 @@ namespace Aggregator
         public string GetHTML(Dictionary<string, IEnumerable<double>> aggregate)
         {
             StringBuilder sb = new StringBuilder();
-
+            sb.AppendLine("<ul>");
             foreach (var car in aggregate)
             {
-                string Template = "<div> {0} <span class=\"sparklines\">{1}</span><div>";
+                string Template = "<li><div> {0} <span class=\"sparklines\">{1}</span></div></li>";
                 sb.AppendLine(string.Format(Template, car.Key, string.Join(",", car.Value)));
             }
+            sb.AppendLine("</ul>");
+            sb.AppendLine("<script type=\"text/javascript\"> $('.sparklines').sparkline('html'); </script>");
             return sb.ToString();
         }
     }
