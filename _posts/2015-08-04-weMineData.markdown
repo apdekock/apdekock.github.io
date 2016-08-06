@@ -1,9 +1,9 @@
 ---
 layout: post 
-title:"Scraping" 
-date: 2016/08/06 6:55:28 AM 
-quote: "“If you get pulled over for speeding.Tell them your spouse has diarrhoea.” — Phil Dunphy[Phil’s - osophy]"
-categories: scraping, auto generatingpost 
+title:  "Scraping" 
+date:   2016-08-06 6:55:28 AM 
+quote:  "If you get pulled over for speeding.Tell them your spouse has diarrhoea. — Phil Dunphy[Phil’s - osophy]"
+categories: scraping, auto generating post 
 ---
  This page is a daily re-generated post, that shows the movement of prices on the www.wesellcars.co.za website.
 
