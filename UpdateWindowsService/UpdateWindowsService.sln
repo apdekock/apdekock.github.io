@@ -9,6 +9,19 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AggregateData", "ClassLibra
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication1", "ConsoleApplication1\ConsoleApplication1.csproj", "{C8F1E16E-0197-4389-BB5C-F47160C4589B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Git", "Git\Git.csproj", "{2A467118-E885-44FC-B7AF-DFAD937F6012}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GitSharp", "GitSharp\GitSharp.csproj", "{7311850F-619A-4241-B09F-157792C75FBA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GitSharp.Core", "GitSharp.Core\GitSharp.Core.csproj", "{C46EDD61-C202-465A-93F1-ADE20A83BB59}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2CABA8FA-BE64-42F2-8E11-7B0BFF2A2EF2}"
+	ProjectSection(SolutionItems) = preProject
+		SharedAssemblyInfo.cs = SharedAssemblyInfo.cs
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GetGumtree", "GetGumtree\GetGumtree.csproj", "{FC1D895E-A86E-4D51-9964-809232EE5132}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +40,22 @@ Global
 		{C8F1E16E-0197-4389-BB5C-F47160C4589B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C8F1E16E-0197-4389-BB5C-F47160C4589B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C8F1E16E-0197-4389-BB5C-F47160C4589B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A467118-E885-44FC-B7AF-DFAD937F6012}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A467118-E885-44FC-B7AF-DFAD937F6012}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A467118-E885-44FC-B7AF-DFAD937F6012}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A467118-E885-44FC-B7AF-DFAD937F6012}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7311850F-619A-4241-B09F-157792C75FBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7311850F-619A-4241-B09F-157792C75FBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7311850F-619A-4241-B09F-157792C75FBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7311850F-619A-4241-B09F-157792C75FBA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C46EDD61-C202-465A-93F1-ADE20A83BB59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C46EDD61-C202-465A-93F1-ADE20A83BB59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C46EDD61-C202-465A-93F1-ADE20A83BB59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C46EDD61-C202-465A-93F1-ADE20A83BB59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC1D895E-A86E-4D51-9964-809232EE5132}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC1D895E-A86E-4D51-9964-809232EE5132}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC1D895E-A86E-4D51-9964-809232EE5132}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC1D895E-A86E-4D51-9964-809232EE5132}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

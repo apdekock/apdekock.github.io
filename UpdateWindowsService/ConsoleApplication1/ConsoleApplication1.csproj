@@ -49,6 +49,18 @@
       <Project>{20c027eb-d31c-41d0-8f24-bf2853f429d5}</Project>
       <Name>AggregateData</Name>
     </ProjectReference>
+    <ProjectReference Include="..\GitSharp.Core\GitSharp.Core.csproj">
+      <Project>{c46edd61-c202-465a-93f1-ade20a83bb59}</Project>
+      <Name>GitSharp.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GitSharp\GitSharp.csproj">
+      <Project>{7311850f-619a-4241-b09f-157792c75fba}</Project>
+      <Name>GitSharp</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Git\Git.csproj">
+      <Project>{2a467118-e885-44fc-b7af-dfad937f6012}</Project>
+      <Name>Git</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

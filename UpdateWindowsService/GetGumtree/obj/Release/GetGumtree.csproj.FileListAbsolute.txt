@@ -1,0 +1,15 @@
+C:\git\GetGumtree\GetGumtree\bin\Release\GetGumtree.exe.config
+C:\git\GetGumtree\GetGumtree\bin\Release\WebDriverServer\chromedriver.exe
+C:\git\GetGumtree\GetGumtree\bin\Release\WebDriverServer\IEDriverServer.exe
+C:\git\GetGumtree\GetGumtree\bin\Release\GetGumtree.exe
+C:\git\GetGumtree\GetGumtree\bin\Release\GetGumtree.pdb
+C:\git\GetGumtree\GetGumtree\bin\Release\Selenium.WebDriverBackedSelenium.dll
+C:\git\GetGumtree\GetGumtree\bin\Release\ThoughtWorks.Selenium.Core.dll
+C:\git\GetGumtree\GetGumtree\bin\Release\WebDriver.dll
+C:\git\GetGumtree\GetGumtree\bin\Release\WebDriver.Support.dll
+C:\git\GetGumtree\GetGumtree\bin\Release\Selenium.WebDriverBackedSelenium.xml
+C:\git\GetGumtree\GetGumtree\bin\Release\ThoughtWorks.Selenium.Core.xml
+C:\git\GetGumtree\GetGumtree\bin\Release\WebDriver.xml
+C:\git\GetGumtree\GetGumtree\bin\Release\WebDriver.Support.xml
+C:\git\GetGumtree\GetGumtree\obj\Release\GetGumtree.exe
+C:\git\GetGumtree\GetGumtree\obj\Release\GetGumtree.pdb

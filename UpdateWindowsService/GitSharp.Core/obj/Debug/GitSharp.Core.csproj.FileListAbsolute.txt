@@ -1,0 +1,11 @@
+C:\git\GitSharp\GitSharp.Core\bin\Debug\GitSharp.Core.XML
+C:\git\GitSharp\GitSharp.Core\bin\Debug\GitSharp.Core.dll
+C:\git\GitSharp\GitSharp.Core\bin\Debug\GitSharp.Core.pdb
+C:\git\GitSharp\GitSharp.Core\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\git\GitSharp\GitSharp.Core\bin\Debug\Tamir.SharpSSH.dll
+C:\git\GitSharp\GitSharp.Core\bin\Debug\DiffieHellman.dll
+C:\git\GitSharp\GitSharp.Core\bin\Debug\Org.Mentalis.Security.dll
+C:\git\GitSharp\GitSharp.Core\bin\Debug\ICSharpCode.SharpZipLib.xml
+C:\git\GitSharp\GitSharp.Core\obj\Debug\GitSharp.Core.csprojResolveAssemblyReference.cache
+C:\git\GitSharp\GitSharp.Core\obj\Debug\GitSharp.Core.dll
+C:\git\GitSharp\GitSharp.Core\obj\Debug\GitSharp.Core.pdb
