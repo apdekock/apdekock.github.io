@@ -1,9 +1,0 @@
-C:\git\GitSharp\GitSharp.Core\bin\Release\GitSharp.Core.dll
-C:\git\GitSharp\GitSharp.Core\bin\Release\GitSharp.Core.pdb
-C:\git\GitSharp\GitSharp.Core\bin\Release\ICSharpCode.SharpZipLib.dll
-C:\git\GitSharp\GitSharp.Core\bin\Release\Tamir.SharpSSH.dll
-C:\git\GitSharp\GitSharp.Core\bin\Release\DiffieHellman.dll
-C:\git\GitSharp\GitSharp.Core\bin\Release\Org.Mentalis.Security.dll
-C:\git\GitSharp\GitSharp.Core\bin\Release\ICSharpCode.SharpZipLib.xml
-C:\git\GitSharp\GitSharp.Core\obj\Release\GitSharp.Core.dll
-C:\git\GitSharp\GitSharp.Core\obj\Release\GitSharp.Core.pdb
