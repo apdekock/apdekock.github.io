@@ -5,7 +5,7 @@ date: 2016-08-07
 quote: "If you get pulled over for speeding. Tell them your spouse has diarrhoea. — Phil Dunphy [Phil’s - osophy]"
 categories: scraping, auto generating post, gitsharp
 ---
-This page is a daily re-generated post (last re-generated  **8/8/2016 6:35:09 PM**), that shows the movement of prices on the [www.weSellCars.co.za](http://www.wesellcars.co.za) website.
+This page is a daily re-generated post (last re-generated  **8/8/2016 7:00:14 PM**), that shows the movement of prices on the [www.weSellCars.co.za](http://www.wesellcars.co.za) website.
 
 ## Why?
 
@@ -14,10 +14,12 @@ This post is a culmination of some side projects playing around with scraping, l
 # Lessons learned
 
 * [GitSharp](http://www.eqqon.com/index.php/GitSharp) is limited and I needed to grab the project from [github](https://github.com/henon/GitSharp) in order to use it.
-The NuGet package kept on complaining about a **repositoryformatversion** setting in config [Core] that it required, it was present, but still complained. I downloaded the project to debug - and did not encounter it. Apart from that - I could not push - and it seems the project does not have a lot of contribution activity (not criticising, jsut stating, I should probably take this up and contribute especially as I would like to employ git as a file store for an application - levering off the already refined functions - more on that in another post).
+    The NuGet package kept on complaining about a **repositoryformatversion** setting in config [Core] that it required, it was present, but still complained. I downloaded the project to debug - and did not encounter it. Apart from that - I could not push - and it seems the project does not have a lot of contribution activity (not criticising, jsut stating, I should probably take this up and contribute especially as I would like to employ git as a file store for an application - levering off the already refined functions - more on that in another post).
 * Scraping with Selenium is probably not the best way - rather employ HttpClient.
 * Quick easy and painless sparklines [jQuery Sparklines](http://omnipotent.net/jquery.sparkline/#s-about)
-* Still no backend but a simple process running on a server that commits to Git
+* Still no backend but a simple process running on a server that commits to Git Gets the job done.
+
+## The List
 <ul>
 <li><div> 150 000km,2004 Daihatsu Charade CXL... <span class="sparklines">34000,30000,30000,30000,30000,27000,27000,27000,27000,27000</span></div></li>
 <li><div> 342 000km,2000 Renault Megane Class... <span class="sparklines">27000,27000,27000,27000,27000,27000,27000,27000,27000,25000,25000,25000,25000,22000,22000,22000,22000</span></div></li>
