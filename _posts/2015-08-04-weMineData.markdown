@@ -5,7 +5,7 @@ date: 2016-08-07
 quote: "If you get pulled over for speeding. Tell them your spouse has diarrhoea. — Phil Dunphy [Phil’s - osophy]"
 categories: scraping, auto generating post, gitsharp
 ---
-This page is a daily re-generated post (last re-generated  **8/12/2016 9:13:05 PM**), that shows the movement of prices on the [www.weSellCars.co.za](http://www.wesellcars.co.za) website.
+This page is a daily re-generated post (last re-generated  **8/12/2016 9:22:42 PM**), that shows the movement of prices on the [www.weSellCars.co.za](http://www.wesellcars.co.za) website.
 
 ## Why?
 
@@ -440,6 +440,8 @@ This post is a culmination of some side projects playing around with scraping, l
 <li><div><a Href='http://www.wesellcars.co.za/vehicle/ford-bantam-13i-xl-8092'> 157 000km,2012 Ford Bantam 1.3i XL (R83000)</a> <span class="sparklines">83000,83000</span></div></li>
 <li><div><a Href='http://www.wesellcars.co.za/vehicle/volkswagen-golf-vi-gti-20-gti-8090'> 151 500km,2009 Volkswagen Golf VI G... (R170000)</a> <span class="sparklines">170000,170000</span></div></li>
 <li><div><a Href='http://www.wesellcars.co.za/vehicle/chevrolet-corsa-utility-14-club-8089'> 108 000km,2010 Chevrolet Corsa Util... (R83000)</a> <span class="sparklines">83000,83000</span></div></li>
+<li><div><a Href='http://www.wesellcars.co.za/vehicle/ford-everest-30-tdci-xlt-8210'> 110 600km,2011 Ford Everest 3.0 TDC... (R150000)</a> <span class="sparklines">150000</span></div></li>
+<li><div><a Href='http://www.wesellcars.co.za/vehicle/hyundai-ix35-20crdi-gls-exec-8209'> 214 420km,2011 Hyundai IX35 2.0crdi... (R129000)</a> <span class="sparklines">129000</span></div></li>
 <li><div><a Href='http://www.wesellcars.co.za/vehicle/toyota-etios-15xs-5dr-8208'> 13 200km,2013 Toyota Etios 1.5XS 5... (R109000)</a> <span class="sparklines">109000</span></div></li>
 <li><div><a Href='http://www.wesellcars.co.za/vehicle/honda-crv-20-comfort-at-awd-8207'> 46 100km,2013 Honda CRV 2.0 Comfor... (R238000)</a> <span class="sparklines">238000</span></div></li>
 <li><div><a Href='http://www.wesellcars.co.za/vehicle/subaru-forester-25-xt-at-8206'> 102 900km,2010 Subaru Forester 2.5 ... (R129000)</a> <span class="sparklines">129000</span></div></li>
@@ -497,8 +499,6 @@ This post is a culmination of some side projects playing around with scraping, l
 <li><div><a Href='http://www.wesellcars.co.za/vehicle/bmw-320i-e90-8154'> 221 578km,2010 BMW 320i (E90) (R87000)</a> <span class="sparklines">87000</span></div></li>
 <li><div><a Href='http://www.wesellcars.co.za/vehicle/nissan-hardbody-np300-25-tdi-lwb-4x4-8153'> 69 000km,2012 Nissan Hardbody NP30... (R139000)</a> <span class="sparklines">139000</span></div></li>
 <li><div><a Href='http://www.wesellcars.co.za/vehicle/tata-indica-14-le-8152'> 66 600km,2009 TATA Indica 1.4 LE (R34000)</a> <span class="sparklines">34000</span></div></li>
-<li><div><a Href='http://www.wesellcars.co.za/vehicle/ford-everest-30-tdci-xlt-8210'> 110 600km,2011 Ford Everest 3.0 TDC... (R150000)</a> <span class="sparklines">150000</span></div></li>
-<li><div><a Href='http://www.wesellcars.co.za/vehicle/hyundai-ix35-20crdi-gls-exec-8209'> 214 420km,2011 Hyundai IX35 2.0crdi... (R129000)</a> <span class="sparklines">129000</span></div></li>
 </ol>
 <script type="text/javascript"> $('.sparklines').sparkline('html'); </script>
 
