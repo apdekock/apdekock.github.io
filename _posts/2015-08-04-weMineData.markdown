@@ -5,7 +5,7 @@ date: 2016-08-07
 quote: "If you get pulled over for speeding. Tell them your spouse has diarrhoea. — Phil Dunphy [Phil’s - osophy]"
 categories: scraping, auto generating post, gitsharp
 ---
-This page is a daily re-generated post (last re-generated  **8/21/2016 5:03:37 PM**), that shows the movement of prices on the [www.weSellCars.co.za](http://www.wesellcars.co.za) website.
+This page is a daily re-generated post (last re-generated  **8/22/2016 5:00:32 PM**), that shows the movement of prices on the [www.weSellCars.co.za](http://www.wesellcars.co.za) website.
 
 ## Why?
 
@@ -114,7 +114,6 @@ This post is a culmination of some side projects playing around with scraping, l
 <li><div><a Href='http://www.wesellcars.co.za/vehicle/porsche-boxster-s-987-convertible-8271'> PTA,117 000km,2005 Porsche Boxster S 98... (R238000)</a> <span class="sparklines">238000,238000,238000,238000,238000</span></div></li>
 <li><div><a Href='http://www.wesellcars.co.za/vehicle/volkswagen-golf-vi-14-tsi-dsg-cabrio-8270'> PTA,105 670km,2012 Volkswagen Golf VI 1... (R204000)</a> <span class="sparklines">204000,204000,204000,204000,204000</span></div></li>
 <li><div><a Href='http://www.wesellcars.co.za/vehicle/volkswagen-touran-19tdi-8269'> PTA,160 000km,2008 Volkswagen Touran 1.... (R96000)</a> <span class="sparklines">96000,96000,96000,96000,96000</span></div></li>
-<li><div><a Href='http://www.wesellcars.co.za/vehicle/land-rover-defender-110-tdi-hard-top-8268'> CPT,382 650km,1998 Land Rover Defender ... (R64000)</a> <span class="sparklines">64000,64000,64000</span></div></li>
 <li><div><a Href='http://www.wesellcars.co.za/vehicle/mazda-323-130-4dr-8267'> CPT,79 000km,1999 Mazda 323 130 4dr (R39000)</a> <span class="sparklines">39000,39000,39000,39000,39000</span></div></li>
 <li><div><a Href='http://www.wesellcars.co.za/vehicle/audi-a4-18t-avant-ambition-multitronic-8265'> CPT,157 000km,2010 Audi A4 1.8T Avant A... (R129000)</a> <span class="sparklines">129000,129000,129000,129000,129000</span></div></li>
 <li><div><a Href='http://www.wesellcars.co.za/vehicle/opel-utility-17dti-8264'> CPT,117 000km,2007 Opel Utility 1.7dti (R83000)</a> <span class="sparklines">83000,83000,83000,83000,83000</span></div></li>
@@ -195,9 +194,7 @@ This post is a culmination of some side projects playing around with scraping, l
 <li><div><a Href='http://www.wesellcars.co.za/vehicle/bmw-320i-at-8150'> LOW MILEAGE!,CPT,109 000km,2007 BMW 320i A/T (R99000)</a> <span class="sparklines">99000,99000,99000,99000,99000</span></div></li>
 <li><div><a Href='http://www.wesellcars.co.za/vehicle/toyota-corolla-18i-advance-8149'> CPT,89 900km,2010 Toyota Corolla 1.8i ... (R124000)</a> <span class="sparklines">124000,124000,124000,124000,124000</span></div></li>
 <li><div><a Href='http://www.wesellcars.co.za/vehicle/vw-polo-16-comfortline-5dr-8148'> CPT,157 050km,2010 VW Polo 1.6 Comfortl... (R115000)</a> <span class="sparklines">115000,115000,115000,115000,115000</span></div></li>
-<li><div><a Href='http://www.wesellcars.co.za/vehicle/kawazaki-z1000-8146'> CPT,63 000km,2012 Kawazaki Z1000 (R48000)</a> <span class="sparklines">48000,48000,48000</span></div></li>
 <li><div><a Href='http://www.wesellcars.co.za/vehicle/honda-crv-22-ctdi-8145'> CPT,128 000km,2008 Honda CRV 2.2 CTDI (R129000)</a> <span class="sparklines">129000,129000,129000,129000,129000</span></div></li>
-<li><div><a Href='http://www.wesellcars.co.za/vehicle/mitsubishi-asx-20-5dr-glx-8143'> CPT,63 000km,2013 Mitsubishi ASX 2.0 5... (R179000)</a> <span class="sparklines">179000,179000,179000</span></div></li>
 <li><div><a Href='http://www.wesellcars.co.za/vehicle/bmw-120d-at-e87-8141'> CPT,116 000km,2010 BMW 120d A/T E87 (R144000)</a> <span class="sparklines">144000,144000,144000,144000,144000</span></div></li>
 <li><div><a Href='http://www.wesellcars.co.za/vehicle/vw-polo-gti-14-dsg-8136'> CPT,91 000km,2012 VW Polo GTI 1.4 DSG (R199000)</a> <span class="sparklines">199000,199000,199000,199000,199000</span></div></li>
 <li><div><a Href='http://www.wesellcars.co.za/vehicle/bmw-x6-40d-xdrive-8135'> CPT,96 000km,2012 BMW X6 4.0d Xdrive (R363000)</a> <span class="sparklines">363000,363000,363000,363000,363000</span></div></li>
@@ -461,7 +458,6 @@ This post is a culmination of some side projects playing around with scraping, l
 <li><div><a Href='http://www.wesellcars.co.za/vehicle/mercedes-benz-c220-cdi-classic-at-8389'> PTA,118 000km,2010 Mercedes-Benz C220 C... (R190000)</a> <span class="sparklines">190000,190000,190000</span></div></li>
 <li><div><a Href='http://www.wesellcars.co.za/vehicle/honda-jazz-15-8388'> PTA,238 000km,2007 Honda Jazz 1.5 (R59000)</a> <span class="sparklines">59000,59000,59000</span></div></li>
 <li><div><a Href='http://www.wesellcars.co.za/vehicle/mercedes-benz-slk-350-at-8387'> PTA,39 000km,2004 Mercedes-Benz SLK 35... (R197000)</a> <span class="sparklines">197000,197000,197000</span></div></li>
-<li><div><a Href='http://www.wesellcars.co.za/vehicle/opel-corsa-160i-3dr-8386'> CPT,231 800km,2000 Opel Corsa 160i 3dr (R30000)</a> <span class="sparklines">30000</span></div></li>
 <li><div><a Href='http://www.wesellcars.co.za/vehicle/bmw-320i-auto-8385'> CPT,126 300km,2007 BMW 320i Auto (R73000)</a> <span class="sparklines">73000,73000,73000</span></div></li>
 <li><div><a Href='http://www.wesellcars.co.za/vehicle/vw-kombi-t5-20tdi-75kw-basetrend-8384'> CPT,118 730km,2012 VW Kombi T5 2.0tdi 7... (R256000)</a> <span class="sparklines">256000,256000,256000</span></div></li>
 <li><div><a Href='http://www.wesellcars.co.za/vehicle/renault-clio-iii-13-dynamic-8383'> PTA,29 000km,2010 Renault Clio III 1.3... (R99000)</a> <span class="sparklines">99000,99000,99000</span></div></li>
