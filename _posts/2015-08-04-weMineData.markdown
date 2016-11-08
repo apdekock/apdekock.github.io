@@ -5,7 +5,7 @@ date: 2016-08-07
 quote: "If you get pulled over for speeding. Tell them your spouse has diarrhoea. — Phil Dunphy [Phil’s - osophy]"
 categories: scraping, auto generating post, gitsharp
 ---
-This page is a daily re-generated post (last re-generated  **11/8/2016 5:00:32 PM**), that shows the movement of prices on the [www.weSellCars.co.za](http://www.wesellcars.co.za) website.
+This page is a daily re-generated post (last re-generated  **11/8/2016 10:20:23 PM**), that shows the movement of prices on the [www.weSellCars.co.za](http://www.wesellcars.co.za) website.
 
 ## Why?
 
@@ -19,7 +19,6 @@ This post is the culmination of some side projects I've been playing around with
 * For quick, easy and painless sparklines [jQuery Sparklines](http://omnipotent.net/jquery.sparkline/#s-about)
 * No backend required, just a simple process running on a server, that commits to a repo (ghPages) gets the job done.
 
-## The List
 <ol>
 </ol>
 <script type="text/javascript"> $('.sparklines').sparkline('html'); </script>
