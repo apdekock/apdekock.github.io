@@ -5,7 +5,7 @@ date: 2016-08-07
 quote: "If you get pulled over for speeding. Tell them your spouse has diarrhoea. — Phil Dunphy [Phil’s - osophy]"
 categories: scraping, auto generating post, gitsharp
 ---
-This page is a daily re-generated post (last re-generated  **11/9/2016 7:58:02 AM**), that shows the movement of prices on the [www.weSellCars.co.za](http://www.wesellcars.co.za) website.
+This page is a daily re-generated post (last re-generated  **11/9/2016 5:03:00 PM**), that shows the movement of prices on the [www.weSellCars.co.za](http://www.wesellcars.co.za) website.
 
 ## Why?
 
@@ -455,11 +455,21 @@ This post is the culmination of some side projects I've been playing around with
 <li><div><a Href='http://www.wesellcars.co.za/vehicle/venter-elite-trailer-16100155'>2014 VENTER ELITE...,Price: R9 500,Year: 2014,Mileage: ... ([2 days])</a> <span class="sparklines">9500,9500</span></div></li>
 <li><div><a Href='http://www.wesellcars.co.za/vehicle/jonway-activa-125cc-16110123'>2013 JONWAY ACTIV...,Price: R5 000,Year: 2013,Mileage: 7 222km ([2 days])</a> <span class="sparklines">5000,5000</span></div></li>
 <li><div><a Href='http://www.wesellcars.co.za/vehicle/venter-trailer-16110216'>1983 VENTER TRAIL...,Price: R4 000,Year: 1983,Mileage: 5km ([2 days])</a> <span class="sparklines">4000,4000</span></div></li>
+<li><div><a Href='http://www.wesellcars.co.za/vehicle/volvo-xc90-d5-momentum-awd-16110337'>2015 VOLVO XC90 D...,Price: R748 000,Year: 2015,Mileage: 27 000km ([1 days])</a> <span class="sparklines">748000</span></div></li>
+<li><div><a Href='http://www.wesellcars.co.za/vehicle/merc-gl500-be-16101259'>2013 MERC GL500 B...,Price: R728 000,Year: 2013,Mileage: 96 250km ([1 days])</a> <span class="sparklines">728000</span></div></li>
+<li><div><a Href='http://www.wesellcars.co.za/vehicle/jaguar-xf-22d-luxury-16110335'>2012 JAGUAR XF 2....,Price: R199 000,Year: 2012,Mileage: 116 000km ([1 days])</a> <span class="sparklines">199000</span></div></li>
 <li><div><a Href='http://www.wesellcars.co.za/vehicle/merc-slk200-k-at-16110236'>2008 MERC SLK200 ...,SOLD,Price: R190 000,Year: 2008,Mileage: 105 000km ([1 days])</a> <span class="sparklines">190000</span></div></li>
+<li><div><a Href='http://www.wesellcars.co.za/vehicle/ford-ranger-22-xl-super-cab-16110088'>2012 FORD RANGER ...,Price: R185 000,Year: 2012,Mileage: 143km ([1 days])</a> <span class="sparklines">185000</span></div></li>
+<li><div><a Href='http://www.wesellcars.co.za/vehicle/toyota-hilux-40l-dc-auto-4x4-16110345'>2007 TOYOTA HILUX...,Price: R165 000,Year: 2007,Mileage: 228 400km ([1 days])</a> <span class="sparklines">165000</span></div></li>
+<li><div><a Href='http://www.wesellcars.co.za/vehicle/vw-tiguan-14-tsi-track-field-4motion-16101006'>2009 VW TIGUAN 1....,Price: R153 000,Year: 2009,Mileage: 115km ([1 days])</a> <span class="sparklines">153000</span></div></li>
 <li><div><a Href='http://www.wesellcars.co.za/vehicle/vw-golf-vi-14-tsi-comf-16101310'>2011 VW GOLF VI 1...,SOLD,Price: R153 000,Year: 2011,Mileage: 74 000km ([1 days])</a> <span class="sparklines">153000</span></div></li>
 <li><div><a Href='http://www.wesellcars.co.za/vehicle/vw-golf-vi-16tdi-comfortline-16101212'>2010 VW GOLF VI 1...,SOLD,Price: R140 000,Year: 2010,Mileage: 146 000km ([1 days])</a> <span class="sparklines">140000</span></div></li>
+<li><div><a Href='http://www.wesellcars.co.za/vehicle/hyundai-i20-14-glide-man-5dr-16110227'>2013 HYUNDAI I20 ...,Price: R139 000,Year: 2013,Mileage: 74km ([1 days])</a> <span class="sparklines">139000</span></div></li>
 <li><div><a Href='http://www.wesellcars.co.za/vehicle/toyota-landcruiser-petrol-sc-16100180'>1999 TOYOTA LANDC...,SOLD,Price: R139 000,Year: 1999,Mileage: 299 033km ([1 days])</a> <span class="sparklines">139000</span></div></li>
+<li><div><a Href='http://www.wesellcars.co.za/vehicle/chev-utility-14-sport-pu-16110267'>2014 CHEV UTILITY...,Price: R138 000,Year: 2014,Mileage: 30km ([1 days])</a> <span class="sparklines">138000</span></div></li>
+<li><div><a Href='http://www.wesellcars.co.za/vehicle/toyota-corolla-13-prof-16110310'>2013 TOYOTA COROL...,Price: R116 000,Year: 2013,Mileage: 141 000km ([1 days])</a> <span class="sparklines">116000</span></div></li>
 <li><div><a Href='http://www.wesellcars.co.za/vehicle/ford-fiesta-16-trend-16110108'>2012 FORD FIESTA ...,SOLD,Price: R106 000,Year: 2012,Mileage: 67 300km ([1 days])</a> <span class="sparklines">106000</span></div></li>
+<li><div><a Href='http://www.wesellcars.co.za/vehicle/toyota-yaris-zen3-acs-5dr-16110287'>2011 TOYOTA YARIS...,Price: R99 000,Year: 2011,Mileage: 100km ([1 days])</a> <span class="sparklines">99000</span></div></li>
 <li><div><a Href='http://www.wesellcars.co.za/vehicle/ford-focus-18si-5dr-16101097'>2010 FORD FOCUS 1...,SOLD,Price: R96 000,Year: 2010,Mileage: 148 000km ([1 days])</a> <span class="sparklines">96000</span></div></li>
 <li><div><a Href='http://www.wesellcars.co.za/vehicle/renault-sandero-stepway-16-16090742'>2011 RENAULT SAND...,SOLD,Price: R89 000,Year: 2011,Mileage: 52 000km ([1 days])</a> <span class="sparklines">89000</span></div></li>
 <li><div><a Href='http://www.wesellcars.co.za/vehicle/vw-polo-16-comf-16110170'>2008 VW POLO 1.6 ...,SOLD,Price: R88 000,Year: 2008,Mileage: 118 000km ([1 days])</a> <span class="sparklines">88000</span></div></li>
@@ -467,8 +477,10 @@ This post is the culmination of some side projects I've been playing around with
 <li><div><a Href='http://www.wesellcars.co.za/vehicle/honda-crv-20-rvi-at-16110053'>2006 HONDA CRV 2....,SOLD,Price: R66 000,Year: 2006,Mileage: 252 000km ([1 days])</a> <span class="sparklines">66000</span></div></li>
 <li><div><a Href='http://www.wesellcars.co.za/vehicle/renault-sandero-16i-united-ac-16110191'>2011 RENAULT SAND...,SOLD,Price: R58 000,Year: 2011,Mileage: 107 743km ([1 days])</a> <span class="sparklines">58000</span></div></li>
 <li><div><a Href='http://www.wesellcars.co.za/vehicle/chev-spark-lite-l-16081430'>2010 CHEV SPARK L...,SOLD,Price: R53 000,Year: 2010,Mileage: 84 000km ([1 days])</a> <span class="sparklines">53000</span></div></li>
+<li><div><a Href='http://www.wesellcars.co.za/vehicle/hyundai-elantra-ii-16i-gls-mt-16110281'>2005 HYUNDAI ELAN...,Price: R40 000,Year: 2005,Mileage: 128km ([1 days])</a> <span class="sparklines">40000</span></div></li>
 <li><div><a Href='http://www.wesellcars.co.za/vehicle/tata-indica-14-lei-16101120'>2006 TATA INDICA ...,SOLD,Price: R40 000,Year: 2006,Mileage: 130 000km ([1 days])</a> <span class="sparklines">40000</span></div></li>
 <li><div><a Href='http://www.wesellcars.co.za/vehicle/jeep-grand-cherokee-47-v8-at-16110086'>2000 JEEP GRAND C...,SOLD,Price: R37 000,Year: 2000,Mileage: 200 000km ([1 days])</a> <span class="sparklines">37000</span></div></li>
+<li><div><a Href='http://www.wesellcars.co.za/vehicle/fiat-punto-13-jtd-active-mt-16110349'>2004 FIAT PUNTO 1...,Price: R29 000,Year: 2004,Mileage: 367 000km ([1 days])</a> <span class="sparklines">29000</span></div></li>
 </ol>
 <script type="text/javascript"> $('.sparklines').sparkline('html'); </script>
 
