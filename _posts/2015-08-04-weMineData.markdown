@@ -5,7 +5,7 @@ date: 2016-08-07
 quote: "If you get pulled over for speeding. Tell them your spouse has diarrhoea. — Phil Dunphy [Phil’s - osophy]"
 categories: scraping, auto generating post, gitsharp
 ---
-This page is a daily re-generated post (last re-generated  **11/13/2016 12:09:45 PM**), that shows the movement of prices on the [www.weSellCars.co.za](http://www.wesellcars.co.za) website.
+This page is a daily re-generated post (last re-generated  **11/13/2016 5:02:54 PM**), that shows the movement of prices on the [www.weSellCars.co.za](http://www.wesellcars.co.za) website.
 
 ## Why?
 
