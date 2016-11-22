@@ -5,7 +5,7 @@ date: 2016-08-07
 quote: "If you get pulled over for speeding. Tell them your spouse has diarrhoea. — Phil Dunphy [Phil’s - osophy]"
 categories: scraping, auto generating post, gitsharp
 ---
-This page is a daily re-generated post (last re-generated  **11/22/2016 2:19:02 PM**), that shows the movement of prices on the [www.weSellCars.co.za](http://www.wesellcars.co.za) website.
+This page is a daily re-generated post (last re-generated  **11/22/2016 5:03:48 PM**), that shows the movement of prices on the [www.weSellCars.co.za](http://www.wesellcars.co.za) website.
 
 ## Why?
 
@@ -685,6 +685,7 @@ This post is the culmination of some side projects I've been playing around with
 <li><div><a Href='http://www.wesellcars.co.za/vehicle/ez-go-gholf-cart-16110939'>2007 EZ-GO GHOLF ...,Price: R29 000,Year: 2007,Mileage: ... ([1 days])</a> <span class="sparklines">29000</span></div></li>
 <li><div><a Href='http://www.wesellcars.co.za/vehicle/camp-master-trailer-16080869'>2004 CAMP MASTER ...,Price: R27 000,Year: 2004,Mileage: ... ([1 days])</a> <span class="sparklines">27000</span></div></li>
 <li><div><a Href='http://www.wesellcars.co.za/vehicle/kia-rio-13-rs-sedan-16110556'>2003 KIA RIO 1.3 ...,Price: R16 000,Year: 2003,Mileage: 397 666km ([1 days])</a> <span class="sparklines">16000</span></div></li>
+<li><div><a Href='http://www.wesellcars.co.za/vehicle/chana-star-1000-pu-16110933'>2007 CHANA STAR 1...,Price: R27 000,Year: 2007,Mileage: 216km ([1 days])</a> <span class="sparklines">27000</span></div></li>
 </ol>
 <script type="text/javascript"> $('.sparklines').sparkline('html'); </script>
 
