@@ -5,7 +5,7 @@ date: 2016-08-07
 quote: "If you get pulled over for speeding. Tell them your spouse has diarrhoea. — Phil Dunphy [Phil’s - osophy]"
 categories: scraping, auto generating post, gitsharp
 ---
-This page is a daily re-generated post (last re-generated  **11/24/2016 12:46:19 PM**), that shows the movement of prices on the [www.weSellCars.co.za](http://www.wesellcars.co.za) website.
+This page is a daily re-generated post (last re-generated  **11/24/2016 5:04:06 PM**), that shows the movement of prices on the [www.weSellCars.co.za](http://www.wesellcars.co.za) website.
 
 ## Why?
 
@@ -774,7 +774,7 @@ This post is the culmination of some side projects I've been playing around with
 <li><div><a Href='http://www.wesellcars.co.za/vehicle/citroen-c1-seduction-10-16110698'>2010 CITROEN C1 S...,Price: R53 000,Year: 2010,Mileage: 101 500km ([1 days])</a> <span class="sparklines">53000</span></div></li>
 <li><div><a Href='http://www.wesellcars.co.za/vehicle/audi-a3-20-fsi-ambition-16111129'>2008 AUDI A3 2.0 ...,Price: R53 000,Year: 2008,Mileage: 228 000km ([1 days])</a> <span class="sparklines">53000</span></div></li>
 <li><div><a Href='http://www.wesellcars.co.za/vehicle/renault-logan-16-exp-16110462'>2011 RENAULT LOGA...,Price: R50 000,Year: 2011,Mileage: 84 450km ([1 days])</a> <span class="sparklines">50000</span></div></li>
-<li><div><a Href='http://www.wesellcars.co.za/vehicle/mitsubishi-colt-28tdi-rodeo-dc-16101014'>2004 MITSUBISHI C...,Price: R50 000,Year: 2004,Mileage: ... ([1 days])</a> <span class="sparklines">50000</span></div></li>
+<li><div><a Href='http://www.wesellcars.co.za/vehicle/bmw-k1200s-mt-16110321'>2005 BMW K1200S M...,Price: R48 000,Year: 2005,Mileage: 52 000km ([1 days])</a> <span class="sparklines">48000</span></div></li>
 <li><div><a Href='http://www.wesellcars.co.za/vehicle/jeep-cherokee-37-sport-auto-16081215'>2003 JEEP CHEROKE...,Price: R47 000,Year: 2003,Mileage: 233 000km ([1 days])</a> <span class="sparklines">47000</span></div></li>
 <li><div><a Href='http://www.wesellcars.co.za/vehicle/mazda-3-20-indiv-4dr-16111190'>2006 MAZDA 3 2.0 ...,Price: R47 000,Year: 2006,Mileage: 200 000km ([1 days])</a> <span class="sparklines">47000</span></div></li>
 <li><div><a Href='http://www.wesellcars.co.za/vehicle/geely-mk2-15-gl-5dr-16110540'>2011 GEELY MK2 1....,Price: R47 000,Year: 2011,Mileage: 60 600km ([1 days])</a> <span class="sparklines">47000</span></div></li>
@@ -815,6 +815,7 @@ This post is the culmination of some side projects I've been playing around with
 <li><div><a Href='http://www.wesellcars.co.za/vehicle/bass-boat-and-trailer-16080708'>1988 BASS BOAT AN...,Price: R17 000,Year: 1988,Mileage: ... ([1 days])</a> <span class="sparklines">17000</span></div></li>
 <li><div><a Href='http://www.wesellcars.co.za/vehicle/kia-rio-13-rs-sedan-16110556'>2003 KIA RIO 1.3 ...,SOLD,Price: R16 000,Year: 2003,Mileage: 397 666km ([1 days])</a> <span class="sparklines">16000</span></div></li>
 <li><div><a Href='http://www.wesellcars.co.za/vehicle/lazy-lowder-1-bike-trailer-16110646'>2013 LAZY LOWDER ...,Price: R13 000,Year: 2013,Mileage: ... ([1 days])</a> <span class="sparklines">13000</span></div></li>
+<li><div><a Href='http://www.wesellcars.co.za/vehicle/mitsubishi-colt-28tdi-rodeo-dc-16101014'>2004 MITSUBISHI C...,Price: R50 000,Year: 2004,Mileage: ... ([1 days])</a> <span class="sparklines">50000</span></div></li>
 </ol>
 <script type="text/javascript"> $('.sparklines').sparkline('html'); </script>
 
