@@ -5,7 +5,7 @@ date: 2016-08-07
 quote: "If you get pulled over for speeding. Tell them your spouse has diarrhoea. — Phil Dunphy [Phil’s - osophy]"
 categories: scraping, auto generating post, gitsharp
 ---
-This page is a daily re-generated post (last re-generated  **12/7/2016 2:50:18 PM**), that shows the movement of prices on the [www.weSellCars.co.za](http://www.wesellcars.co.za) website.
+This page is a daily re-generated post (last re-generated  **12/7/2016 5:03:47 PM**), that shows the movement of prices on the [www.weSellCars.co.za](http://www.wesellcars.co.za) website.
 
 ## Why?
 
@@ -523,6 +523,10 @@ This post is the culmination of some side projects I've been playing around with
 <li><div><a Href='http://www.wesellcars.co.za/vehicle/fiat-strada-16-el-16120044'>2005 FIAT STRADA ...,Year: 2005,Mileage: 187 000km,Branch: PTA ([1 days] - R 42000)</a> <span class="sparklines">42000</span></div></li>
 <li><div><a Href='http://www.wesellcars.co.za/vehicle/peugeot-206-16-xt-16120164'>2004 PEUGEOT 206 ...,Year: 2004,Mileage: 166 000km,Branch: PTA ([1 days] - R 39000)</a> <span class="sparklines">39000</span></div></li>
 <li><div><a Href='http://www.wesellcars.co.za/vehicle/merc-c180-classic-mt-16091477'>1997 MERC C180 CL...,SOLD,Year: 1997,Mileage: 194 373km,Branch: CPT ([1 days] - R 25000)</a> <span class="sparklines">25000</span></div></li>
+<li><div><a Href='http://www.wesellcars.co.za/vehicle/mini-cooper-s-paceman-mt-16120041'>2013 MINI COOPER ...,Year: 2013,Mileage: 41 000km,Branch: CPT ([1 days] - R 251000)</a> <span class="sparklines">251000</span></div></li>
+<li><div><a Href='http://www.wesellcars.co.za/vehicle/mini-cooper-clubman-s-16111562'>2008 MINI COOPER ...,Year: 2008,Mileage: 109 000km,Branch: CPT ([1 days] - R 116000)</a> <span class="sparklines">116000</span></div></li>
+<li><div><a Href='http://www.wesellcars.co.za/vehicle/hyundai-i10-11gls-55-16120282'>2011 HYUNDAI I10 ...,Year: 2011,Mileage: 88 500km,Branch: CPT ([1 days] - R 71000)</a> <span class="sparklines">71000</span></div></li>
+<li><div><a Href='http://www.wesellcars.co.za/vehicle/daihatsu-sirion-13-16120269'>2006 DAIHATSU SIR...,Year: 2006,Mileage: 100 500km,Branch: CPT ([1 days] - R 45000)</a> <span class="sparklines">45000</span></div></li>
 <li><div><a Href='http://www.wesellcars.co.za/vehicle/vw-golf-vi-gti-20-tsi-mt-16101230'>2010 VW GOLF VI G...,Year: 2010,Mileage: 137 471km,Branch: PTA ([4 days] - R 179000)</a> <span class="sparklines">160000,179000,179000,179000</span></div></li>
 </ol>
 <script type="text/javascript"> $('.sparklines').sparkline('html'); </script>
