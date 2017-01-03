@@ -12,6 +12,17 @@ I did a presentation recently on best practices, it was very high level and cove
 
 <iframe src="http://www.slides.com/philip_slides/deck-2/embed" width="576" height="420" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
   
+
+## Quotes 
+
+Quotes that have stuck with me and that encourage inquisition into how we improve and build better software.
+
+ * "There are two ways of constructing a software design: One way is to make it so simple that there are obviously no deficiencies, and the other way is to make it so complicated that there are no obvious deficiencies. The first method is far more difficult." - C.A.R. Hoare   
+
+ * "Controlling complexity is the essence of computer programming." -   Brian Kernighan 
+
+ * "The competent programmer is fully aware of the limited size of his own skull. He therefore approaches his task with full humility, and avoids clever tricks like the plague."   - Edsger Dijkstra
+
 ## Sources
  * XUnit Test Patterns: Refactoring Test Code - Gerard Meszaros
  * Refactoring: Improving the Design of Existing Code - Martin Fowler
@@ -23,15 +34,4 @@ I did a presentation recently on best practices, it was very high level and cove
  * https://spin.atomicobject.com/2013/02/23/ports-adapters-software-architecture/
  * http://jasonpolites.github.io/tao-of-testing/ch4-1.1.html
  * http://www.sparxsystems.com/downloads/whitepapers/FCGSS_US_WP_Applying_4+1_w_UML2.pdf
-
-## Quotes 
-
-Quotes that have stuck with me and that encourage inquisition into how we improve and build better software
-
- * "There are two ways of constructing a software design: One way is to make it so simple that there are obviously no deficiencies, and the other way is to make it so complicated that there are no obvious deficiencies. The first method is far more difficult." - C.A.R. Hoare   
-
- * "Controlling complexity is the essence of computer programming." -   Brian Kernighan 
-
- * "The competent programmer is fully aware of the limited size of his own skull. He therefore approaches his task with full humility, and avoids clever tricks like the plague."   - Edsger Dijkstra
-
 
