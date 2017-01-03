@@ -30,8 +30,8 @@ Quotes that have stuck with me and that encourage inquisition into how we improv
  * SOA Patterns - Arnon Rotem-Gal-Oz
  * C# 3.0 Design Patterns - Judith Bishop
  * IEEE std 42010-2011: Systems and software engineering - architecture description
- * http://spinemodel.info/
- * https://spin.atomicobject.com/2013/02/23/ports-adapters-software-architecture/
- * http://jasonpolites.github.io/tao-of-testing/ch4-1.1.html
- * http://www.sparxsystems.com/downloads/whitepapers/FCGSS_US_WP_Applying_4+1_w_UML2.pdf
+ * [http://spinemodel.info/](http://spinemodel.info/)
+ * [https://spin.atomicobject.com/2013/02/23/ports-adapters-software-architecture/](https://spin.atomicobject.com/2013/02/23/ports-adapters-software-architecture/)
+ * [http://jasonpolites.github.io/tao-of-testing/ch4-1.1.html](http://jasonpolites.github.io/tao-of-testing/ch4-1.1.html)
+ * [http://www.sparxsystems.com/downloads/whitepapers/FCGSS_US_WP_Applying_4+1_w_UML2.pdf](http://www.sparxsystems.com/downloads/whitepapers/FCGSS_US_WP_Applying_4+1_w_UML2.pdf)
 
