@@ -5,7 +5,7 @@ date: 2016-08-07
 quote: "If you get pulled over for speeding. Tell them your spouse has diarrhoea. — Phil Dunphy [Phil’s - osophy]"
 categories: scraping, auto generating post, gitsharp
 ---
-This page is a daily re-generated post (last re-generated  **1/30/2017 1:44:18 PM**), that shows the movement of prices on the [www.weSellCars.co.za](http://www.wesellcars.co.za) website.
+This page is a daily re-generated post (last re-generated  **1/30/2017 5:03:40 PM**), that shows the movement of prices on the [www.weSellCars.co.za](http://www.wesellcars.co.za) website.
 
 ## Why?
 
@@ -497,6 +497,9 @@ This post is the culmination of some side projects I've been playing around with
 <li><div><a Href='http://www.wesellcars.co.za/vehicle/hyundai-atoz-prime-10-17011007'>2002 HYUNDAI ATOZ...,Year: 2002,Mileage: 213 000km,Branch: PTA ([1 days] - R 37000)</a> <span class="sparklines">37000</span></div></li>
 <li><div><a Href='http://www.wesellcars.co.za/vehicle/gypsey-rapture-caravan-17011293'>1997 GYPSEY RAPTU...,Year: 1997,Mileage: ...,Branch: PTA ([1 days] - R 32000)</a> <span class="sparklines">32000</span></div></li>
 <li><div><a Href='http://www.wesellcars.co.za/vehicle/honda-cbr250r-17011141'>2011 HONDA CBR250...,Year: 2011,Mileage: 7 500km,Branch: PTA ([1 days] - R 32000)</a> <span class="sparklines">32000</span></div></li>
+<li><div><a Href='http://www.wesellcars.co.za/vehicle/vw-polo14-comf-17010714'>2010 VW POLO1.4 C...,Year: 2010,Mileage: 141 000km,Branch: CPT ([1 days] - R 114000)</a> <span class="sparklines">114000</span></div></li>
+<li><div><a Href='http://www.wesellcars.co.za/vehicle/audi-a4-sw-avant-facelift-18i-17011189'>2001 AUDI A4 S/W ...,Year: 2001,Mileage: 278 000km,Branch: CPT ([1 days] - R 47000)</a> <span class="sparklines">47000</span></div></li>
+<li><div><a Href='http://www.wesellcars.co.za/vehicle/toyota-tazz-130-ac-17011459'>2004 TOYOTA TAZZ ...,Year: 2004,Mileage: 195 550km,Branch: CPT ([1 days] - R 40000)</a> <span class="sparklines">40000</span></div></li>
 </ol>
 <script type="text/javascript"> $('.sparklines').sparkline('html'); </script>
 
