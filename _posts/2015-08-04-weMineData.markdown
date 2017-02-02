@@ -5,7 +5,7 @@ date: 2016-08-07
 quote: "If you get pulled over for speeding. Tell them your spouse has diarrhoea. — Phil Dunphy [Phil’s - osophy]"
 categories: scraping, auto generating post, gitsharp
 ---
-This page is a daily re-generated post (last re-generated  **2/2/2017 1:52:43 PM**), that shows the movement of prices on the [www.weSellCars.co.za](http://www.wesellcars.co.za) website.
+This page is a daily re-generated post (last re-generated  **2/2/2017 5:03:27 PM**), that shows the movement of prices on the [www.weSellCars.co.za](http://www.wesellcars.co.za) website.
 
 ## Why?
 
@@ -532,6 +532,10 @@ This post is the culmination of some side projects I've been playing around with
 <li><div><a Href='http://www.wesellcars.co.za/vehicle/dart-ski-boat-mercury-2-stroke-90hp-17010277'>1981 DART SKI BOA...,Year: 1981,Mileage: ...,Branch: PTA ([13 days] - R 11000)</a> <span class="sparklines">11000,11000,11000,11000,11000,11000,11000,11000,11000,11000,11000,11000,11000</span></div></li>
 <li><div><a Href='http://www.wesellcars.co.za/vehicle/puzey-xp-stomper-125cc-17010273'>2013 PUZEY XP STO...,Year: 2013,Mileage: ...,Branch: CPT ([16 days] - R 9000)</a> <span class="sparklines">9000,9000,9000,9000,9000,9000,9000,9000,9000,9000,9000,9000,9000,9000,9000,9000</span></div></li>
 <li><div><a Href='http://www.wesellcars.co.za/vehicle/vuka-scuta-xt150-17010531'>2010 VUKA SCUTA X...,Year: 2010,Mileage: ...,Branch: CPT ([4 days] - R 6000)</a> <span class="sparklines">6000,6000,6000,6000</span></div></li>
+<li><div><a Href='http://www.wesellcars.co.za/vehicle/range-rover-evoque-20-si4-at-17011508'>2012 RANGE ROVER ...,Year: 2012,Mileage: 50 300km,Branch: CPT ([1 days] - R 408000)</a> <span class="sparklines">408000</span></div></li>
+<li><div><a Href='http://www.wesellcars.co.za/vehicle/fiat-500-12-lounge-17011645'>2014 FIAT 500 1.2...,Year: 2014,Mileage: 56 000km,Branch: CPT ([1 days] - R 119000)</a> <span class="sparklines">119000</span></div></li>
+<li><div><a Href='http://www.wesellcars.co.za/vehicle/merc-benz-c200-estate-17011646'>2005 MERC BENZ C2...,Year: 2005,Mileage: 222 000km,Branch: CPT ([1 days] - R 68000)</a> <span class="sparklines">68000</span></div></li>
+<li><div><a Href='http://www.wesellcars.co.za/vehicle/vw-citi-golf-14-17011574'>2006 VW CITI GOLF...,Year: 2006,Mileage: 213 000km,Branch: CPT ([1 days] - R 41000)</a> <span class="sparklines">41000</span></div></li>
 </ol>
 <script type="text/javascript"> $('.sparklines').sparkline('html'); </script>
 
