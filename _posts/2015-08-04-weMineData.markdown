@@ -5,7 +5,7 @@ date: 2016-08-07
 quote: "If you get pulled over for speeding. Tell them your spouse has diarrhoea. — Phil Dunphy [Phil’s - osophy]"
 categories: scraping, auto generating post, gitsharp
 ---
-This page is a daily re-generated post (last re-generated  **2/14/2017 6:44:54 AM**), that shows the movement of prices on the [www.weSellCars.co.za](http://www.wesellcars.co.za) website.
+This page is a daily re-generated post (last re-generated  **2/14/2017 5:03:37 PM**), that shows the movement of prices on the [www.weSellCars.co.za](http://www.wesellcars.co.za) website.
 
 ## Why?
 
@@ -579,6 +579,23 @@ This post is the culmination of some side projects I've been playing around with
 <li><div><a Href='http://www.wesellcars.co.za/vehicle/hyundai-tiburon-27-v6-17020626'>2004 HYUNDAI TIBU...,Year: 2004,Mileage: 235 000km,Branch: CPT ([2 days] - R 55000)</a> <span class="sparklines">55000,55000</span></div></li>
 <li><div><a Href='http://www.wesellcars.co.za/vehicle/mazda-323-midge-17020204'>1995 MAZDA 323 MI...,Year: 1995,Mileage: 222 000km,Branch: CPT ([2 days] - R 38000)</a> <span class="sparklines">38000,38000</span></div></li>
 <li><div><a Href='http://www.wesellcars.co.za/vehicle/vw-city-chico-14i-17020470'>2005 VW CITY CHIC...,Year: 2005,Mileage: 268 000km,Branch: PTA ([2 days] - R 37000)</a> <span class="sparklines">37000,37000</span></div></li>
+<li><div><a Href='http://www.wesellcars.co.za/vehicle/mitsubishi-pajero-32-swb-at-17020558'>2013 MITSUBISHI P...,Year: 2013,Mileage: 37 000km,Branch: PTA ([1 days] - R 428000)</a> <span class="sparklines">428000</span></div></li>
+<li><div><a Href='http://www.wesellcars.co.za/vehicle/renault-duster-16-dynamic-17020229'>2016 RENAULT DUST...,Year: 2016,Mileage: 15 600km,Branch: PTA ([1 days] - R 220000)</a> <span class="sparklines">220000</span></div></li>
+<li><div><a Href='http://www.wesellcars.co.za/vehicle/ford-everest-30-tdci-ltd-4x4-at-17020430'>2013 FORD EVEREST...,Year: 2013,Mileage: 105 000km,Branch: PTA ([1 days] - R 190000)</a> <span class="sparklines">190000</span></div></li>
+<li><div><a Href='http://www.wesellcars.co.za/vehicle/ford-eco-sport-15-tivct-amb-17020379'>2014 FORD ECO SPO...,Year: 2014,Mileage: 81 000km,Branch: PTA ([1 days] - R 173000)</a> <span class="sparklines">173000</span></div></li>
+<li><div><a Href='http://www.wesellcars.co.za/vehicle/vw-jetta-14-tsicomfortline-17011410'>2011 VW JETTA 1.4...,Year: 2011,Mileage: 90 100km,Branch: PTA ([1 days] - R 120000)</a> <span class="sparklines">120000</span></div></li>
+<li><div><a Href='http://www.wesellcars.co.za/vehicle/ford-ranger-2500td-super-cab-xlt-pu-17020554'>2005 FORD RANGER ...,Year: 2005,Mileage: 146 300km,Branch: PTA ([1 days] - R 119000)</a> <span class="sparklines">119000</span></div></li>
+<li><div><a Href='http://www.wesellcars.co.za/vehicle/renault-sandero-900t-expression-17020514'>2014 RENAULT SAND...,Year: 2014,Mileage: 27 000km,Branch: PTA ([1 days] - R 114000)</a> <span class="sparklines">114000</span></div></li>
+<li><div><a Href='http://www.wesellcars.co.za/vehicle/vw-jetta-19-tdi-comf-17011302'>2009 VW JETTA 1.9...,Year: 2009,Mileage: 111 000km,Branch: PTA ([1 days] - R 106000)</a> <span class="sparklines">106000</span></div></li>
+<li><div><a Href='http://www.wesellcars.co.za/vehicle/harley-davidson-vrsc-v-rod-muscle-975932'>2009 HARLEY DAVID...,Year: 2009,Mileage: 9 460km,Branch: PTA ([1 days] - R 104000)</a> <span class="sparklines">104000</span></div></li>
+<li><div><a Href='http://www.wesellcars.co.za/vehicle/merc-c350-amg-17020536'>2010 MERC C350 AM...,Year: 2010,Mileage: 285 000km,Branch: PTA ([1 days] - R 102000)</a> <span class="sparklines">102000</span></div></li>
+<li><div><a Href='http://www.wesellcars.co.za/vehicle/merc-c200k-classic-at-17020565'>2008 MERC C200K C...,Year: 2008,Mileage: 144 000km,Branch: PTA ([1 days] - R 102000)</a> <span class="sparklines">102000</span></div></li>
+<li><div><a Href='http://www.wesellcars.co.za/vehicle/hyundai-i10-11-gls-motion-17010867'>2012 HYUNDAI I10 ...,Year: 2012,Mileage: 44 000km,Branch: PTA ([1 days] - R 88000)</a> <span class="sparklines">88000</span></div></li>
+<li><div><a Href='http://www.wesellcars.co.za/vehicle/ford-ranger-2500d-lwb-xl-sc-17011423'>2007 FORD RANGER ...,Year: 2007,Mileage: 211 000km,Branch: PTA ([1 days] - R 83000)</a> <span class="sparklines">83000</span></div></li>
+<li><div><a Href='http://www.wesellcars.co.za/vehicle/yamaha-r1-17020577'>2008 YAMAHA R1,Year: 2008,Mileage: 23 501km,Branch: PTA ([1 days] - R 80000)</a> <span class="sparklines">80000</span></div></li>
+<li><div><a Href='http://www.wesellcars.co.za/vehicle/hyundai-i120-14-17020323'>2011 HYUNDAI I120...,Year: 2011,Mileage: 130 000km,Branch: PTA ([1 days] - R 71000)</a> <span class="sparklines">71000</span></div></li>
+<li><div><a Href='http://www.wesellcars.co.za/vehicle/vw-polo-14-17020353'>2007 VW POLO 1.4,Year: 2007,Mileage: 174 500km,Branch: PTA ([1 days] - R 65000)</a> <span class="sparklines">65000</span></div></li>
+<li><div><a Href='http://www.wesellcars.co.za/vehicle/challenger-trailer-17020476'>2007 CHALLENGER T...,Year: 2007,Mileage: ...,Branch: PTA ([1 days] - R 7000)</a> <span class="sparklines">7000</span></div></li>
 </ol>
 <script type="text/javascript"> $('.sparklines').sparkline('html'); </script>
 
