@@ -21,7 +21,7 @@ This is an update / improvement on the previous scraping post, I also wanted to 
 </script>
 ## The List
 <iframe frameborder="0" onload="resizeIframe(this)" 
-style="max-width: 100%; width: 100% ;border-width: 0px; height: 400px; vertical-align: middle;"	src="https://exposewesellcars.azurewebsites.net/api/ExposeHtml?code=Pb38/cyv8YxMMFR4VMKOcyHdun8gK7MafQq3lGQWppO9zkNTJv8/xA=="><base target="_parent">
+style="max-width: 100%; width: 100% ;border-width: 0px; height: 400px; vertical-align: middle;"	src="https://exposewesellcars.azurewebsites.net/api/ExposeHtml?code=Pb38/cyv8YxMMFR4VMKOcyHdun8gK7MafQq3lGQWppO9zkNTJv8/xA==">
 </iframe>
 
 	
