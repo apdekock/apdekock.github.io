@@ -15,7 +15,12 @@ This is an update / improvement on the previous scraping post, I also wanted to 
 
 
 ## The List
-<iframe 
-style="max-width: 100%;
+<iframe frameborder="0" scrolling="no" onload="resizeIframe(this)" 
+style="max-width: 100%; width=100%;border-width: 0px;
     vertical-align: middle;"
 	src="https://exposewesellcars.azurewebsites.net/api/ExposeHtml?code=Pb38/cyv8YxMMFR4VMKOcyHdun8gK7MafQq3lGQWppO9zkNTJv8/xA=="></iframe>
+	<script>
+  function resizeIframe(obj) {
+    obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+  }
+</script>
