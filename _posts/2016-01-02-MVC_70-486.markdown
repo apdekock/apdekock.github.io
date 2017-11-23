@@ -50,7 +50,7 @@ _For more detailed information on exam content see [this](https://borntolearn.ms
 
 _Now for: Exam Ref 70-487: Developing Windows Azure and Web Services_
 
-##**Moral:**
+## **Moral:**
 
 So what can we take from Phil's infinite wisdom?
 
