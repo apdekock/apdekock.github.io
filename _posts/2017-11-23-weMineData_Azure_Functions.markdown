@@ -13,9 +13,6 @@ This is an update / improvement on the previous scraping post, I also wanted to 
 
 * I eventually implimented [HttpClient](https://msdn.microsoft.com/en-us/library/system.net.http.httpclient(v=vs.118).aspx) in conjunction with the HTMLAgilityPack in an Azure Functions App, much faster and less brittle.
 
-<div id="testDiv"></div>
-<script>$("#testDiv").load("https://exposewesellcars.azurewebsites.net/api/ExposeHtml?code=Pb38/cyv8YxMMFR4VMKOcyHdun8gK7MafQq3lGQWppO9zkNTJv8/xA==");</script>
-
 <script>
   function resizeIframe(obj) {
     obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
