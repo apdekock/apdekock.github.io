@@ -6,7 +6,7 @@ quote: "If you get pulled over for speeding. Tell them your spouse has diarrhoea
 categories: scraping, auto generating post, gitsharp
 ---
 This page is a daily re-generated post (last re-generated  **11/23/2017 5:08:21 PM**), that shows the movement of prices on the [www.weSellCars.co.za](http://www.wesellcars.co.za) website.
-Post generation imporoved - see [this post](http://www.phils-osophy.co.za/scraping,/auto/generating/post,/gitsharp,/httpclient,/httpagilitypack,/azure/functions/2017/11/23/weMineData_Azure_Functions.html)
+**Post generation imporoved - see [this post](http://www.phils-osophy.co.za/scraping,/auto/generating/post,/gitsharp,/httpclient,/httpagilitypack,/azure/functions/2017/11/23/weMineData_Azure_Functions.html)**
 ## Why?
 
 This post is the culmination of some side projects I've been playing around with. Scraping, looking for a way to integrate with git through C# and a challenge to use this blog (which has no back-end or support for any server side scripting) to dynamically update a post. I realise that would best be accomplished through just making new posts but I opted for an altered post as this is a tech blog, and multiple posts about car prices would not be appropriate.
