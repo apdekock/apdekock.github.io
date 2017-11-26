@@ -178,7 +178,7 @@ _**This little snippet explained why I could not see any client side Data Stores
 	
 ![alt text]({{ site.url }}/assets/oedq_version.PNG "OEDQ Version")
 	
-##**Moral:**
+## **Moral:**
 
 So what can we take from Phil's infinite wisdom?
 

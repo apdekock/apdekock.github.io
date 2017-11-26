@@ -112,7 +112,7 @@ Granted, the versions in the [apdekock/jekyllWindows](https://github.com/apdekoc
 |:---|
 |[DevKit-mingw64-64-4.7.2-20130224-1432-sfx.exe](http://dl.bintray.com/oneclick/rubyinstaller/DevKit-mingw64-64-4.7.2-20130224-1432-sfx.exe)|
 
-##**Moral:**
+## **Moral:**
 
   * “Why do I have to watch a French movie, I didn’t do anything wrong.” — Phil Dunphy
  

@@ -391,7 +391,7 @@ namespace ConsoleApplication
 * I did some research and found an awesome library in [Tanuki Software's Java Service Wrapper](http://wrapper.tanukisoftware.com/). It looks like an awesome tool with a lot of [features](http://wrapper.tanukisoftware.com/doc/english/product-features.html) and will be able to provide the same functionality as this project with a few added benefits.
 * If you have the ability to alter both the Java and .NET code - [jni4net](http://jni4net.com/) is an option.
 
-##**Moral:**
+## **Moral:**
 
 So what can we take from Phil's infinite wisdom?
 
