@@ -45,7 +45,7 @@ Switching between laptops or reloading the OS and replicating these steps over a
 
 ![alt text]({{ site.url }}/assets/jekyll/jekyllSite.png)
 
-> [Jekyll](https://jekyllrb.com/) is a simple, user friendly static site generator powered by Ruby, and is also the engine behind GitHub Pages. It takes a template directory containing raw text files, runs it through Markdown (Liquid or Textile) convertors, and generates a complete ready-to-publish static website. - [http://mashable.com/2014/08/28/static-website-generators/](http://mashable.com/2014/08/28/static-website-generators/)
+> [Jekyll](https://jekyllrb.com/) is a simple, user friendly static site generator powered by Ruby, and is also the engine behind GitHub Pages. It takes a template directory containing raw text files, runs it through Markdown (Liquid or Textile) converters, and generates a complete ready-to-publish static website. - [http://mashable.com/2014/08/28/static-website-generators/](http://mashable.com/2014/08/28/static-website-generators/)
 
 For more information check out the [Jekyll Github repo](https://github.com/jekyll/jekyll).
 

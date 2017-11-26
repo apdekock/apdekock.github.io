@@ -26,7 +26,7 @@ Quotes that have stuck with me and that encourage inquisition into how we improv
 ## Sources
  * XUnit Test Patterns: Refactoring Test Code - Gerard Meszaros
  * Refactoring: Improving the Design of Existing Code - Martin Fowler
- * Code Comlplete 2 - Steve McConnell
+ * Code Complete 2 - Steve McConnell
  * SOA Patterns - Arnon Rotem-Gal-Oz
  * C# 3.0 Design Patterns - Judith Bishop
  * IEEE std 42010-2011: Systems and software engineering - architecture description

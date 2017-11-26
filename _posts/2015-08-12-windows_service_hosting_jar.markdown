@@ -58,7 +58,7 @@ Either start with the **Getting started** section below...
 For the purposes of this post I used a pre-existing Spring SOAP web service that I borrowed from the spring getting started guide: ["Producing a SOAP web service"](http://spring.io/guides/gs/producing-web-service/) which is at this [GitHub repo](https://github.com/spring-guides/gs-producing-web-service).
 
 * I forked the [_"Producing a SOAP web service"_ GitHub repo](https://github.com/spring-guides/gs-producing-web-service.git) > [here](https://github.com/apdekock/gs-producing-web-service) and,
-  - ...added **additional logging** (_for demonstration purposes that shows the EndPoint called and the Country parameter in the service request_).
+  - ...added **additional logging** (_for demonstration purposes that shows the Endpoint called and the Country parameter in the service request_).
   -  ...added a **run.bat** batch file to run the compiled sample jar as a stand alone service.
  
 1. Clone the [_"Producing a SOAP web service"_ GitHub repo](https://github.com/apdekock/gs-producing-web-service) altered by me.
@@ -73,7 +73,7 @@ A console should appear as below with Spring telling us what's going on.
 4. Test the service once it is up and running. I used [SoapUI](http://www.soapui.org/) by SMARTBEAR[^7]. In the previous screen shot, you will see the additional logging come into play when a few service calls are made. I called the service 4 times, three times with "Spain" as the request country and once with "France".
 ![Spring Test SOAP UI]({{ site.url }}/assets/java_net_post/running_spring_service_soapUI.PNG "Spring WS running test")
 
-[^6]:Why don't I just do this? - Because as soon as I close the console the process stops and our service dissapears. Hence, the Windows Service.
+[^6]:Why don't I just do this? - Because as soon as I close the console the process stops and our service disappears. Hence, the Windows Service.
 [^7]:Adding the service to the project - Right click on **Projects** > **New SOAP Project** and in the _Initial  WSDL_ field paste: [http://localhost:8080/ws/countries.wsdl](http://localhost:8080/ws/countries.wsdl)
 
 ## Hosting the Java API as a Windows Service
@@ -118,7 +118,7 @@ protected override void OnStart(string[] args)
 
 * _Config args_: All the app settings are used as arguments in order - regardless of key name. So first entry is first argument. _**arg0**_ then _**arg1**_ then _**charlie123**_ etc...
 {% highlight XML %}
-<?xml version="1.0" encoding="utf-8"?>
+<?XML version="1.0" encoding="utf-8"?>
 <configuration>
   <startup>
     <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.5" />
@@ -350,7 +350,7 @@ namespace ConsoleApplication
 [^9]: Installing a Windows Service can be done either through the [installutil.exe](https://msdn.microsoft.com/en-us/library/sd8zc8ha(v=vs.110).aspx) that ships with the .NET framework or the [sc.exe](https://technet.microsoft.com/en-us/library/cc990289.aspx) utility that is native to, and naturally occurs in, the Windows habitat (from Vista and up).
 
 # Uninstalling the Windows Service
-  * It is not required to uninstall the Windows Service with each change you woudl like to deploy locally, however, it is advisable to stop the service, uninstall it, replace the altered assembly and re-install the service.
+  * It is not required to uninstall the Windows Service with each change you would like to deploy locally, however, it is advisable to stop the service, uninstall it, replace the altered assembly and re-install the service.
 	1. _**sc stop testJavaWindowsService**_
 	2. _**sc delete testJavaWindowsService**_
 	3. replace the altered assembly

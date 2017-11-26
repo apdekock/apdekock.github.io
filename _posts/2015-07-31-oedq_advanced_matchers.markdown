@@ -7,7 +7,7 @@ categories: OEDQ, Oracle Enterprise Data Quality, SQL, SQL Server, Data Validati
 ---
 ## What is OEDQ?
 
-[Oracle Enterprise Data Quality (OEDQ) / EDQ](http://www.oracle.com/technetwork/middleware/oedq/overview/index.html) baiscally enables an organisation to govern data, it facilitates data integration and has the capability to extract basic business intelligence. The objective in applying OEDQ was data cleansing. The first step was to identify and report to business the specific records and table fields that need to be addressed to improve data quality and in cases of weak references, data integrity. It also allowed us to identify where serious input validation is required or where client side validations fails and server side validation is omitted.
+[Oracle Enterprise Data Quality (OEDQ) / EDQ](http://www.oracle.com/technetwork/middleware/oedq/overview/index.html) basically enables an organisation to govern data, it facilitates data integration and has the capability to extract basic business intelligence. The objective in applying OEDQ was data cleansing. The first step was to identify and report to business the specific records and table fields that need to be addressed to improve data quality and in cases of weak references, data integrity. It also allowed us to identify where serious input validation is required or where client side validations fails and server side validation is omitted.
 
 # Set up OEDQ
 	
@@ -59,7 +59,7 @@ Right clicking on the menu items provides you with the option to create a new in
 	
 	In my case I created two snapshots one of the _Customers_ table and another of the _Employees_ table.<sup><sup>(You can create an SQL query as well if you would like a more targeted approach.)</sup></sup>
 		
-	![alt text]({{ site.url }}/assets/2.2_snapshots.PNG "SnapShots")
+	![alt text]({{ site.url }}/assets/2.2_snapshots.PNG "Snapshots")
 	
 	You can see the city column in both the _Customers_ and _Employees_ tables.
 
@@ -83,7 +83,7 @@ Right clicking on the menu items provides you with the option to create a new in
 	
 	![alt text]({{ site.url }}/assets/4.1_reader1.PNG "Reader Employees")
 	
-	4.2 Double click on the new Reader and select the _Employees_ snapshot at the Source dropdown. Select all fields for this exercise - we'll only be using country though.
+	4.2 Double click on the new Reader and select the _Employees_ snapshot at the Source drop down. Select all fields for this exercise - we'll only be using country though.
 	
 	![alt text]({{ site.url }}/assets/4.2_reader2.PNG "Reader Employees")
 	
@@ -128,7 +128,7 @@ Right clicking on the menu items provides you with the option to create a new in
 	![alt text]({{ site.url }}/assets/6.4_map_identifiers.PNG "Map Identifiers")
 	![alt text]({{ site.url }}/assets/6.4_map_identifiers1.PNG "Map Identifiers")
 
-	6.3 _Double Click_ on [**Cluster**](http://www.oracle.com/webfolder/technetwork/data-quality/edqhelp/Content/advanced_features/indexing_concept_guide.htm) to create one.<sup><sup>[See the link for further information on **Clustering**](http://www.oracle.com/webfolder/technetwork/data-quality/edqhelp/Content/advanced_features/indexing_concept_guide.htm).</sup></sup> Click on the _+_ button > then _Add Identififer_ and select **City**.
+	6.3 _Double Click_ on [**Cluster**](http://www.oracle.com/webfolder/technetwork/data-quality/edqhelp/Content/advanced_features/indexing_concept_guide.htm) to create one.<sup><sup>[See the link for further information on **Clustering**](http://www.oracle.com/webfolder/technetwork/data-quality/edqhelp/Content/advanced_features/indexing_concept_guide.htm).</sup></sup> Click on the _+_ button > then _Add Identifier_ and select **City**.
 
 	![alt text]({{ site.url }}/assets/6.5_cluster1.PNG "Cluster")
 	
@@ -140,7 +140,7 @@ Right clicking on the menu items provides you with the option to create a new in
 	
 	![alt text]({{ site.url }}/assets/6.6_match2.PNG "Comparison")
 	
-	6.4.2 Change the Comparison Type to _Exact String Match_.<sup><sup>Feel free to look through the other options that might come in handy in the dropdown.</sup></sup>
+	6.4.2 Change the Comparison Type to _Exact String Match_.<sup><sup>Feel free to look through the other options that might come in handy in the drop down.</sup></sup>
 	
 	![alt text]({{ site.url }}/assets/6.6_match3.PNG "Comparison")
 	
@@ -168,7 +168,7 @@ Right clicking on the menu items provides you with the option to create a new in
 
 # Additional Information
 * See the [Matching Concept Guide](http://www.oracle.com/webfolder/technetwork/data-quality/edqhelp/Content/advanced_features/matching_concept_guide.htm) for additional information.
-* OEDQ is a great tool and is extremely powerful. For the data cleansing project I set up scheduled jobs that profile certain table fields for a degree of quality and produces a few Excel spreadsheet (per business area concerned) with the anomalous records to be addressed. The previous reports are archived and hence, an analysis can be done to determine if data quality is improving or degrading over time. All this was done with built in Functionality provided by OEDQ in conjuction with a few batch files for complex file system I/O operations.
+* OEDQ is a great tool and is extremely powerful. For the data cleansing project I set up scheduled jobs that profile certain table fields for a degree of quality and produces a few Excel spreadsheet (per business area concerned) with the anomalous records to be addressed. The previous reports are archived and hence, an analysis can be done to determine if data quality is improving or degrading over time. All this was done with built in Functionality provided by OEDQ in conjunction with a few batch files for complex file system I/O operations.
 * The documentation has some crucial information hidden (in a note sections or greyed out sections). However, it is helpful and does explain the reasoning behind the functionality and the operations one can perform.
 _**This little snippet explained why I could not see any client side Data Stores in my Tool palette when creating a Job.**_
 	

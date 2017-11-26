@@ -14,10 +14,10 @@ This post is the culmination of some side projects I've been playing around with
 # Lessons learned
 
 * [GitSharp](http://www.eqqon.com/index.php/GitSharp) is limited and I needed to grab the project from [github](https://github.com/henon/GitSharp) in order to use it.
-    The NuGet package kept on complaining about a **repositoryformatversion** setting in config [Core] that it required even though it was present, it still complained. So, I downloaded the source to debug the issue but then I did not encounter it. Apart from that - gitsharp did not allow me to push - and it seems the project does not have a lot of contribution activity (not criticising, just stating. I should probably take this up and contribute, especially as I would like to employ git as a file store for an application. Levering off the already refined functions coudl be a win but more on that in another post).
+    The NuGet package kept on complaining about a **repositoryformatversion** setting in config [Core] that it required even though it was present, it still complained. So, I downloaded the source to debug the issue but then I did not encounter it. Apart from that - gitsharp did not allow me to push - and it seems the project does not have a lot of contribution activity (not criticising, just stating. I should probably take this up and contribute, especially as I would like to employ git as a file store for an application. Levering off the already refined functions could be a win but more on that in another post).
 * Scraping with Selenium is probably not the best way - rather employ [HttpClient](https://msdn.microsoft.com/en-us/library/system.net.http.httpclient(v=vs.118).aspx).
 * For quick, easy and painless sparklines [jQuery Sparklines](http://omnipotent.net/jquery.sparkline/#s-about)
-* No backend required, just a simple process running on a server, that commits to a repo (ghPages) gets the job done.
+* No back end required, just a simple process running on a server, that commits to a repo (ghPages) gets the job done.
 
 ## The List
 <ol>
