@@ -401,7 +401,7 @@ So what can we take from Phil's infinite wisdom?
 	
 [^10]:[Shock and awe](https://en.wikipedia.org/wiki/Shock_and_awe)
 
-##**Quick Guide:** 
+## **Quick Guide:** 
 1. Clone [Java.NETWindowsService repo](https://github.com/apdekock/Java.NETWindowsService). 
 2. Compile the solution.
 3. Install and Start the compiled service.<sup> see the **Installing/Uninstalling the service** section on how to install the service.</sup> 
