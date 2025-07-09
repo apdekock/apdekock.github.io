@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Philip de Kock
+title: About
 permalink: /about/
 ---
-
+# Philip de Kock
 ## Quick Overview
 
 - 🏆 Scaled software development organization over 500%
