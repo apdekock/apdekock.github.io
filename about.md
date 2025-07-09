@@ -3,7 +3,7 @@ layout: page
 title: Philip de Kock
 permalink: /about/
 ---
-[![View CV](https://img.shields.io/badge/View-Interactive_CV-blue?style=for-the-badge)](https://yourusername.github.io/cv.html)
+[![View CV](https://img.shields.io/badge/View-Interactive_CV-blue?style=for-the-badge)](https://apdekock.github.io/CV.html)
 
 ## Quick Overview
 - 🏆 Scaled software development organization over 500%
