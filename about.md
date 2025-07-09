@@ -48,7 +48,7 @@ Results-driven with proven expertise in scaling technology organizations and dri
 
 ## Academic Qualifications
 
-**Masters in Information Technology Management (M.IT)**  
+<strong>Masters in Information Technology Management (M.IT)<strong/> 
 University of Pretoria, 2012 – 2013
 
 **Bachelor of Commerce Honours Informatics (B. Com Hons. Informatics)**  
