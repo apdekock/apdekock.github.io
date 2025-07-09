@@ -48,44 +48,44 @@ Results-driven with proven expertise in scaling technology organizations and dri
 
 ## Academic Qualifications
 
-<strong>Masters in Information Technology Management (M.IT)<strong/> 
+<strong>Masters in Information Technology Management (M.IT)</strong>  
 University of Pretoria, 2012 – 2013
 
-**Bachelor of Commerce Honours Informatics (B. Com Hons. Informatics)**  
+<strong>Bachelor of Commerce Honours Informatics (B. Com Hons. Informatics)</strong>  
 University of Pretoria, 2005
 
-**Bachelor of Commerce Informatics (B. Com Informatics)**  
+<strong>Bachelor of Commerce Informatics (B. Com Informatics)</strong>  
 University of Pretoria, 2002 - 2004
 
 ## Certifications
 
-- **CCISO**: Certified Chief Information Security Officer (EC-Council)
-- **TOGAF® CERTIFIED**: TOGAF® 9 Certified License 473385 - Level 1 & 2
-- **ITIL Certified**: ITIL Foundation Certified: Axelos 2019
-- **CSM**: Certified SCRUM Master - International SCRUM Institute
-- **MCP**: Microsoft Certified Professional MS: Programming in C# & ASP.NET MVC
-- **CSCP**: Certified Supply Chain Professional - SAPICS, 2009
-- **Schuitema Care & Growth**: Leadership Program
-- **IBM Certified**: BPM Application Developer - v8.5.7
+- <strong>CCISO</strong>: Certified Chief Information Security Officer (EC-Council)
+- <strong>TOGAF® CERTIFIED</strong>: TOGAF® 9 Certified License 473385 - Level 1 & 2
+- <strong>ITIL Certified</strong>: ITIL Foundation Certified: Axelos 2019
+- <strong>CSM</strong>: Certified SCRUM Master - International SCRUM Institute
+- <strong>MCP</strong>: Microsoft Certified Professional MS: Programming in C# & ASP.NET MVC
+- <strong>CSCP</strong>: Certified Supply Chain Professional - SAPICS, 2009
+- <strong>Schuitema Care & Growth</strong>: Leadership Program
+- <strong>IBM Certified</strong>: BPM Application Developer - v8.5.7
 
 ## Skills
 
-**Leadership & Strategy**: Digital Transformation; Technology Strategy; Organizational Development; Change Management; Strategic Roadmap Development; Business-IT Alignment; Innovation Management; Stakeholder Management; Executive Leadership; Cross-functional Leadership
+<strong>Leadership & Strategy</strong>: Digital Transformation; Technology Strategy; Organizational Development; Change Management; Strategic Roadmap Development; Business-IT Alignment; Innovation Management; Stakeholder Management; Executive Leadership; Cross-functional Leadership
 
-**Information Security & Compliance**: ISO 27001; GDPR; POPIA/PAIA; CCISO; Information Security; Cybersecurity; Risk Management; Governance Risk Compliance (GRC); Data Protection; Privacy; Security Controls; Vulnerability Management; Security Architecture
+<strong>Information Security & Compliance</strong>: ISO 27001; GDPR; POPIA/PAIA; CCISO; Information Security; Cybersecurity; Risk Management; Governance Risk Compliance (GRC); Data Protection; Privacy; Security Controls; Vulnerability Management; Security Architecture
 
-**Enterprise Architecture & Technology**: TOGAF; Enterprise Architecture; Solution Architecture; Cloud Computing; Microsoft Azure; AWS; DevSecOps; Continuous Integration/Continuous Deployment (CI/CD); Microservices; SOA; API Management; Infrastructure as Code; Automation
+<strong>Enterprise Architecture & Technology</strong>: TOGAF; Enterprise Architecture; Solution Architecture; Cloud Computing; Microsoft Azure; AWS; DevSecOps; Continuous Integration/Continuous Deployment (CI/CD); Microservices; SOA; API Management; Infrastructure as Code; Automation
 
-**Development & Operations**: Microsoft .NET; C#; ASP.NET MVC; Agile; Scrum; ITIL; DevOps; Software Development Lifecycle (SDLC); Quality Assurance; Test Automation; Performance Management; Monitoring & Observability
+<strong>Development & Operations</strong>: Microsoft .NET; C#; ASP.NET MVC; Agile; Scrum; ITIL; DevOps; Software Development Lifecycle (SDLC); Quality Assurance; Test Automation; Performance Management; Monitoring & Observability
 
-**Project & Program Management**: Program Management; Portfolio Management; Project Management Office (PMO); Waterfall; Agile/Scrum; Budget Management; Resource Planning; Vendor Management; Contract Management; SLA Management; Delivery Management
+<strong>Project & Program Management</strong>: Program Management; Portfolio Management; Project Management Office (PMO); Waterfall; Agile/Scrum; Budget Management; Resource Planning; Vendor Management; Contract Management; SLA Management; Delivery Management
 
-**Industry Expertise**: IoT; Telematics; Financial Services; Supply Chain; Logistics; Fintech; Tracking Devices; Connected Devices; Real-time Systems; Regulatory Compliance; Enterprise Software
+<strong>Industry Expertise</strong>: IoT; Telematics; Financial Services; Supply Chain; Logistics; Fintech; Tracking Devices; Connected Devices; Real-time Systems; Regulatory Compliance; Enterprise Software
 
 ## Experience
 
 ### Group Software Manager
-**DIGITAL MATTER** | Oct 2020 – Present
+<strong>DIGITAL MATTER</strong> | Oct 2020 – Present
 
 Started as Software Manager (Ex-Co) in 2020 and appointed to Group Software Manager in 2023
 
@@ -104,7 +104,7 @@ Started as Software Manager (Ex-Co) in 2020 and appointed to Group Software Mana
 - Creating visibility across the business
 
 ### Senior Manager: Client Relations and Project Delivery
-**DIGIATA** | May 2016 – Sep 2020
+<strong>DIGIATA</strong> | May 2016 – Sep 2020
 
 Consulted at clients in the financial services industry, leading teams on implementation projects for enterprise software solutions. Ensuring effective project management, robust solutions, and quality delivery through a team of highly skilled engineers. Working with leadership to continually identify and implement process improvements while providing transparency and visibility. Implementing and executing on performance management, coaching, and training of a growing team. Project scoping, costing, forecasting, estimation and resource planning and management. Maintain and build strong client relationships and network for new business opportunities.
 
@@ -113,7 +113,7 @@ Consulted at clients in the financial services industry, leading teams on implem
 - Introduced and implemented test automation that allowed the team to gain confidence in development efforts while advocating and coaching on best practices and good design
 
 ### Senior Consultant
-**IDS CONSULTANTS** | Aug 2015 – Apr 2016
+<strong>IDS CONSULTANTS</strong> | Aug 2015 – Apr 2016
 
 Consulting at clients in the financial services industry. Implementing or redesigning existing solutions to align with strategic organizational objectives.
 
@@ -124,7 +124,7 @@ Consulting at clients in the financial services industry. Implementing or redesi
 - Promoting Agile values in a collaborative environment enabling buy-in from stakeholders
 
 ### Senior Software Engineer
-**ASHBURTON INVESTMENTS (FIRST RAND GROUP)** | Feb 2015 – Aug 2015
+<strong>ASHBURTON INVESTMENTS (FIRST RAND GROUP)</strong> | Feb 2015 – Aug 2015
 
 Responsible for the delivery of solutions for tactical business objectives. Implemented industry best practices in continuous delivery for an online financial services securities platform.
 
@@ -133,7 +133,7 @@ Responsible for the delivery of solutions for tactical business objectives. Impl
 - Implemented a data quality management and continuous monitoring solution
 
 ### Senior Team Lead
-**BUSINESS SYSTEMS GROUP (BSG)** | Feb 2012 – Jan 2015
+<strong>BUSINESS SYSTEMS GROUP (BSG)</strong> | Feb 2012 – Jan 2015
 
 Consulting in the financial services industry, leading a team of 6 on implementation projects for enterprise-wide backend software solutions. Design and delivery of value-adding solutions. Established robust processes in solution design and implementation within a Scrum environment through a team of highly skilled individuals that enabled improvement in the quality of delivery.
 
@@ -144,7 +144,7 @@ Consulting in the financial services industry, leading a team of 6 on implementa
 - Managing collaborative solution design as well as a 3rd party client vendor
 
 ### Senior Software Engineer
-**BARLOWORLD SUPPLY CHAIN SOFTWARE** | Feb 2007 - Jan 2012
+<strong>BARLOWORLD SUPPLY CHAIN SOFTWARE</strong> | Feb 2007 - Jan 2012
 
 Ascended to senior software developer while delivering software in the supply chain, and inventory optimization domains in addition to ad-hoc software in data visualization, dynamic business rules engine, multi-platform deployment packages as well as a centralized licensing platform.
 
@@ -155,7 +155,7 @@ Ascended to senior software developer while delivering software in the supply ch
 - Showcase software functionality to stakeholders and research new technologies to produce proof of concept applications
 
 ### Programmer
-**ALEXANDER FORBES COMPENSATION TECHNOLOGIES** | Jul 2005 - Jan 2007
+<strong>ALEXANDER FORBES COMPENSATION TECHNOLOGIES</strong> | Jul 2005 - Jan 2007
 
 Developing web-based and desktop applications in the Microsoft technology stack. Responsibilities included software development, database design and maintenance and client support.
 
