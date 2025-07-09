@@ -1,18 +1,12 @@
 ---
 layout: page
-title: About
+title: Philip de Kock - Technology Leader & CISO
 permalink: /about/
 ---
 # [Philip de Kock](https://za.linkedin.com/pub/philip-de-kock/3/686/5b9)
 
 [![picture]({{ site.url }}/assets/phil.jpg "Philip de Kock")](https://za.linkedin.com/pub/philip-de-kock/3/686/5b9)
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Philip de Kock - Technology Leader & CISO</title>
+ 
     <style>
         * {
             margin: 0;
@@ -399,9 +393,7 @@ permalink: /about/
                 display: none;
             }
         }
-    </style>
-</head>
-<body>
+    </style> 
     <div class="container">
         <header class="header">
             <div class="header-content">
@@ -726,8 +718,6 @@ permalink: /about/
                 document.querySelector('.header-content').style.transform = 'translateY(0)';
             }, 300);
         });
-    </script>
-</body>
-</html>
+    </script> 
 
 [![linked_in_icon]({{ site.url }}/assets/linked_in_icon.svg "Linkedin")](https://za.linkedin.com/pub/philip-de-kock/3/686/5b9) 
