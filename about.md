@@ -13,8 +13,6 @@ permalink: /about/
 
 [![View CV](https://img.shields.io/badge/View-Interactive_CV-blue?style=for-the-badge)](https://apdekock.github.io/CV.html) 
 
-**Certifications:** M.IT (Masters), B.Com (Hons), Certified Chief Information Security Officer (EC-Council), TOGAF® & ITIL Certified, MCP, CSM, CSCP, IBM Certified
-
 ## PROFILE
 
 Results-driven with proven expertise in scaling technology organizations and driving digital transformation in IoT-enabled businesses. Successfully built and led a global software development team, delivering enterprise-grade solutions supporting hundreds of thousands of connected devices with daily interactions, leading to lucrative venture capital investment.
@@ -161,7 +159,7 @@ Ascended to senior software developer while delivering software in the supply ch
 
 Developing web-based and desktop applications in the Microsoft technology stack. Responsibilities included software development, database design and maintenance and client support.
 
-## CONTACT & LINKS
+#### CONTACT & LINKS
 
 [![picture]({{ site.url }}/assets/phil.jpg "Philip de Kock")](https://za.linkedin.com/pub/philip-de-kock/3/686/5b9) 
 
