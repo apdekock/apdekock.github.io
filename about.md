@@ -3,7 +3,7 @@ layout: page
 title: About
 permalink: /about/
 ---
-# Philip de Kock
+
 ## Quick Overview
 
 - 🏆 Scaled software development organization over 500%
@@ -13,32 +13,32 @@ permalink: /about/
 
 [![View CV](https://img.shields.io/badge/View-Interactive_CV-blue?style=for-the-badge)](https://apdekock.github.io/CV.html) 
 
-## PROFILE
+## Philip de Kock
 
 Results-driven with proven expertise in scaling technology organizations and driving digital transformation in IoT-enabled businesses. Successfully built and led a global software development team, delivering enterprise-grade solutions supporting hundreds of thousands of connected devices with daily interactions, leading to lucrative venture capital investment.
 
-## KEY ACHIEVEMENTS & RESPONSIBILITIES
+## Key Achievements & Responsibilities
 
-### ORGANIZATIONAL LEADERSHIP & GROWTH
+### Organizational Leadership & Growth
 
 - Scaled software development organization over 500% while maintaining operational excellence across global teams
 - Implemented comprehensive mentorship and performance management programs for highly technical staff spanning mechanical, software, and electronic engineering disciplines
 - Led cross-functional coordination including second-line support operations and vendor management initiatives
 
-### SECURITY & COMPLIANCE EXCELLENCE
+### Security & Compliance Excellence
 
 - Led multi-standard compliance initiative achieving ISO 27001, GDPR, and POPIA/PAIA certifications within 24 months
 - Established comprehensive information security controls framework across global operations
 - Implemented enterprise-wide data protection and regulatory compliance programs ensuring adherence to international privacy standards
 
-### TECHNOLOGY & INFRASTRUCTURE
+### Technology & Infrastructure
 
 - Architected and deployed cloud infrastructure solutions supporting massive IoT device connectivity
 - Successfully modernized legacy platform architecture while maintaining business continuity
 - Implemented AI innovation initiatives creating enhanced visibility across multi-disciplinary engineering teams
 - Led comprehensive technology stack and tools renewal programs
 
-### STRATEGIC OPERATIONS & GOVERNANCE
+### Strategic Operations & Governance
 
 - Developed and executed comprehensive technical roadmap aligning business priorities with organizational objectives
 - Established scalable organizational structure eliminating single points of failure and key person dependencies
@@ -46,7 +46,7 @@ Results-driven with proven expertise in scaling technology organizations and dri
 - Instituted software quality governance frameworks and regulatory compliance protocols
 - Managed full project and programme portfolio including budget oversight and resource allocation
 
-## ACADEMIC QUALIFICATIONS
+## Academic Qualifications
 
 **Masters in Information Technology Management (M.IT)**  
 University of Pretoria, 2012 – 2013
@@ -57,7 +57,7 @@ University of Pretoria, 2005
 **Bachelor of Commerce Informatics (B. Com Informatics)**  
 University of Pretoria, 2002 - 2004
 
-## CERTIFICATIONS
+## Certifications
 
 - **CCISO**: Certified Chief Information Security Officer (EC-Council)
 - **TOGAF® CERTIFIED**: TOGAF® 9 Certified License 473385 - Level 1 & 2
@@ -68,7 +68,7 @@ University of Pretoria, 2002 - 2004
 - **Schuitema Care & Growth**: Leadership Program
 - **IBM Certified**: BPM Application Developer - v8.5.7
 
-## SKILLS
+## Skills
 
 **Leadership & Strategy**: Digital Transformation; Technology Strategy; Organizational Development; Change Management; Strategic Roadmap Development; Business-IT Alignment; Innovation Management; Stakeholder Management; Executive Leadership; Cross-functional Leadership
 
@@ -82,7 +82,7 @@ University of Pretoria, 2002 - 2004
 
 **Industry Expertise**: IoT; Telematics; Financial Services; Supply Chain; Logistics; Fintech; Tracking Devices; Connected Devices; Real-time Systems; Regulatory Compliance; Enterprise Software
 
-## EXPERIENCE
+## Experience
 
 ### Group Software Manager
 **DIGITAL MATTER** | Oct 2020 – Present
@@ -159,7 +159,7 @@ Ascended to senior software developer while delivering software in the supply ch
 
 Developing web-based and desktop applications in the Microsoft technology stack. Responsibilities included software development, database design and maintenance and client support.
 
-#### CONTACT & LINKS
+#### Contact
 
 [![picture]({{ site.url }}/assets/phil.jpg "Philip de Kock")](https://za.linkedin.com/pub/philip-de-kock/3/686/5b9) 
 
