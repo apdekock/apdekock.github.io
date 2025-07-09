@@ -11,8 +11,6 @@ permalink: /about/
 
 [![View CV](https://img.shields.io/badge/View-Interactive_CV-blue?style=for-the-badge)](https://apdekock.github.io/CV.html) 
 
-**CELL** (+27) 83 678 3082 • **E-MAIL** philipdekock@gmail.com • **LinkedIn** https://www.linkedin.com/in/philip-de-kock-5b96863
-
 M.IT (Masters), B.Com (Hons), Certified Chief Information Security Officer (EC-Council), TOGAF® & ITIL Certified, MCP, CSM, CSCP, IBM Certified
 
 ## PROFILE
