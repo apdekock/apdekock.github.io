@@ -19,8 +19,6 @@ This is an update / improvement on the previous scraping post, I also wanted to 
   }
 </script>
 ## The List
-<iframe frameborder="0" onload="resizeIframe(this)" 
-style="max-width: 100%; width: 100% ;border-width: 0px; height: 400px; vertical-align: middle;"	src="https://retrievewesellcars.azurewebsites.net/api/HttpTriggerRetrieveHtml?code=mMrqZHyzvFJlDNCOfl6bZifkEjl8QZcwV4kJzfS7/4J5Tcg8jX45JQ==">
-</iframe>
 
+Unfortunately the site I scraped decided to implement some anti scraping methods :-( so I've removed the Azure function.
 	
