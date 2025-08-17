@@ -10,4 +10,4 @@ github_username: apdekock
 bitbucket_username: philipdekock
 # Build settings
 markdown: kramdown
-highlighter: pygments
+highlighter: rouge
